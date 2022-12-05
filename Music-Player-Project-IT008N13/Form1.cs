@@ -21,5 +21,10 @@ namespace Music_Player_Project_IT008N13
         {
 
         }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

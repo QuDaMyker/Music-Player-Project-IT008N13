@@ -28,117 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // toolStrip1
             // 
-            this.button4.Location = new System.Drawing.Point(7, 300);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(309, 51);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Play queue";
-            this.button4.UseVisualStyleBackColor = true;
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1,
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripSeparator1,
+            this.toolStripButton4,
+            this.toolStripButton5,
+            this.toolStripButton6});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(294, 834);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // textBox1
+            // toolStripButton1
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 14);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 43);
-            this.textBox1.TabIndex = 1;
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton1.Size = new System.Drawing.Size(272, 47);
+            this.toolStripButton1.Text = "Home";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
-            // button6
+            // toolStripButton2
             // 
-            this.button6.Location = new System.Drawing.Point(7, 357);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(309, 51);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Playlist";
-            this.button6.UseVisualStyleBackColor = true;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton2.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton2.Text = "Music library";
             // 
-            // button5
+            // toolStripButton3
             // 
-            this.button5.Location = new System.Drawing.Point(3, 682);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(320, 51);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Setting";
-            this.button5.UseVisualStyleBackColor = true;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton3.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton3.Text = "Video library";
             // 
-            // button3
+            // toolStripSeparator1
             // 
-            this.button3.Location = new System.Drawing.Point(7, 208);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(309, 51);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Video library";
-            this.button3.UseVisualStyleBackColor = true;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(292, 6);
             // 
-            // button2
+            // toolStripButton4
             // 
-            this.button2.Location = new System.Drawing.Point(7, 151);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(309, 51);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Music library";
-            this.button2.UseVisualStyleBackColor = true;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton4.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton4.Text = "Play queue";
             // 
-            // button1
+            // toolStripButton5
             // 
-            this.button1.Location = new System.Drawing.Point(7, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(309, 51);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 200);
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton5.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton5.Text = "Playlists";
             // 
-            // panel1
+            // toolStripTextBox1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Location = new System.Drawing.Point(5, 62);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 736);
-            this.panel1.TabIndex = 6;
+            this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(272, 27);
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton6.Size = new System.Drawing.Size(292, 44);
+            this.toolStripButton6.Text = "Setting";
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1667, 834);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "mainForm";
             this.Text = "Media Player Project";
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
     }
 }
 
