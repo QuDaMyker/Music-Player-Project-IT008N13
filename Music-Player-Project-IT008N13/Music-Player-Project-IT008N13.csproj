@@ -87,6 +87,15 @@
     <EmbeddedResource Include="addMediaQueueForm.resx">
       <DependentUpon>addMediaQueueForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addMusicForm.resx">
+      <DependentUpon>addMusicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPlaylistForm.resx">
+      <DependentUpon>addPlaylistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addVideoForm.resx">
+      <DependentUpon>addVideoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="settingForm.resx">
+      <DependentUpon>settingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
