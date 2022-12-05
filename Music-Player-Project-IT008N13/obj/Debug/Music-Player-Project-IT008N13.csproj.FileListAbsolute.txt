@@ -9,3 +9,4 @@ C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music
 C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.csproj.CoreCompileInputs.cache
 C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.exe
 C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.pdb
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addMediaQueueForm.resources

@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addMediaQueueForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addMediaQueueForm.Designer.cs">
+      <DependentUpon>addMediaQueueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMusicForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addMusicForm.Designer.cs">
+      <DependentUpon>addMusicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPlaylistForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addPlaylistForm.Designer.cs">
+      <DependentUpon>addPlaylistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addVideoForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addVideoForm.Designer.cs">
+      <DependentUpon>addVideoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="settingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="settingForm.Designer.cs">
+      <DependentUpon>settingForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addMediaQueueForm.resx">
+      <DependentUpon>addMediaQueueForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
