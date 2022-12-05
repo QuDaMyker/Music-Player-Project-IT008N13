@@ -67,7 +67,7 @@
             this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripTextBox1.Size = new System.Drawing.Size(272, 27);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(266, 27);
             // 
             // toolStripButton1
             // 
@@ -91,7 +91,7 @@
             this.toolStripButton2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton2.Size = new System.Drawing.Size(272, 47);
+            this.toolStripButton2.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton2.Text = "Music library";
             // 
             // toolStripButton3
@@ -103,14 +103,14 @@
             this.toolStripButton3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton3.Size = new System.Drawing.Size(272, 47);
+            this.toolStripButton3.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton3.Text = "Video library";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(292, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(286, 6);
             // 
             // toolStripButton4
             // 
@@ -121,7 +121,7 @@
             this.toolStripButton4.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton4.Size = new System.Drawing.Size(272, 47);
+            this.toolStripButton4.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton4.Text = "Play queue";
             // 
             // toolStripButton5
@@ -133,7 +133,7 @@
             this.toolStripButton5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 200);
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton5.Size = new System.Drawing.Size(272, 47);
+            this.toolStripButton5.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton5.Text = "Playlists";
             // 
             // toolStripButton6
@@ -144,7 +144,7 @@
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton6.Size = new System.Drawing.Size(292, 47);
+            this.toolStripButton6.Size = new System.Drawing.Size(286, 47);
             this.toolStripButton6.Text = "Setting";
             // 
             // mainForm

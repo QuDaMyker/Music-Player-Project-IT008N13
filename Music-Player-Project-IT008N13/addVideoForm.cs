@@ -16,5 +16,10 @@ namespace Music_Player_Project_IT008N13
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Click");
+        }
     }
 }
