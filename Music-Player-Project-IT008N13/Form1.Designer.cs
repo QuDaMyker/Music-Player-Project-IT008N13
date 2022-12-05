@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,13 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(272, 27);
+            // 
             // toolStripButton1
             // 
             this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,24 +84,26 @@
             // 
             // toolStripButton2
             // 
+            this.toolStripButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton2.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton2.Size = new System.Drawing.Size(272, 47);
             this.toolStripButton2.Text = "Music library";
             // 
             // toolStripButton3
             // 
+            this.toolStripButton3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton3.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton3.Size = new System.Drawing.Size(272, 47);
             this.toolStripButton3.Text = "Video library";
             // 
             // toolStripSeparator1
@@ -104,41 +113,37 @@
             // 
             // toolStripButton4
             // 
+            this.toolStripButton4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton4.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton4.Size = new System.Drawing.Size(272, 47);
             this.toolStripButton4.Text = "Play queue";
             // 
             // toolStripButton5
             // 
+            this.toolStripButton5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 200);
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton5.Size = new System.Drawing.Size(272, 44);
+            this.toolStripButton5.Size = new System.Drawing.Size(272, 47);
             this.toolStripButton5.Text = "Playlists";
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripTextBox1.Size = new System.Drawing.Size(272, 27);
             // 
             // toolStripButton6
             // 
+            this.toolStripButton6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton6.Size = new System.Drawing.Size(292, 44);
+            this.toolStripButton6.Size = new System.Drawing.Size(292, 47);
             this.toolStripButton6.Text = "Setting";
             // 
             // mainForm

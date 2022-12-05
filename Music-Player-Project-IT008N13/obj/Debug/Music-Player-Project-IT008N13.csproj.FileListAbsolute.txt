@@ -10,10 +10,6 @@ C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music
 C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.exe
 C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.pdb
 C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addMediaQueueForm.resources
-C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addMusicForm.resources
-C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addPlaylistForm.resources
-C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addVideoForm.resources
-C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.settingForm.resources
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\bin\Debug\Music-Player-Project-IT008N13.exe.config
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\bin\Debug\Music-Player-Project-IT008N13.exe
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\bin\Debug\Music-Player-Project-IT008N13.pdb
@@ -27,3 +23,8 @@ D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.csproj.CoreCompileInputs.cache
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.exe
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music-Player-Project-IT008N13.pdb
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addSettingForm.resources
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addHomeForm.resources
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addMusicForm.resources
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addPlaylistForm.resources
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addVideoForm.resources

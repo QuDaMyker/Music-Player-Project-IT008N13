@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Music_Player_Project_IT008N13
 {
-    public partial class settingForm : UserControl
+    public partial class addSettingForm : UserControl
     {
-        public settingForm()
+        public addSettingForm()
         {
             InitializeComponent();
         }

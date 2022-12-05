@@ -1,6 +1,6 @@
 ﻿namespace Music_Player_Project_IT008N13
 {
-    partial class addPlaylistForm
+    partial class addSettingForm
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // addPlaylistForm
+            // addSettingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
-            this.Name = "addPlaylistForm";
+            this.BackColor = System.Drawing.Color.Fuchsia;
+            this.Name = "addSettingForm";
             this.Size = new System.Drawing.Size(1358, 810);
             this.ResumeLayout(false);
 

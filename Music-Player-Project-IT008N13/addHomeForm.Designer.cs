@@ -1,6 +1,6 @@
 ﻿namespace Music_Player_Project_IT008N13
 {
-    partial class settingForm
+    partial class addHomeForm
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // settingForm
+            // addHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "settingForm";
-            this.Size = new System.Drawing.Size(1436, 848);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Name = "addHomeForm";
+            this.Size = new System.Drawing.Size(1358, 810);
             this.ResumeLayout(false);
 
         }
