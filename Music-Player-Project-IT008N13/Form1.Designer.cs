@@ -58,7 +58,7 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(294, 834);
+            this.toolStrip1.Size = new System.Drawing.Size(288, 834);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -78,7 +78,7 @@
             this.toolStripButton1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton1.Size = new System.Drawing.Size(272, 47);
+            this.toolStripButton1.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton1.Text = "Home";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
@@ -105,6 +105,7 @@
             this.toolStripButton3.Padding = new System.Windows.Forms.Padding(10);
             this.toolStripButton3.Size = new System.Drawing.Size(272, 47);
             this.toolStripButton3.Text = "Video library";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator1
             // 
