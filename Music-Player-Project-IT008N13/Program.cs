@@ -16,7 +16,7 @@ namespace Music_Player_Project_IT008N13
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new mainForm());
         }
     }
 }
