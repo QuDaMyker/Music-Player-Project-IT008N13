@@ -38,6 +38,7 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,12 +59,13 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(288, 834);
+            this.toolStrip1.Size = new System.Drawing.Size(288, 904);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripTextBox1
             // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
@@ -147,11 +149,20 @@
             this.toolStripButton6.Size = new System.Drawing.Size(286, 47);
             this.toolStripButton6.Text = "Setting";
             // 
+            // addHomeForm1
+            // 
+            this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.Location = new System.Drawing.Point(297, 12);
+            this.addHomeForm1.Name = "addHomeForm1";
+            this.addHomeForm1.Size = new System.Drawing.Size(1358, 797);
+            this.addHomeForm1.TabIndex = 1;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1667, 834);
+            this.ClientSize = new System.Drawing.Size(1667, 904);
+            this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "mainForm";
@@ -173,6 +184,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private addHomeForm addHomeForm1;
     }
 }
 
