@@ -38,7 +38,6 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,21 +148,11 @@
             this.toolStripButton6.Size = new System.Drawing.Size(214, 44);
             this.toolStripButton6.Text = "Setting";
             // 
-            // addHomeForm1
-            // 
-            this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addHomeForm1.Location = new System.Drawing.Point(218, 11);
-            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(2);
-            this.addHomeForm1.Name = "addHomeForm1";
-            this.addHomeForm1.Size = new System.Drawing.Size(1018, 648);
-            this.addHomeForm1.TabIndex = 1;
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 734);
-            this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -186,7 +175,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private addHomeForm addHomeForm1;
     }
 }
 
