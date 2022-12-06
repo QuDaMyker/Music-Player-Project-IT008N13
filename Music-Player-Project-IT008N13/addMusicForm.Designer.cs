@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Name = "addMusicForm";
-            this.Size = new System.Drawing.Size(1358, 810);
+            this.Size = new System.Drawing.Size(1358, 797);
             this.ResumeLayout(false);
 
         }

@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Fuchsia;
             this.Name = "addSettingForm";
-            this.Size = new System.Drawing.Size(1358, 810);
+            this.Size = new System.Drawing.Size(1358, 797);
             this.ResumeLayout(false);
 
         }
