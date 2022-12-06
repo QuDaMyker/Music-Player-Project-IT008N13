@@ -124,7 +124,7 @@
   <data name="toolStripButtonClear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAE9KSURBVHhe7b0JnFxVmb+PuIw6jqKOy6ijf8aRUdxlVFQU
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAE9KSURBVHhe7b0JnFxVmb+PuIw6jqKOy6ijf8aRUdxlVFQU
         UVlkXNGokG6wO0kn3enOAglJd7q6XOkgJCzZl96zdXdVdFxQ1AEdHYUEZe+qXqo6CyDITgdk6dT930NO
         fkjzJqm+525V53k+n+fjKPSZrtt1vu9bt+5971EAAOCNKU7f8xfv6z2jcV//qqZ9fTc37uu7p3Gs76nG
         sf47msb6/+D+32ua9vVXu//9Perf1T8GAAAApUrTo6nPuwX/NrfAO0U51r/PbRR+5zYKy5eM9Z/d/HDq
@@ -466,10 +466,10 @@
         RK5CYII=
 </value>
   </data>
-  <data name="toolStripButtonAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="toolStripButtonAddTo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAABcZSURBVHhe7d1rjOV1fcfxQS4+qfQBXtE0Xh4Zk6ZKohWV
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABcZSURBVHhe7d1rjOV1fcfxQS4+qfQBXtE0Xh4Zk6ZKohWV
         1Urq9PzPnP9/iPPMa0KJouAlqSxGs4aKJVq8PNCEJkbES+KE+Z9ZSPaBjdIqNfqkNlpbERsp1ktVRKNW
         E4Tt78z+q7H8BJad+X7P5fVK3gUzy86Zv7Hfz9lld9eAxbG5s/nY8bTtxn13uOm7j5S//lP5z/9R/v77
         zbT92XjaHT/IZp9j9rlmn3P2uYfXcHj2mtY/9dLHDC8TADgVR44cecTGzuaflcP7gXJkv1qO7X21wzwX
