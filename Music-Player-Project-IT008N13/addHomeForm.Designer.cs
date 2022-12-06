@@ -58,7 +58,7 @@
             // btnOpenFIle
             // 
             this.btnOpenFIle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFIle.Location = new System.Drawing.Point(1051, 73);
+            this.btnOpenFIle.Location = new System.Drawing.Point(1174, 71);
             this.btnOpenFIle.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.btnOpenFIle.Name = "btnOpenFIle";
             this.btnOpenFIle.Size = new System.Drawing.Size(122, 47);
@@ -70,7 +70,7 @@
             // 
             this.comboBoxOpenFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxOpenFile.FormattingEnabled = true;
-            this.comboBoxOpenFile.Location = new System.Drawing.Point(1186, 76);
+            this.comboBoxOpenFile.Location = new System.Drawing.Point(1309, 74);
             this.comboBoxOpenFile.Name = "comboBoxOpenFile";
             this.comboBoxOpenFile.Size = new System.Drawing.Size(20, 44);
             this.comboBoxOpenFile.TabIndex = 2;
