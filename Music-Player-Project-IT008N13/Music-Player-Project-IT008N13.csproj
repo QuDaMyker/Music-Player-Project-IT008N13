@@ -90,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeCantFindAnyMusic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeCantFindAnyMusic.Designer.cs">
+      <DependentUpon>WeCantFindAnyMusic.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addHomeForm.resx">
       <DependentUpon>addHomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +126,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WeCantFindAnyMusic.resx">
+      <DependentUpon>WeCantFindAnyMusic.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
