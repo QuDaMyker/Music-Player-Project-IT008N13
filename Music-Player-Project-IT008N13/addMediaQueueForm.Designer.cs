@@ -32,6 +32,7 @@
             this.labelNamePlayQueue = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonClear = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +50,11 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonClear});
+            this.toolStripButtonClear,
+            this.toolStripButtonAdd});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1358, 34);
+            this.toolStrip1.Size = new System.Drawing.Size(1358, 27);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -60,11 +62,17 @@
             // 
             this.toolStripButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonClear.Image")));
             this.toolStripButtonClear.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonClear.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.toolStripButtonClear.Name = "toolStripButtonClear";
-            this.toolStripButtonClear.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButtonClear.Size = new System.Drawing.Size(143, 24);
-            this.toolStripButtonClear.Text = "toolStripButton1";
+            this.toolStripButtonClear.Size = new System.Drawing.Size(67, 24);
+            this.toolStripButtonClear.Text = "Clear";
+            // 
+            // toolStripButtonAdd
+            // 
+            this.toolStripButtonAdd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAdd.Image")));
+            this.toolStripButtonAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAdd.Name = "toolStripButtonAdd";
+            this.toolStripButtonAdd.Size = new System.Drawing.Size(81, 24);
+            this.toolStripButtonAdd.Text = "Add To";
             // 
             // addMediaQueueForm
             // 
@@ -88,5 +96,6 @@
         private System.Windows.Forms.Label labelNamePlayQueue;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonClear;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAdd;
     }
 }
