@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addMediaQueueForm));
             this.labelNamePlayQueue = new System.Windows.Forms.Label();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.toolStripContainer1.SuspendLayout();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonClear = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNamePlayQueue
@@ -43,37 +45,48 @@
             this.labelNamePlayQueue.TabIndex = 2;
             this.labelNamePlayQueue.Text = "Play Queue";
             // 
-            // toolStripContainer1
+            // toolStrip1
             // 
-            this.toolStripContainer1.BottomToolStripPanelVisible = false;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonClear});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1358, 34);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripContainer1.ContentPanel
+            // toolStripButtonClear
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(150, 150);
-            this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(125, 183);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(150, 175);
-            this.toolStripContainer1.TabIndex = 3;
-            this.toolStripContainer1.Text = "toolStripContainer1";
+            this.toolStripButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonClear.Image")));
+            this.toolStripButtonClear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonClear.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.toolStripButtonClear.Name = "toolStripButtonClear";
+            this.toolStripButtonClear.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripButtonClear.Size = new System.Drawing.Size(143, 24);
+            this.toolStripButtonClear.Text = "toolStripButton1";
             // 
             // addMediaQueueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Controls.Add(this.toolStripContainer1);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.labelNamePlayQueue);
+            this.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.Name = "addMediaQueueForm";
             this.Size = new System.Drawing.Size(1358, 797);
-            this.toolStripContainer1.ResumeLayout(false);
-            this.toolStripContainer1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelNamePlayQueue;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonClear;
     }
 }
