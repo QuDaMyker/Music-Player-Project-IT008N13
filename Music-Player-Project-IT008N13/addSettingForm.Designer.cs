@@ -102,7 +102,7 @@
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(57, 70);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(938, 108);
             this.panel1.TabIndex = 2;
@@ -126,10 +126,10 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel2.Image")));
-            this.toolStripLabel2.Margin = new System.Windows.Forms.Padding(0, 1, 750, 2);
+            this.toolStripLabel2.Margin = new System.Windows.Forms.Padding(0, 1, 502, 2);
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Padding = new System.Windows.Forms.Padding(20);
-            this.toolStripLabel2.Size = new System.Drawing.Size(184, 38);
+            this.toolStripLabel2.Size = new System.Drawing.Size(184, 30);
             this.toolStripLabel2.Text = "Video library locations";
             // 
             // toolStripButton3
@@ -139,7 +139,7 @@
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Margin = new System.Windows.Forms.Padding(0, 1, 40, 2);
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(87, 38);
+            this.toolStripButton3.Size = new System.Drawing.Size(87, 30);
             this.toolStripButton3.Text = "Add folder";
             // 
             // toolStripButton4
@@ -148,7 +148,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(24, 38);
+            this.toolStripButton4.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton4.Text = "toolStripButton2";
             // 
             // toolStrip1
@@ -170,10 +170,10 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel1.Image")));
-            this.toolStripLabel1.Margin = new System.Windows.Forms.Padding(0, 1, 750, 2);
+            this.toolStripLabel1.Margin = new System.Windows.Forms.Padding(0, 1, 500, 2);
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Padding = new System.Windows.Forms.Padding(20);
-            this.toolStripLabel1.Size = new System.Drawing.Size(186, 60);
+            this.toolStripLabel1.Size = new System.Drawing.Size(186, 30);
             this.toolStripLabel1.Text = "Music library locations";
             // 
             // toolStripButton1
@@ -183,7 +183,7 @@
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Margin = new System.Windows.Forms.Padding(0, 1, 40, 2);
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(87, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(87, 30);
             this.toolStripButton1.Text = "Add folder";
             // 
             // toolStripButton2
@@ -192,7 +192,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // panel2
@@ -201,7 +201,7 @@
             this.panel2.Controls.Add(this.toolStrip4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(57, 193);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(938, 110);
             this.panel2.TabIndex = 4;
@@ -225,10 +225,10 @@
             // toolStripLabel3
             // 
             this.toolStripLabel3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel3.Image")));
-            this.toolStripLabel3.Margin = new System.Windows.Forms.Padding(0, 1, 883, 2);
+            this.toolStripLabel3.Margin = new System.Windows.Forms.Padding(0, 1, 608, 2);
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Padding = new System.Windows.Forms.Padding(20);
-            this.toolStripLabel3.Size = new System.Drawing.Size(134, 38);
+            this.toolStripLabel3.Size = new System.Drawing.Size(134, 30);
             this.toolStripLabel3.Text = "Accent color";
             // 
             // toolStripButton5
@@ -239,7 +239,7 @@
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Margin = new System.Windows.Forms.Padding(0, 1, 40, 2);
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(33, 38);
+            this.toolStripButton5.Size = new System.Drawing.Size(33, 30);
             this.toolStripButton5.Text = "Zest";
             // 
             // toolStripButton6
@@ -248,7 +248,7 @@
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(24, 38);
+            this.toolStripButton6.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton6.Text = "toolStripButton2";
             // 
             // toolStrip4
@@ -270,10 +270,10 @@
             // toolStripLabel4
             // 
             this.toolStripLabel4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel4.Image")));
-            this.toolStripLabel4.Margin = new System.Windows.Forms.Padding(0, 1, 798, 2);
+            this.toolStripLabel4.Margin = new System.Windows.Forms.Padding(0, 1, 540, 2);
             this.toolStripLabel4.Name = "toolStripLabel4";
             this.toolStripLabel4.Padding = new System.Windows.Forms.Padding(20);
-            this.toolStripLabel4.Size = new System.Drawing.Size(126, 38);
+            this.toolStripLabel4.Size = new System.Drawing.Size(126, 30);
             this.toolStripLabel4.Text = "App theme";
             // 
             // toolStripButton7
@@ -284,7 +284,7 @@
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Margin = new System.Windows.Forms.Padding(0, 1, 40, 2);
             this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(109, 38);
+            this.toolStripButton7.Size = new System.Drawing.Size(109, 30);
             this.toolStripButton7.Text = "Use system setting";
             // 
             // toolStripButton8
@@ -293,7 +293,7 @@
             this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
             this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(24, 38);
+            this.toolStripButton8.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton8.Text = "toolStripButton2";
             // 
             // label3
@@ -311,7 +311,7 @@
             this.panel3.Controls.Add(this.toolStrip5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(57, 317);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(938, 63);
             this.panel3.TabIndex = 5;
@@ -334,17 +334,17 @@
             // toolStripLabel5
             // 
             this.toolStripLabel5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel5.Image")));
-            this.toolStripLabel5.Margin = new System.Windows.Forms.Padding(0, 1, 675, 2);
+            this.toolStripLabel5.Margin = new System.Windows.Forms.Padding(0, 1, 438, 2);
             this.toolStripLabel5.Name = "toolStripLabel5";
             this.toolStripLabel5.Padding = new System.Windows.Forms.Padding(20);
-            this.toolStripLabel5.Size = new System.Drawing.Size(313, 38);
+            this.toolStripLabel5.Size = new System.Drawing.Size(313, 30);
             this.toolStripLabel5.Text = "Look up missing album art and artist art online";
             // 
             // toolStripLabel6
             // 
             this.toolStripLabel6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(23, 38);
+            this.toolStripLabel6.Size = new System.Drawing.Size(23, 30);
             this.toolStripLabel6.Text = "On";
             // 
             // label4
@@ -362,7 +362,7 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(57, 398);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(938, 63);
             this.panel4.TabIndex = 6;
@@ -393,7 +393,7 @@
             this.panel5.Controls.Add(this.linkLabel1);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(57, 507);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(938, 102);
             this.panel5.TabIndex = 7;
@@ -445,9 +445,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "addSettingForm";
-            this.Size = new System.Drawing.Size(1018, 658);
+            this.Size = new System.Drawing.Size(1018, 648);
             this.panel1.ResumeLayout(false);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();

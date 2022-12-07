@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAddFolder = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,14 +76,25 @@
             this.toolStripButtonAddFolder.Size = new System.Drawing.Size(114, 25);
             this.toolStripButtonAddFolder.Text = "  Add Folder";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(436, 301);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 46);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Settings";
+            // 
             // addVideoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelNameVideo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addVideoForm";
             this.Size = new System.Drawing.Size(1018, 648);
             this.panel1.ResumeLayout(false);
@@ -100,5 +112,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonAddFolder;
+        private System.Windows.Forms.Label label1;
     }
 }

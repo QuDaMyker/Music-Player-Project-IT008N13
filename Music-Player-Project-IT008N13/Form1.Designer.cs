@@ -38,6 +38,7 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,13 +59,12 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(216, 734);
+            this.toolStrip1.Size = new System.Drawing.Size(216, 687);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripTextBox1
             // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
@@ -148,11 +148,21 @@
             this.toolStripButton6.Size = new System.Drawing.Size(214, 44);
             this.toolStripButton6.Text = "Setting";
             // 
+            // addSettingForm1
+            // 
+            this.addSettingForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addSettingForm1.Location = new System.Drawing.Point(221, 0);
+            this.addSettingForm1.Margin = new System.Windows.Forms.Padding(8);
+            this.addSettingForm1.Name = "addSettingForm1";
+            this.addSettingForm1.Size = new System.Drawing.Size(950, 687);
+            this.addSettingForm1.TabIndex = 1;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 734);
+            this.ClientSize = new System.Drawing.Size(1155, 687);
+            this.Controls.Add(this.addSettingForm1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -175,6 +185,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private addSettingForm addSettingForm1;
     }
 }
 
