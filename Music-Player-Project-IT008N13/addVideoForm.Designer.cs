@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addVideoForm));
-            this.labelNameVideo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAddFolder = new System.Windows.Forms.ToolStripButton();
@@ -37,17 +36,6 @@
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // labelNameVideo
-            // 
-            this.labelNameVideo.AutoSize = true;
-            this.labelNameVideo.Font = new System.Drawing.Font("Forte", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameVideo.Location = new System.Drawing.Point(28, 21);
-            this.labelNameVideo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNameVideo.Name = "labelNameVideo";
-            this.labelNameVideo.Size = new System.Drawing.Size(180, 70);
-            this.labelNameVideo.TabIndex = 6;
-            this.labelNameVideo.Text = "Video";
             // 
             // panel1
             // 
@@ -79,12 +67,12 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(436, 301);
+            this.label1.Location = new System.Drawing.Point(51, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 46);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Settings";
+            this.label1.Text = "Video";
             // 
             // addVideoForm
             // 
@@ -93,7 +81,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.labelNameVideo);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addVideoForm";
             this.Size = new System.Drawing.Size(1018, 648);
@@ -102,13 +89,10 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelNameVideo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonAddFolder;
