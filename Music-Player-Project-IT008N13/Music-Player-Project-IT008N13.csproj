@@ -82,6 +82,9 @@
     <Compile Include="addVideoForm.Designer.cs">
       <DependentUpon>addVideoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addVideoForm.resx">
       <DependentUpon>addVideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToggleButton.resx">
+      <DependentUpon>ToggleButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
