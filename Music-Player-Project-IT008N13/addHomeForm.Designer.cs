@@ -76,6 +76,7 @@
             this.toolStripButtonOpenFile.Name = "toolStripButtonOpenFile";
             this.toolStripButtonOpenFile.Size = new System.Drawing.Size(182, 41);
             this.toolStripButtonOpenFile.Text = "Open File    ";
+            this.toolStripButtonOpenFile.Click += new System.EventHandler(this.toolStripButtonOpenFile_Click);
             // 
             // toolStripSeparator
             // 
@@ -89,6 +90,7 @@
             this.toolStripButtonOpenFolder.Name = "toolStripButtonOpenFolder";
             this.toolStripButtonOpenFolder.Size = new System.Drawing.Size(188, 41);
             this.toolStripButtonOpenFolder.Text = "Open Folder";
+            this.toolStripButtonOpenFolder.Click += new System.EventHandler(this.toolStripButtonOpenFolder_Click);
             // 
             // toolStripButtonOpenURL
             // 

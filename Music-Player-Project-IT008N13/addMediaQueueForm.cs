@@ -16,5 +16,9 @@ namespace Music_Player_Project_IT008N13
         {
             InitializeComponent();
         }
+
+        private void addMediaQueueForm_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

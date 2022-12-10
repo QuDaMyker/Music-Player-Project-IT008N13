@@ -39,6 +39,11 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
+            this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
+            this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
+            this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
+            this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
+            this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +87,7 @@
             this.toolStripButton1.Padding = new System.Windows.Forms.Padding(10);
             this.toolStripButton1.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton1.Text = "Home";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -107,7 +112,6 @@
             this.toolStripButton3.Padding = new System.Windows.Forms.Padding(10);
             this.toolStripButton3.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton3.Text = "Video library";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator1
             // 
@@ -152,17 +156,68 @@
             // addHomeForm1
             // 
             this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.FolderContainMedia = "";
             this.addHomeForm1.Location = new System.Drawing.Point(306, 11);
             this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addHomeForm1.Name = "addHomeForm1";
             this.addHomeForm1.Size = new System.Drawing.Size(1357, 798);
             this.addHomeForm1.TabIndex = 1;
             // 
+            // addMediaQueueForm1
+            // 
+            this.addMediaQueueForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addMediaQueueForm1.Location = new System.Drawing.Point(306, 11);
+            this.addMediaQueueForm1.Margin = new System.Windows.Forms.Padding(0);
+            this.addMediaQueueForm1.Name = "addMediaQueueForm1";
+            this.addMediaQueueForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addMediaQueueForm1.TabIndex = 2;
+            // 
+            // addMusicForm1
+            // 
+            this.addMusicForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addMusicForm1.Location = new System.Drawing.Point(306, 11);
+            this.addMusicForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addMusicForm1.Name = "addMusicForm1";
+            this.addMusicForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addMusicForm1.TabIndex = 3;
+            // 
+            // addPlaylistForm1
+            // 
+            this.addPlaylistForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addPlaylistForm1.Location = new System.Drawing.Point(306, 11);
+            this.addPlaylistForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addPlaylistForm1.Name = "addPlaylistForm1";
+            this.addPlaylistForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addPlaylistForm1.TabIndex = 4;
+            // 
+            // addSettingForm1
+            // 
+            this.addSettingForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addSettingForm1.Location = new System.Drawing.Point(306, 19);
+            this.addSettingForm1.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.addSettingForm1.Name = "addSettingForm1";
+            this.addSettingForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addSettingForm1.TabIndex = 5;
+            // 
+            // addVideoForm1
+            // 
+            this.addVideoForm1.BackColor = System.Drawing.Color.White;
+            this.addVideoForm1.Location = new System.Drawing.Point(306, 11);
+            this.addVideoForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addVideoForm1.Name = "addVideoForm1";
+            this.addVideoForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addVideoForm1.TabIndex = 6;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1675, 934);
+            this.Controls.Add(this.addVideoForm1);
+            this.Controls.Add(this.addSettingForm1);
+            this.Controls.Add(this.addPlaylistForm1);
+            this.Controls.Add(this.addMusicForm1);
+            this.Controls.Add(this.addMediaQueueForm1);
             this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -187,5 +242,10 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private addHomeForm addHomeForm1;
+        private addMediaQueueForm addMediaQueueForm1;
+        private addMusicForm addMusicForm1;
+        private addPlaylistForm addPlaylistForm1;
+        private addSettingForm addSettingForm1;
+        private addVideoForm addVideoForm1;
     }
 }

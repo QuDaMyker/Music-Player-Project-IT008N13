@@ -12,6 +12,7 @@ namespace Music_Player_Project_IT008N13
 {
     public partial class mainForm : Form
     {
+        
         public mainForm()
         {
             InitializeComponent();
@@ -19,18 +20,12 @@ namespace Music_Player_Project_IT008N13
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-
+            addHomeForm1.Show();
+            addMediaQueueForm1.Hide();
+            addPlaylistForm1.Hide();
+            addMusicForm1.Hide();
+            addVideoForm1.Hide();
+            addSettingForm1.Hide();
         }
-
-        private void toolStripButton1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

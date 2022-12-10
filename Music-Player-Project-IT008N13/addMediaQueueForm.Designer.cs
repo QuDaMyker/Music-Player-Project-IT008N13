@@ -35,11 +35,11 @@
             this.btnAddto = new System.Windows.Forms.ToolStripButton();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.addFileToPlayQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFolderToPlayQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMediaFromURLToPlayQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +117,11 @@
             this.toolStripButton1.Size = new System.Drawing.Size(102, 35);
             this.toolStripButton1.Text = "Add file(s)";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            // 
             // toolStripDropDownButton1
             // 
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -151,11 +156,6 @@
             this.addMediaFromURLToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
             this.addMediaFromURLToPlayQueueToolStripMenuItem.Text = "Add Media From URL to Play queue";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
-            // 
             // addMediaQueueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -167,6 +167,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "addMediaQueueForm";
             this.Size = new System.Drawing.Size(1357, 798);
+            this.Load += new System.EventHandler(this.addMediaQueueForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.toolStrip3.ResumeLayout(false);
