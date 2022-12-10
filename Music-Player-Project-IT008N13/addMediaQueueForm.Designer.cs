@@ -34,12 +34,12 @@
             this.btnClear = new System.Windows.Forms.ToolStripButton();
             this.btnAddto = new System.Windows.Forms.ToolStripButton();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnAddFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.addFileToPlayQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addFolderToPlayQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addMediaFromURLToPlayQueueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDropDown = new System.Windows.Forms.ToolStripDropDownButton();
+            this.btnAddFiletoQueue = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddFoldertoQueue = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddMediaformUrl = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,7 @@
             this.btnClear.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.btnClear.Size = new System.Drawing.Size(82, 36);
+            this.btnClear.Size = new System.Drawing.Size(73, 36);
             this.btnClear.Text = "Clear";
             // 
             // btnAddto
@@ -87,7 +87,7 @@
             this.btnAddto.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddto.Name = "btnAddto";
             this.btnAddto.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.btnAddto.Size = new System.Drawing.Size(99, 36);
+            this.btnAddto.Size = new System.Drawing.Size(87, 36);
             this.btnAddto.Text = "Add to";
             // 
             // toolStrip3
@@ -98,63 +98,63 @@
             this.toolStrip3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.btnAddFile,
             this.toolStripSeparator1,
-            this.toolStripDropDownButton1});
+            this.btnDropDown});
             this.toolStrip3.Location = new System.Drawing.Point(953, 26);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Size = new System.Drawing.Size(169, 38);
             this.toolStrip3.TabIndex = 9;
             this.toolStrip3.Text = "toolStrip3";
             // 
-            // toolStripButton1
+            // btnAddFile
             // 
-            this.toolStripButton1.BackColor = System.Drawing.Color.White;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(0, 1, 5, 2);
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(102, 35);
-            this.toolStripButton1.Text = "Add file(s)";
+            this.btnAddFile.BackColor = System.Drawing.Color.White;
+            this.btnAddFile.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFile.Image")));
+            this.btnAddFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAddFile.Margin = new System.Windows.Forms.Padding(0, 1, 5, 2);
+            this.btnAddFile.Name = "btnAddFile";
+            this.btnAddFile.Size = new System.Drawing.Size(85, 35);
+            this.btnAddFile.Text = "Add file(s)";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
             // 
-            // toolStripDropDownButton1
+            // btnDropDown
             // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addFileToPlayQueueToolStripMenuItem,
-            this.addFolderToPlayQueueToolStripMenuItem,
-            this.addMediaFromURLToPlayQueueToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(34, 35);
-            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            this.btnDropDown.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDropDown.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAddFiletoQueue,
+            this.btnAddFoldertoQueue,
+            this.btnAddMediaformUrl});
+            this.btnDropDown.Image = ((System.Drawing.Image)(resources.GetObject("btnDropDown.Image")));
+            this.btnDropDown.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDropDown.Name = "btnDropDown";
+            this.btnDropDown.Size = new System.Drawing.Size(33, 35);
+            this.btnDropDown.Text = "toolStripDropDownButton1";
             // 
-            // addFileToPlayQueueToolStripMenuItem
+            // btnAddFiletoQueue
             // 
-            this.addFileToPlayQueueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addFileToPlayQueueToolStripMenuItem.Image")));
-            this.addFileToPlayQueueToolStripMenuItem.Name = "addFileToPlayQueueToolStripMenuItem";
-            this.addFileToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
-            this.addFileToPlayQueueToolStripMenuItem.Text = "Add File to play queue";
+            this.btnAddFiletoQueue.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFiletoQueue.Image")));
+            this.btnAddFiletoQueue.Name = "btnAddFiletoQueue";
+            this.btnAddFiletoQueue.Size = new System.Drawing.Size(266, 26);
+            this.btnAddFiletoQueue.Text = "Add File to play queue";
             // 
-            // addFolderToPlayQueueToolStripMenuItem
+            // btnAddFoldertoQueue
             // 
-            this.addFolderToPlayQueueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addFolderToPlayQueueToolStripMenuItem.Image")));
-            this.addFolderToPlayQueueToolStripMenuItem.Name = "addFolderToPlayQueueToolStripMenuItem";
-            this.addFolderToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
-            this.addFolderToPlayQueueToolStripMenuItem.Text = "Add Folder to Play queue";
+            this.btnAddFoldertoQueue.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFoldertoQueue.Image")));
+            this.btnAddFoldertoQueue.Name = "btnAddFoldertoQueue";
+            this.btnAddFoldertoQueue.Size = new System.Drawing.Size(266, 26);
+            this.btnAddFoldertoQueue.Text = "Add Folder to Play queue";
             // 
-            // addMediaFromURLToPlayQueueToolStripMenuItem
+            // btnAddMediaformUrl
             // 
-            this.addMediaFromURLToPlayQueueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addMediaFromURLToPlayQueueToolStripMenuItem.Image")));
-            this.addMediaFromURLToPlayQueueToolStripMenuItem.Name = "addMediaFromURLToPlayQueueToolStripMenuItem";
-            this.addMediaFromURLToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
-            this.addMediaFromURLToPlayQueueToolStripMenuItem.Text = "Add Media From URL to Play queue";
+            this.btnAddMediaformUrl.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMediaformUrl.Image")));
+            this.btnAddMediaformUrl.Name = "btnAddMediaformUrl";
+            this.btnAddMediaformUrl.Size = new System.Drawing.Size(266, 26);
+            this.btnAddMediaformUrl.Text = "Add Media From URL to Play queue";
             // 
             // addMediaQueueForm
             // 
@@ -182,11 +182,11 @@
         private System.Windows.Forms.ToolStripButton btnClear;
         private System.Windows.Forms.ToolStripButton btnAddto;
         private System.Windows.Forms.ToolStrip toolStrip3;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnAddFile;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripMenuItem addFileToPlayQueueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addFolderToPlayQueueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addMediaFromURLToPlayQueueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton btnDropDown;
+        private System.Windows.Forms.ToolStripMenuItem btnAddFiletoQueue;
+        private System.Windows.Forms.ToolStripMenuItem btnAddFoldertoQueue;
+        private System.Windows.Forms.ToolStripMenuItem btnAddMediaformUrl;
     }
 }
