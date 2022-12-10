@@ -46,6 +46,7 @@
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
+            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +69,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(288, 736);
+            this.toolStrip1.Size = new System.Drawing.Size(288, 934);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -157,7 +159,7 @@
             this.toolStripButton6.Size = new System.Drawing.Size(286, 47);
             this.toolStripButton6.Text = "Setting";
             // 
-            // addSettingForm1
+            // addHomeForm1
             // 
             this.addSettingForm1.BackColor = System.Drawing.SystemColors.Control;
             this.addSettingForm1.Location = new System.Drawing.Point(295, 0);
@@ -165,6 +167,12 @@
             this.addSettingForm1.Name = "addSettingForm1";
             this.addSettingForm1.Size = new System.Drawing.Size(1244, 619);
             this.addSettingForm1.TabIndex = 1;
+            this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.Location = new System.Drawing.Point(306, 11);
+            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addHomeForm1.Name = "addHomeForm1";
+            this.addHomeForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addHomeForm1.TabIndex = 1;
             // 
             // slider1
             // 
@@ -261,6 +269,8 @@
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.slider1);
             this.Controls.Add(this.addSettingForm1);
+            this.ClientSize = new System.Drawing.Size(1675, 934);
+            this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -293,6 +303,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton9;
         private System.Windows.Forms.ToolStripButton toolStripButton10;
         private System.Windows.Forms.ToolStripButton toolStripButton11;
+        private addHomeForm addHomeForm1;
     }
 }
 

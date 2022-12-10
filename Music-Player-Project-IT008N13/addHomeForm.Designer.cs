@@ -52,6 +52,7 @@
             this.btnOpenFIle.TabIndex = 1;
             this.btnOpenFIle.Text = "Open FIle(s)";
             this.btnOpenFIle.UseVisualStyleBackColor = true;
+            this.btnOpenFIle.Click += new System.EventHandler(this.btnOpenFIle_Click);
             // 
             // toolStrip1
             // 
