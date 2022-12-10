@@ -38,17 +38,8 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
-            this.slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
             this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.toolStrip1.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -68,7 +59,6 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(288, 736);
             this.toolStrip1.Size = new System.Drawing.Size(288, 934);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
@@ -161,12 +151,6 @@
             // 
             // addHomeForm1
             // 
-            this.addSettingForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addSettingForm1.Location = new System.Drawing.Point(295, 0);
-            this.addSettingForm1.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.addSettingForm1.Name = "addSettingForm1";
-            this.addSettingForm1.Size = new System.Drawing.Size(1244, 619);
-            this.addSettingForm1.TabIndex = 1;
             this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
             this.addHomeForm1.Location = new System.Drawing.Point(306, 11);
             this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -174,101 +158,10 @@
             this.addHomeForm1.Size = new System.Drawing.Size(1357, 798);
             this.addHomeForm1.TabIndex = 1;
             // 
-            // slider1
-            // 
-            this.slider1.BackColor = System.Drawing.Color.DimGray;
-            this.slider1.ChannelColor = System.Drawing.Color.Coral;
-            this.slider1.ChannelHeight = 6;
-            this.slider1.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.slider1.ForeColor = System.Drawing.Color.White;
-            this.slider1.Location = new System.Drawing.Point(48, 612);
-            this.slider1.Name = "slider1";
-            this.slider1.ShowMaximum = false;
-            this.slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
-            this.slider1.Size = new System.Drawing.Size(1426, 23);
-            this.slider1.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.slider1.SliderHeight = 6;
-            this.slider1.SymbolAfter = "";
-            this.slider1.SymbolBefore = "";
-            this.slider1.TabIndex = 2;
-            // 
-            // toolStrip2
-            // 
-            this.toolStrip2.AutoSize = false;
-            this.toolStrip2.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton7,
-            this.toolStripButton8,
-            this.toolStripButton9,
-            this.toolStripButton10,
-            this.toolStripButton11});
-            this.toolStrip2.Location = new System.Drawing.Point(662, 653);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(339, 55);
-            this.toolStrip2.TabIndex = 3;
-            this.toolStrip2.Text = "toolStrip2";
-            // 
-            // toolStripButton7
-            // 
-            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton7.Size = new System.Drawing.Size(44, 52);
-            this.toolStripButton7.Text = "toolStripButton7";
-            // 
-            // toolStripButton8
-            // 
-            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton8.Size = new System.Drawing.Size(44, 52);
-            this.toolStripButton8.Text = "toolStripButton8";
-            // 
-            // toolStripButton9
-            // 
-            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Padding = new System.Windows.Forms.Padding(20);
-            this.toolStripButton9.Size = new System.Drawing.Size(64, 52);
-            this.toolStripButton9.Text = "toolStripButton9";
-            // 
-            // toolStripButton10
-            // 
-            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton10.Size = new System.Drawing.Size(44, 52);
-            this.toolStripButton10.Text = "toolStripButton10";
-            // 
-            // toolStripButton11
-            // 
-            this.toolStripButton11.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton11.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton11.Image")));
-            this.toolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton11.Name = "toolStripButton11";
-            this.toolStripButton11.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton11.Size = new System.Drawing.Size(44, 52);
-            this.toolStripButton11.Text = "toolStripButton11";
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 736);
-            this.Controls.Add(this.toolStrip2);
-            this.Controls.Add(this.slider1);
-            this.Controls.Add(this.addSettingForm1);
             this.ClientSize = new System.Drawing.Size(1675, 934);
             this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.toolStrip1);
@@ -278,8 +171,6 @@
             this.Text = "Media Player Project";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -295,15 +186,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private addSettingForm addSettingForm1;
-        private Controls.Slider slider1;
-        private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripButton toolStripButton8;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
-        private System.Windows.Forms.ToolStripButton toolStripButton10;
-        private System.Windows.Forms.ToolStripButton toolStripButton11;
         private addHomeForm addHomeForm1;
     }
 }
-
