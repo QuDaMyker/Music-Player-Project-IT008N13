@@ -123,5 +123,6 @@ namespace Music_Player_Project_IT008N13
             addVideoForm1.Hide();
             addSettingForm1.Show();
         }
+
     }
 }
