@@ -39,7 +39,7 @@ namespace Music_Player_Project_IT008N13
         }
         private void addSongs()
         {
-            flowLayoutPanelSongs.AutoScroll = true;
+            //flowLayoutPanelSongs.AutoScroll = true;
             OpenFileDialog fileOpen = new OpenFileDialog();
             fileOpen.Filter = "MP3 File |*.mp3|" +
                 "MP4 File |*.mp4|" +
@@ -56,10 +56,16 @@ namespace Music_Player_Project_IT008N13
                 for (int i = 0; i < Files.Length; i++)
                 {
                     Button song = new Button();
-                    song.Width = flowLayoutPanelSongs.Width;
+                    song.Text = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3", "").ToUpper();
+                    song.Height = listBox1.Height / 10;
+                    listBox1.Controls.Add(song);
+                    song.Dock = DockStyle.Top;
+                    song.BringToFront();
+                    //track_list
+                    /*song.Width = flowLayoutPanelSongs.Width;
                     song.Height = flowLayoutPanelSongs.Height / 10;
                     song.Text = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3","").ToUpper();
-                    flowLayoutPanelSongs.Controls.Add(song);
+                    flowLayoutPanelSongs.Controls.Add(song);*/
                 }
             }
         }

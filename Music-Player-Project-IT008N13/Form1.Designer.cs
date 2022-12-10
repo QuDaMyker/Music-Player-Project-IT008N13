@@ -47,13 +47,13 @@
             this.panelControl = new System.Windows.Forms.Panel();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.btnVolume = new System.Windows.Forms.ToolStripButton();
+            this.Silder = new Music_Player_Project_IT008N13.Controls.Slider();
             this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
             this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
-            this.Silder = new Music_Player_Project_IT008N13.Controls.Slider();
             this.toolStripControl.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
@@ -281,9 +281,28 @@
             this.btnVolume.Size = new System.Drawing.Size(40, 44);
             this.btnVolume.Text = "toolStripButton12";
             // 
+            // Silder
+            // 
+            this.Silder.ChannelColor = System.Drawing.Color.Salmon;
+            this.Silder.ChannelHeight = 6;
+            this.Silder.ForeBackColor = System.Drawing.Color.RoyalBlue;
+            this.Silder.ForeColor = System.Drawing.Color.White;
+            this.Silder.Location = new System.Drawing.Point(72, 4);
+            this.Silder.Margin = new System.Windows.Forms.Padding(4);
+            this.Silder.Name = "Silder";
+            this.Silder.ShowMaximum = false;
+            this.Silder.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
+            this.Silder.Size = new System.Drawing.Size(1537, 28);
+            this.Silder.SliderColor = System.Drawing.Color.RoyalBlue;
+            this.Silder.SliderHeight = 6;
+            this.Silder.SymbolAfter = "";
+            this.Silder.SymbolBefore = "";
+            this.Silder.TabIndex = 2;
+            // 
             // addHomeForm1
             // 
             this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.FileContainMedia = "";
             this.addHomeForm1.FolderContainMedia = "";
             this.addHomeForm1.Location = new System.Drawing.Point(279, 3);
             this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -335,24 +354,6 @@
             this.addVideoForm1.Name = "addVideoForm1";
             this.addVideoForm1.Size = new System.Drawing.Size(1396, 796);
             this.addVideoForm1.TabIndex = 5;
-            // 
-            // Silder
-            // 
-            this.Silder.ChannelColor = System.Drawing.Color.Salmon;
-            this.Silder.ChannelHeight = 6;
-            this.Silder.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.Silder.ForeColor = System.Drawing.Color.White;
-            this.Silder.Location = new System.Drawing.Point(72, 4);
-            this.Silder.Margin = new System.Windows.Forms.Padding(4);
-            this.Silder.Name = "Silder";
-            this.Silder.ShowMaximum = false;
-            this.Silder.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
-            this.Silder.Size = new System.Drawing.Size(1537, 28);
-            this.Silder.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.Silder.SliderHeight = 6;
-            this.Silder.SymbolAfter = "";
-            this.Silder.SymbolBefore = "";
-            this.Silder.TabIndex = 2;
             // 
             // mainForm
             // 
