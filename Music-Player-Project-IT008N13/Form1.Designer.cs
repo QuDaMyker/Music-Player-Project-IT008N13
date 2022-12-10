@@ -80,10 +80,9 @@
             // txtBSearch
             // 
             this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBSearch.Margin = new System.Windows.Forms.Padding(10);
+            this.txtBSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtBSearch.Name = "txtBSearch";
-            this.txtBSearch.Padding = new System.Windows.Forms.Padding(10);
-            this.txtBSearch.Size = new System.Drawing.Size(194, 23);
+            this.txtBSearch.Size = new System.Drawing.Size(210, 23);
             // 
             // btnHome
             // 

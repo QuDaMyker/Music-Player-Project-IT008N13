@@ -24,36 +24,36 @@ namespace Music_Player_Project_IT008N13
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new addHomeForm(), sender);
+            //OpenChildForm(new addHomeForm(), sender);
         }
 
         private void bbtnMusicLibrary_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new addMusicForm, sender);
+            //OpenChildForm(new addMusicForm, sender);
 
         }
 
         private void btnVideoLibrary_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new addVideoForm, sender);
+            //OpenChildForm(new addVideoForm, sender);
 
         }
 
         private void btnPlayQueue_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new addMediaQueueForm, sender);
+            //OpenChildForm(new addMediaQueueForm, sender);
 
         }
 
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new addPlaylistForm, sender);
+            //OpenChildForm(new addPlaylistForm, sender);
 
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new addSettingForm, sender);
+            //OpenChildForm(new addSettingForm, sender);
         }
     }
 }
