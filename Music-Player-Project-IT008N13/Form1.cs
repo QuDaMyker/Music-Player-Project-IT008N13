@@ -12,10 +12,12 @@ namespace Music_Player_Project_IT008N13
 {
     public partial class mainForm : Form
     {
-        
+        private static mainForm form = null;
+        private delegate void EnableDelegate(bool enable);
         public mainForm()
         {
             InitializeComponent();
+            form = this;
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {
@@ -25,6 +27,8 @@ namespace Music_Player_Project_IT008N13
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
+            //addHomeForm addHomeForm1 = new addHomeForm();
+            //addHomeForm1.Show();
             addHomeForm1.Show();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
