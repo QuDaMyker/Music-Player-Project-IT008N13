@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using AxWMPLib;
 
 namespace Music_Player_Project_IT008N13
 {
@@ -34,7 +33,6 @@ namespace Music_Player_Project_IT008N13
             get { return _FileContainMedia; }
             set { _FileContainMedia = value; }
         }
-        mainForm fgrid;
         public addHomeForm()
         {
             InitializeComponent();
@@ -62,13 +60,8 @@ namespace Music_Player_Project_IT008N13
                     song.Height = flowLayoutPanelSongs.Height / 10;
                     song.Text = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3","").ToUpper();
                     flowLayoutPanelSongs.Controls.Add(song);
-                    song.Click += (click_Song);
                 }
             }
-        }
-        private void click_Song(object sender, EventArgs e)
-        {
-            mainForm.axWindowsMediaPlayer1.Ctlcontrols.play();
         }
         private void btnOpenFIle_Click(object sender, EventArgs e)
         {
