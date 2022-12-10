@@ -38,6 +38,7 @@
             this.panelButton = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelLibraries = new System.Windows.Forms.Label();
+            this.flowLayoutPanelSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.toolStrip1.SuspendLayout();
             this.panelButton.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +53,7 @@
             this.btnOpenFIle.TabIndex = 1;
             this.btnOpenFIle.Text = "Open FIle(s)";
             this.btnOpenFIle.UseVisualStyleBackColor = true;
+            this.btnOpenFIle.Click += new System.EventHandler(this.btnOpenFIle_Click);
             // 
             // toolStrip1
             // 
@@ -75,6 +77,7 @@
             this.toolStripButtonOpenFile.Name = "toolStripButtonOpenFile";
             this.toolStripButtonOpenFile.Size = new System.Drawing.Size(182, 41);
             this.toolStripButtonOpenFile.Text = "Open File    ";
+            this.toolStripButtonOpenFile.Click += new System.EventHandler(this.toolStripButtonOpenFile_Click);
             // 
             // toolStripSeparator
             // 
@@ -88,6 +91,7 @@
             this.toolStripButtonOpenFolder.Name = "toolStripButtonOpenFolder";
             this.toolStripButtonOpenFolder.Size = new System.Drawing.Size(188, 41);
             this.toolStripButtonOpenFolder.Text = "Open Folder";
+            this.toolStripButtonOpenFolder.Click += new System.EventHandler(this.toolStripButtonOpenFolder_Click);
             // 
             // toolStripButtonOpenURL
             // 
@@ -125,11 +129,19 @@
             this.labelLibraries.TabIndex = 6;
             this.labelLibraries.Text = "Recent media";
             // 
+            // flowLayoutPanelSongs
+            // 
+            this.flowLayoutPanelSongs.Location = new System.Drawing.Point(70, 158);
+            this.flowLayoutPanelSongs.Name = "flowLayoutPanelSongs";
+            this.flowLayoutPanelSongs.Size = new System.Drawing.Size(1229, 573);
+            this.flowLayoutPanelSongs.TabIndex = 7;
+            // 
             // addHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.flowLayoutPanelSongs);
             this.Controls.Add(this.labelLibraries);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOpenFIle);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelLibraries;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSongs;
     }
 }
