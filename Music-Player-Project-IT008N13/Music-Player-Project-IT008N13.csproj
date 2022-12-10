@@ -135,6 +135,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="WeCantFindAnyMusic.resx">
       <DependentUpon>WeCantFindAnyMusic.cs</DependentUpon>
@@ -151,6 +152,114 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\add-folder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\add-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\btnHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\btnMusic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\btnPlaylists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\btnPlayQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\btnVideo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\expand-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\folder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\folder %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\iconApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\musical-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\musiclibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\playlist %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\sound-wave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\speaker-filled-audio-tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\trash-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\www.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,7 +63,7 @@
             // toolStripControl
             // 
             this.toolStripControl.AutoSize = false;
-            this.toolStripControl.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toolStripControl.BackColor = System.Drawing.Color.LightBlue;
             this.toolStripControl.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStripControl.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripControl.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -78,7 +78,7 @@
             this.btnSetting});
             this.toolStripControl.Location = new System.Drawing.Point(0, 0);
             this.toolStripControl.Name = "toolStripControl";
-            this.toolStripControl.Size = new System.Drawing.Size(288, 934);
+            this.toolStripControl.Size = new System.Drawing.Size(279, 934);
             this.toolStripControl.TabIndex = 0;
             this.toolStripControl.Text = "toolStrip1";
             // 
@@ -87,7 +87,7 @@
             this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtBSearch.Name = "txtBSearch";
-            this.txtBSearch.Size = new System.Drawing.Size(282, 27);
+            this.txtBSearch.Size = new System.Drawing.Size(273, 23);
             // 
             // btnHome
             // 
@@ -95,10 +95,10 @@
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHome.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(10);
-            this.btnHome.Size = new System.Drawing.Size(266, 47);
+            this.btnHome.Size = new System.Drawing.Size(277, 44);
             this.btnHome.Text = "Home";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
@@ -108,10 +108,10 @@
             this.bbtnMusicLibrary.Image = ((System.Drawing.Image)(resources.GetObject("bbtnMusicLibrary.Image")));
             this.bbtnMusicLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bbtnMusicLibrary.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.bbtnMusicLibrary.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.bbtnMusicLibrary.Margin = new System.Windows.Forms.Padding(0);
             this.bbtnMusicLibrary.Name = "bbtnMusicLibrary";
             this.bbtnMusicLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.bbtnMusicLibrary.Size = new System.Drawing.Size(266, 47);
+            this.bbtnMusicLibrary.Size = new System.Drawing.Size(277, 44);
             this.bbtnMusicLibrary.Text = "Music library";
             this.bbtnMusicLibrary.Click += new System.EventHandler(this.bbtnMusicLibrary_Click);
             // 
@@ -121,10 +121,10 @@
             this.btnVideoLibrary.Image = ((System.Drawing.Image)(resources.GetObject("btnVideoLibrary.Image")));
             this.btnVideoLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVideoLibrary.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnVideoLibrary.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnVideoLibrary.Margin = new System.Windows.Forms.Padding(0);
             this.btnVideoLibrary.Name = "btnVideoLibrary";
             this.btnVideoLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.btnVideoLibrary.Size = new System.Drawing.Size(266, 47);
+            this.btnVideoLibrary.Size = new System.Drawing.Size(277, 44);
             this.btnVideoLibrary.Text = "Video library";
             this.btnVideoLibrary.Click += new System.EventHandler(this.btnVideoLibrary_Click);
             // 
@@ -133,7 +133,7 @@
             this.toolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.toolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(286, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(277, 6);
             // 
             // btnPlayQueue
             // 
@@ -141,10 +141,10 @@
             this.btnPlayQueue.Image = ((System.Drawing.Image)(resources.GetObject("btnPlayQueue.Image")));
             this.btnPlayQueue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlayQueue.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPlayQueue.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.btnPlayQueue.Margin = new System.Windows.Forms.Padding(0);
             this.btnPlayQueue.Name = "btnPlayQueue";
             this.btnPlayQueue.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlayQueue.Size = new System.Drawing.Size(266, 47);
+            this.btnPlayQueue.Size = new System.Drawing.Size(277, 44);
             this.btnPlayQueue.Text = "Play queue";
             this.btnPlayQueue.Click += new System.EventHandler(this.btnPlayQueue_Click);
             // 
@@ -154,10 +154,10 @@
             this.btnPlaylists.Image = ((System.Drawing.Image)(resources.GetObject("btnPlaylists.Image")));
             this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylists.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPlaylists.Margin = new System.Windows.Forms.Padding(10, 0, 10, 200);
+            this.btnPlaylists.Margin = new System.Windows.Forms.Padding(0, 0, 0, 200);
             this.btnPlaylists.Name = "btnPlaylists";
             this.btnPlaylists.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlaylists.Size = new System.Drawing.Size(266, 47);
+            this.btnPlaylists.Size = new System.Drawing.Size(277, 44);
             this.btnPlaylists.Text = "Playlists";
             this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
             // 
@@ -167,10 +167,10 @@
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(10, 1, 0, 2);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(0);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(10);
-            this.btnSetting.Size = new System.Drawing.Size(276, 47);
+            this.btnSetting.Size = new System.Drawing.Size(277, 44);
             this.btnSetting.Text = "Setting";
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
@@ -216,12 +216,13 @@
             // btnPlayPause
             // 
             this.btnPlayPause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnPlayPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPlayPause.Image")));
+            this.btnPlayPause.Image = global::Music_Player_Project_IT008N13.Properties.Resources.play;
             this.btnPlayPause.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPlayPause.Name = "btnPlayPause";
             this.btnPlayPause.Padding = new System.Windows.Forms.Padding(20);
             this.btnPlayPause.Size = new System.Drawing.Size(64, 55);
             this.btnPlayPause.Text = "toolStripButton9";
+            this.btnPlayPause.Click += new System.EventHandler(this.btnPlayPause_Click);
             // 
             // btnNext
             // 
@@ -284,6 +285,7 @@
             // addHomeForm1
             // 
             this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.FileContainMedia = "";
             this.addHomeForm1.FolderContainMedia = "";
             this.addHomeForm1.Location = new System.Drawing.Point(279, 3);
             this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
