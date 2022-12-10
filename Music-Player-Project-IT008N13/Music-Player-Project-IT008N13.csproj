@@ -82,6 +82,9 @@
     <Compile Include="addVideoForm.Designer.cs">
       <DependentUpon>addVideoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Slider.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
