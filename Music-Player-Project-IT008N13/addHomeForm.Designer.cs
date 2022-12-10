@@ -38,7 +38,7 @@
             this.panelButton = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelLibraries = new System.Windows.Forms.Label();
-            this.flowLayoutPanelSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.toolStrip1.SuspendLayout();
             this.panelButton.SuspendLayout();
             this.SuspendLayout();
@@ -129,19 +129,21 @@
             this.labelLibraries.TabIndex = 6;
             this.labelLibraries.Text = "Recent media";
             // 
-            // flowLayoutPanelSongs
+            // listBox1
             // 
-            this.flowLayoutPanelSongs.Location = new System.Drawing.Point(70, 158);
-            this.flowLayoutPanelSongs.Name = "flowLayoutPanelSongs";
-            this.flowLayoutPanelSongs.Size = new System.Drawing.Size(1229, 573);
-            this.flowLayoutPanelSongs.TabIndex = 7;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(84, 218);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(1226, 516);
+            this.listBox1.TabIndex = 7;
             // 
             // addHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.flowLayoutPanelSongs);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.labelLibraries);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOpenFIle);
@@ -167,6 +169,6 @@
         private System.Windows.Forms.Panel panelButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelLibraries;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSongs;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
