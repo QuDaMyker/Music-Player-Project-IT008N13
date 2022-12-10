@@ -17,15 +17,44 @@ namespace Music_Player_Project_IT008N13
         {
             InitializeComponent();
         }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void OpenChildForm(Form childForm, object btnSender)
         {
-            addHomeForm1.Show();
-            addMediaQueueForm1.Hide();
-            addPlaylistForm1.Hide();
-            addMusicForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();
+            childForm.Location = new Point(209, 0);
+            childForm.Size = new Size(1047, 647);
+            childForm.ShowDialog();
+        }
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addHomeForm(), sender);
+        }
+
+        private void bbtnMusicLibrary_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addMusicForm, sender);
+
+        }
+
+        private void btnVideoLibrary_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addVideoForm, sender);
+
+        }
+
+        private void btnPlayQueue_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addMediaQueueForm, sender);
+
+        }
+
+        private void btnPlaylists_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addPlaylistForm, sender);
+
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addSettingForm, sender);
         }
     }
 }
