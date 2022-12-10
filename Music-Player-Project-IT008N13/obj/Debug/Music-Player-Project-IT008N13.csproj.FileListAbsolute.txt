@@ -35,3 +35,4 @@ D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.addVideoForm.resources
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.WeCantFindAnyMusic.resources
 D:\Project Music Player\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.Controls.ToggleButton.resources
+C:\Users\quocd\OneDrive\Tài liệu\GitHub\Music-Player-Project-IT008N13\Music-Player-Project-IT008N13\obj\Debug\Music_Player_Project_IT008N13.Controls.ToggleButton.resources

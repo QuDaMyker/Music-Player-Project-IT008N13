@@ -52,6 +52,7 @@
             this.btnOpenFIle.TabIndex = 1;
             this.btnOpenFIle.Text = "Open FIle(s)";
             this.btnOpenFIle.UseVisualStyleBackColor = true;
+            this.btnOpenFIle.Click += new System.EventHandler(this.btnOpenFIle_Click);
             // 
             // toolStrip1
             // 
@@ -102,7 +103,7 @@
             this.panelButton.Controls.Add(this.toolStrip1);
             this.panelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelButton.Location = new System.Drawing.Point(1264, 54);
-            this.panelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelButton.Margin = new System.Windows.Forms.Padding(4);
             this.panelButton.Name = "panelButton";
             this.panelButton.Size = new System.Drawing.Size(59, 46);
             this.panelButton.TabIndex = 4;

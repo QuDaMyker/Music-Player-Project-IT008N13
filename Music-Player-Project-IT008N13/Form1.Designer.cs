@@ -38,7 +38,7 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
+            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,16 +59,17 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(216, 687);
+            this.toolStrip1.Size = new System.Drawing.Size(288, 934);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripTextBox1
             // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(10);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripTextBox1.Size = new System.Drawing.Size(194, 23);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(266, 27);
             // 
             // toolStripButton1
             // 
@@ -79,7 +80,7 @@
             this.toolStripButton1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton1.Size = new System.Drawing.Size(194, 44);
+            this.toolStripButton1.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton1.Text = "Home";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
@@ -92,7 +93,7 @@
             this.toolStripButton2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton2.Size = new System.Drawing.Size(194, 44);
+            this.toolStripButton2.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton2.Text = "Music library";
             // 
             // toolStripButton3
@@ -104,14 +105,14 @@
             this.toolStripButton3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton3.Size = new System.Drawing.Size(194, 44);
+            this.toolStripButton3.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton3.Text = "Video library";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(214, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(286, 6);
             // 
             // toolStripButton4
             // 
@@ -122,7 +123,7 @@
             this.toolStripButton4.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton4.Size = new System.Drawing.Size(194, 44);
+            this.toolStripButton4.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton4.Text = "Play queue";
             // 
             // toolStripButton5
@@ -134,7 +135,7 @@
             this.toolStripButton5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 200);
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton5.Size = new System.Drawing.Size(194, 44);
+            this.toolStripButton5.Size = new System.Drawing.Size(266, 47);
             this.toolStripButton5.Text = "Playlists";
             // 
             // toolStripButton6
@@ -145,27 +146,27 @@
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton6.Size = new System.Drawing.Size(214, 44);
+            this.toolStripButton6.Size = new System.Drawing.Size(286, 47);
             this.toolStripButton6.Text = "Setting";
             // 
-            // addSettingForm1
+            // addHomeForm1
             // 
-            this.addSettingForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addSettingForm1.Location = new System.Drawing.Point(221, 0);
-            this.addSettingForm1.Margin = new System.Windows.Forms.Padding(8);
-            this.addSettingForm1.Name = "addSettingForm1";
-            this.addSettingForm1.Size = new System.Drawing.Size(950, 687);
-            this.addSettingForm1.TabIndex = 1;
+            this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.Location = new System.Drawing.Point(306, 11);
+            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addHomeForm1.Name = "addHomeForm1";
+            this.addHomeForm1.Size = new System.Drawing.Size(1357, 798);
+            this.addHomeForm1.TabIndex = 1;
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 687);
-            this.Controls.Add(this.addSettingForm1);
+            this.ClientSize = new System.Drawing.Size(1675, 934);
+            this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "mainForm";
             this.Text = "Media Player Project";
             this.toolStrip1.ResumeLayout(false);
@@ -185,7 +186,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private addSettingForm addSettingForm1;
+        private addHomeForm addHomeForm1;
     }
 }
 
