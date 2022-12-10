@@ -25,36 +25,63 @@ namespace Music_Player_Project_IT008N13
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new addHomeForm(), sender);
+            addHomeForm1.Show();
+            addMediaQueueForm1.Hide();
+            addMusicForm1.Hide();
+            addPlaylistForm1.Hide();
+            addVideoForm1.Hide();
+            addSettingForm1.Hide();
         }
 
         private void bbtnMusicLibrary_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new addMusicForm, sender);
-
+            addHomeForm1.Hide();
+            addMediaQueueForm1.Hide();
+            addMusicForm1.Show();
+            addPlaylistForm1.Hide();
+            addVideoForm1.Hide();
+            addSettingForm1.Hide();
         }
 
         private void btnVideoLibrary_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new addVideoForm, sender);
+            addHomeForm1.Hide();
+            addMediaQueueForm1.Hide();
+            addMusicForm1.Hide();
+            addPlaylistForm1.Hide();
+            addVideoForm1.Show();
+            addSettingForm1.Hide();
 
         }
 
         private void btnPlayQueue_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new addMediaQueueForm, sender);
-
+            addHomeForm1.Hide();
+            addMediaQueueForm1.Show();
+            addMusicForm1.Hide();
+            addPlaylistForm1.Hide();
+            addVideoForm1.Hide();
+            addSettingForm1.Hide();
         }
 
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new addPlaylistForm, sender);
-
+            addHomeForm1.Hide();
+            addMediaQueueForm1.Hide();
+            addMusicForm1.Hide();
+            addPlaylistForm1.Show();
+            addVideoForm1.Hide();
+            addSettingForm1.Hide();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new addSettingForm, sender);
+            addHomeForm1.Hide();
+            addMediaQueueForm1.Hide();
+            addMusicForm1.Hide();
+            addPlaylistForm1.Hide();
+            addVideoForm1.Hide();
+            addSettingForm1.Show();
         }
     }
 }

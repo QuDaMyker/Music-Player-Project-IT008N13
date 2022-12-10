@@ -29,27 +29,6 @@ namespace Music_Player_Project_IT008N13
         {
             InitializeComponent();
         }
-        private void btnOpenFIle_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dg = new OpenFileDialog();
-            dg.Filter = "|*.mp3| |*.mp4| |*.mkv| |*.m3u8| |All files (*.*)|*.*|";
-            dg.FilterIndex = 0;
-            dg.ShowDialog(this);
-        }
-
-        private void toolStripButtonOpenFile_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog fileOpen = new OpenFileDialog();
-            fileOpen.Filter = "|*.mp3| |*.mp4| |*.mkv| |*.m3u8| |All files (*.*)|*.*|";
-            fileOpen.FilterIndex = 0;
-            fileOpen.ShowDialog(this);
-        }
-
-        private void toolStripButtonOpenFolder_Click(object sender, EventArgs e)
-        {
-            FolderBrowserDialog folderOpen = new FolderBrowserDialog();
-            _FolderContainMedia = folderOpen.SelectedPath;
-            folderOpen.ShowDialog(this);
-        }
+        
     }
 }

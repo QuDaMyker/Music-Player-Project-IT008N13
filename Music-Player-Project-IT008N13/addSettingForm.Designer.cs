@@ -53,6 +53,7 @@
             this.btnExpand3 = new System.Windows.Forms.ToolStripButton();
             this.labelPersonalization = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.toggleButton1 = new Music_Player_Project_IT008N13.Controls.ToggleButton();
             this.labelOnOff = new System.Windows.Forms.ToolStrip();
             this.labelLookup = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
@@ -64,7 +65,6 @@
             this.linklabelFeedback = new System.Windows.Forms.LinkLabel();
             this.linklablehelp = new System.Windows.Forms.LinkLabel();
             this.labelApp = new System.Windows.Forms.Label();
-            this.toggleButton1 = new Music_Player_Project_IT008N13.Controls.ToggleButton();
             this.panel1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -315,6 +315,20 @@
             this.panel3.Size = new System.Drawing.Size(1251, 78);
             this.panel3.TabIndex = 5;
             // 
+            // toggleButton1
+            // 
+            this.toggleButton1.AutoSize = true;
+            this.toggleButton1.Location = new System.Drawing.Point(879, 42);
+            this.toggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.toggleButton1.Name = "toggleButton1";
+            this.toggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.toggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.toggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.toggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.toggleButton1.Size = new System.Drawing.Size(45, 22);
+            this.toggleButton1.TabIndex = 5;
+            this.toggleButton1.UseVisualStyleBackColor = true;
+            // 
             // labelOnOff
             // 
             this.labelOnOff.AutoSize = false;
@@ -427,20 +441,6 @@
             this.labelApp.TabIndex = 1;
             this.labelApp.Text = "App";
             // 
-            // toggleButton1
-            // 
-            this.toggleButton1.AutoSize = true;
-            this.toggleButton1.Location = new System.Drawing.Point(879, 42);
-            this.toggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.toggleButton1.Name = "toggleButton1";
-            this.toggleButton1.OffBackColor = System.Drawing.Color.Gray;
-            this.toggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.toggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.toggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.toggleButton1.Size = new System.Drawing.Size(45, 22);
-            this.toggleButton1.TabIndex = 5;
-            this.toggleButton1.UseVisualStyleBackColor = true;
-            // 
             // addSettingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -454,7 +454,7 @@
             this.Controls.Add(this.labelSetting);
             this.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.Name = "addSettingForm";
-            this.Size = new System.Drawing.Size(1357, 798);
+            this.Size = new System.Drawing.Size(1396, 796);
             this.panel1.ResumeLayout(false);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();

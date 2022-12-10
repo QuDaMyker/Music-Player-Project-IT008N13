@@ -120,14 +120,14 @@
             // 
             this.aZToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
             this.aZToolStripMenuItem.Name = "aZToolStripMenuItem";
-            this.aZToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aZToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aZToolStripMenuItem.Text = "A - Z";
             // 
             // zAToolStripMenuItem
             // 
             this.zAToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
             this.zAToolStripMenuItem.Name = "zAToolStripMenuItem";
-            this.zAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.zAToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.zAToolStripMenuItem.Text = "Z - A";
             // 
             // addVideoForm
@@ -140,7 +140,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "addVideoForm";
-            this.Size = new System.Drawing.Size(1357, 798);
+            this.Size = new System.Drawing.Size(1396, 796);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.toolStrip2.ResumeLayout(false);

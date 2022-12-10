@@ -48,7 +48,7 @@
             this.Controls.Add(this.labelSetting);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "addMusicForm";
-            this.Size = new System.Drawing.Size(1357, 798);
+            this.Size = new System.Drawing.Size(1396, 796);
             this.ResumeLayout(false);
 
         }

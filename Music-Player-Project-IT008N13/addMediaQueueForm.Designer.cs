@@ -166,7 +166,7 @@
             this.Controls.Add(this.labelPlayQueue);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "addMediaQueueForm";
-            this.Size = new System.Drawing.Size(1357, 798);
+            this.Size = new System.Drawing.Size(1396, 796);
             this.Load += new System.EventHandler(this.addMediaQueueForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
