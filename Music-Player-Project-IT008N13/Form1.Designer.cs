@@ -54,10 +54,12 @@
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
+            player = new AxWMPLib.AxWindowsMediaPlayer();
             this.toolStripControl.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
             this.toolStrip3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStripControl
@@ -87,7 +89,7 @@
             this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtBSearch.Name = "txtBSearch";
-            this.txtBSearch.Size = new System.Drawing.Size(273, 23);
+            this.txtBSearch.Size = new System.Drawing.Size(273, 27);
             // 
             // btnHome
             // 
@@ -98,7 +100,7 @@
             this.btnHome.Margin = new System.Windows.Forms.Padding(0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(10);
-            this.btnHome.Size = new System.Drawing.Size(277, 44);
+            this.btnHome.Size = new System.Drawing.Size(277, 47);
             this.btnHome.Text = "Home";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
@@ -111,7 +113,7 @@
             this.bbtnMusicLibrary.Margin = new System.Windows.Forms.Padding(0);
             this.bbtnMusicLibrary.Name = "bbtnMusicLibrary";
             this.bbtnMusicLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.bbtnMusicLibrary.Size = new System.Drawing.Size(277, 44);
+            this.bbtnMusicLibrary.Size = new System.Drawing.Size(277, 47);
             this.bbtnMusicLibrary.Text = "Music library";
             this.bbtnMusicLibrary.Click += new System.EventHandler(this.bbtnMusicLibrary_Click);
             // 
@@ -124,7 +126,7 @@
             this.btnVideoLibrary.Margin = new System.Windows.Forms.Padding(0);
             this.btnVideoLibrary.Name = "btnVideoLibrary";
             this.btnVideoLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.btnVideoLibrary.Size = new System.Drawing.Size(277, 44);
+            this.btnVideoLibrary.Size = new System.Drawing.Size(277, 47);
             this.btnVideoLibrary.Text = "Video library";
             this.btnVideoLibrary.Click += new System.EventHandler(this.btnVideoLibrary_Click);
             // 
@@ -144,7 +146,7 @@
             this.btnPlayQueue.Margin = new System.Windows.Forms.Padding(0);
             this.btnPlayQueue.Name = "btnPlayQueue";
             this.btnPlayQueue.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlayQueue.Size = new System.Drawing.Size(277, 44);
+            this.btnPlayQueue.Size = new System.Drawing.Size(277, 47);
             this.btnPlayQueue.Text = "Play queue";
             this.btnPlayQueue.Click += new System.EventHandler(this.btnPlayQueue_Click);
             // 
@@ -157,7 +159,7 @@
             this.btnPlaylists.Margin = new System.Windows.Forms.Padding(0, 0, 0, 200);
             this.btnPlaylists.Name = "btnPlaylists";
             this.btnPlaylists.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlaylists.Size = new System.Drawing.Size(277, 44);
+            this.btnPlaylists.Size = new System.Drawing.Size(277, 47);
             this.btnPlaylists.Text = "Playlists";
             this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
             // 
@@ -170,7 +172,7 @@
             this.btnSetting.Margin = new System.Windows.Forms.Padding(0);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(10);
-            this.btnSetting.Size = new System.Drawing.Size(277, 44);
+            this.btnSetting.Size = new System.Drawing.Size(277, 47);
             this.btnSetting.Text = "Setting";
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
@@ -356,11 +358,21 @@
             this.addVideoForm1.Size = new System.Drawing.Size(1396, 796);
             this.addVideoForm1.TabIndex = 5;
             // 
+            // player
+            // 
+            player.Enabled = true;
+            player.Location = new System.Drawing.Point(115, 626);
+            player.Name = "player";
+            player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            player.Size = new System.Drawing.Size(79, 96);
+            player.TabIndex = 11;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1675, 934);
+            this.Controls.Add(player);
             this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.addMediaQueueForm1);
             this.Controls.Add(this.addMusicForm1);
@@ -380,6 +392,7 @@
             this.panelControl.ResumeLayout(false);
             this.toolStrip3.ResumeLayout(false);
             this.toolStrip3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -411,5 +424,6 @@
         private addMusicForm addMusicForm1;
         private addMediaQueueForm addMediaQueueForm1;
         private addHomeForm addHomeForm1;
+        public static AxWMPLib.AxWindowsMediaPlayer player;
     }
 }
