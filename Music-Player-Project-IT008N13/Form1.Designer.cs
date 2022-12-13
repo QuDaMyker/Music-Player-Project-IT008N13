@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.toolStripControl = new System.Windows.Forms.ToolStrip();
-            this.txtBSearch = new System.Windows.Forms.ToolStripTextBox();
             this.btnHome = new System.Windows.Forms.ToolStripButton();
             this.bbtnMusicLibrary = new System.Windows.Forms.ToolStripButton();
             this.btnVideoLibrary = new System.Windows.Forms.ToolStripButton();
@@ -45,6 +44,7 @@
             this.btnNext = new System.Windows.Forms.ToolStripButton();
             this.btnLoop = new System.Windows.Forms.ToolStripButton();
             this.panelControl = new System.Windows.Forms.Panel();
+            this.slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.btnVolume = new System.Windows.Forms.ToolStripButton();
             this.Silder = new Music_Player_Project_IT008N13.Controls.Slider();
@@ -54,23 +54,21 @@
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
-            player = new AxWMPLib.AxWindowsMediaPlayer();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolStripControl.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
             this.toolStrip3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStripControl
             // 
             this.toolStripControl.AutoSize = false;
-            this.toolStripControl.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripControl.BackColor = System.Drawing.Color.Teal;
             this.toolStripControl.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStripControl.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripControl.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtBSearch,
             this.btnHome,
             this.bbtnMusicLibrary,
             this.btnVideoLibrary,
@@ -80,53 +78,49 @@
             this.btnSetting});
             this.toolStripControl.Location = new System.Drawing.Point(0, 0);
             this.toolStripControl.Name = "toolStripControl";
-            this.toolStripControl.Size = new System.Drawing.Size(279, 934);
+            this.toolStripControl.Size = new System.Drawing.Size(436, 934);
             this.toolStripControl.TabIndex = 0;
             this.toolStripControl.Text = "toolStrip1";
-            // 
-            // txtBSearch
-            // 
-            this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBSearch.Name = "txtBSearch";
-            this.txtBSearch.Size = new System.Drawing.Size(273, 27);
             // 
             // btnHome
             // 
             this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 150, 0, 0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(10);
-            this.btnHome.Size = new System.Drawing.Size(277, 47);
+            this.btnHome.Size = new System.Drawing.Size(434, 47);
             this.btnHome.Text = "Home";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // bbtnMusicLibrary
             // 
             this.bbtnMusicLibrary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtnMusicLibrary.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bbtnMusicLibrary.Image = ((System.Drawing.Image)(resources.GetObject("bbtnMusicLibrary.Image")));
             this.bbtnMusicLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bbtnMusicLibrary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bbtnMusicLibrary.Margin = new System.Windows.Forms.Padding(0);
             this.bbtnMusicLibrary.Name = "bbtnMusicLibrary";
             this.bbtnMusicLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.bbtnMusicLibrary.Size = new System.Drawing.Size(277, 47);
+            this.bbtnMusicLibrary.Size = new System.Drawing.Size(434, 47);
             this.bbtnMusicLibrary.Text = "Music library";
             this.bbtnMusicLibrary.Click += new System.EventHandler(this.bbtnMusicLibrary_Click);
             // 
             // btnVideoLibrary
             // 
             this.btnVideoLibrary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVideoLibrary.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnVideoLibrary.Image = ((System.Drawing.Image)(resources.GetObject("btnVideoLibrary.Image")));
             this.btnVideoLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVideoLibrary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnVideoLibrary.Margin = new System.Windows.Forms.Padding(0);
             this.btnVideoLibrary.Name = "btnVideoLibrary";
             this.btnVideoLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.btnVideoLibrary.Size = new System.Drawing.Size(277, 47);
+            this.btnVideoLibrary.Size = new System.Drawing.Size(434, 47);
             this.btnVideoLibrary.Text = "Video library";
             this.btnVideoLibrary.Click += new System.EventHandler(this.btnVideoLibrary_Click);
             // 
@@ -135,44 +129,47 @@
             this.toolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.toolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(277, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(434, 6);
             // 
             // btnPlayQueue
             // 
             this.btnPlayQueue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayQueue.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPlayQueue.Image = ((System.Drawing.Image)(resources.GetObject("btnPlayQueue.Image")));
             this.btnPlayQueue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlayQueue.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPlayQueue.Margin = new System.Windows.Forms.Padding(0);
             this.btnPlayQueue.Name = "btnPlayQueue";
             this.btnPlayQueue.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlayQueue.Size = new System.Drawing.Size(277, 47);
+            this.btnPlayQueue.Size = new System.Drawing.Size(434, 47);
             this.btnPlayQueue.Text = "Play queue";
             this.btnPlayQueue.Click += new System.EventHandler(this.btnPlayQueue_Click);
             // 
             // btnPlaylists
             // 
             this.btnPlaylists.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaylists.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPlaylists.Image = ((System.Drawing.Image)(resources.GetObject("btnPlaylists.Image")));
             this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylists.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPlaylists.Margin = new System.Windows.Forms.Padding(0, 0, 0, 200);
             this.btnPlaylists.Name = "btnPlaylists";
             this.btnPlaylists.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlaylists.Size = new System.Drawing.Size(277, 47);
+            this.btnPlaylists.Size = new System.Drawing.Size(434, 47);
             this.btnPlaylists.Text = "Playlists";
             this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
             // 
             // btnSetting
             // 
             this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSetting.Margin = new System.Windows.Forms.Padding(0);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(10);
-            this.btnSetting.Size = new System.Drawing.Size(277, 47);
+            this.btnSetting.Size = new System.Drawing.Size(434, 47);
             this.btnSetting.Text = "Setting";
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
@@ -185,11 +182,11 @@
             this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnShuffle,
-            this.btnPrevious,
             this.btnPlayPause,
             this.btnNext,
-            this.btnLoop});
-            this.toolStrip2.Location = new System.Drawing.Point(708, 36);
+            this.btnLoop,
+            this.btnPrevious});
+            this.toolStrip2.Location = new System.Drawing.Point(869, 58);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Size = new System.Drawing.Size(321, 58);
             this.toolStrip2.TabIndex = 3;
@@ -249,14 +246,33 @@
             // panelControl
             // 
             this.panelControl.BackColor = System.Drawing.SystemColors.Control;
+            this.panelControl.Controls.Add(this.slider1);
+            this.panelControl.Controls.Add(this.toolStrip2);
             this.panelControl.Controls.Add(this.toolStrip3);
             this.panelControl.Controls.Add(this.Silder);
-            this.panelControl.Controls.Add(this.toolStrip2);
             this.panelControl.Location = new System.Drawing.Point(0, 799);
-            this.panelControl.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(1675, 135);
             this.panelControl.TabIndex = 4;
+            // 
+            // slider1
+            // 
+            this.slider1.ChannelColor = System.Drawing.Color.CadetBlue;
+            this.slider1.ChannelHeight = 6;
+            this.slider1.ForeBackColor = System.Drawing.Color.Transparent;
+            this.slider1.ForeColor = System.Drawing.Color.Transparent;
+            this.slider1.Location = new System.Drawing.Point(1511, 58);
+            this.slider1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.slider1.Name = "slider1";
+            this.slider1.ShowMaximum = false;
+            this.slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
+            this.slider1.Size = new System.Drawing.Size(99, 12);
+            this.slider1.SliderColor = System.Drawing.Color.RoyalBlue;
+            this.slider1.SliderHeight = 6;
+            this.slider1.SymbolAfter = "";
+            this.slider1.SymbolBefore = "";
+            this.slider1.TabIndex = 6;
             // 
             // toolStrip3
             // 
@@ -286,12 +302,12 @@
             // 
             // Silder
             // 
-            this.Silder.ChannelColor = System.Drawing.Color.Salmon;
+            this.Silder.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Silder.ChannelHeight = 6;
-            this.Silder.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.Silder.ForeColor = System.Drawing.Color.White;
+            this.Silder.ForeBackColor = System.Drawing.Color.Transparent;
+            this.Silder.ForeColor = System.Drawing.Color.Transparent;
             this.Silder.Location = new System.Drawing.Point(72, 4);
-            this.Silder.Margin = new System.Windows.Forms.Padding(4);
+            this.Silder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Silder.Name = "Silder";
             this.Silder.ShowMaximum = false;
             this.Silder.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
@@ -304,19 +320,19 @@
             // 
             // addHomeForm1
             // 
-            this.addHomeForm1.BackColor = System.Drawing.SystemColors.Control;
+            this.addHomeForm1.BackColor = System.Drawing.Color.MintCream;
             this.addHomeForm1.FileContainMedia = "";
             this.addHomeForm1.FolderContainMedia = "";
-            this.addHomeForm1.Location = new System.Drawing.Point(279, 3);
+            this.addHomeForm1.Location = new System.Drawing.Point(279, 0);
             this.addHomeForm1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addHomeForm1.Name = "addHomeForm1";
-            this.addHomeForm1.Size = new System.Drawing.Size(1396, 796);
+            this.addHomeForm1.Size = new System.Drawing.Size(1396, 799);
             this.addHomeForm1.TabIndex = 10;
             // 
             // addMediaQueueForm1
             // 
             this.addMediaQueueForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addMediaQueueForm1.Location = new System.Drawing.Point(279, 3);
+            this.addMediaQueueForm1.Location = new System.Drawing.Point(279, 2);
             this.addMediaQueueForm1.Margin = new System.Windows.Forms.Padding(0);
             this.addMediaQueueForm1.Name = "addMediaQueueForm1";
             this.addMediaQueueForm1.Size = new System.Drawing.Size(1396, 796);
@@ -358,21 +374,22 @@
             this.addVideoForm1.Size = new System.Drawing.Size(1396, 796);
             this.addVideoForm1.TabIndex = 5;
             // 
-            // player
+            // textBox1
             // 
-            player.Enabled = true;
-            player.Location = new System.Drawing.Point(115, 626);
-            player.Name = "player";
-            player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            player.Size = new System.Drawing.Size(79, 96);
-            player.TabIndex = 11;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(0, 138);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(277, 46);
+            this.textBox1.TabIndex = 12;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1675, 934);
-            this.Controls.Add(player);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.addMediaQueueForm1);
             this.Controls.Add(this.addMusicForm1);
@@ -381,7 +398,7 @@
             this.Controls.Add(this.addVideoForm1);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.toolStripControl);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "mainForm";
             this.Text = "Media Player Project";
@@ -392,8 +409,8 @@
             this.panelControl.ResumeLayout(false);
             this.toolStrip3.ResumeLayout(false);
             this.toolStrip3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -406,7 +423,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnPlayQueue;
         private System.Windows.Forms.ToolStripButton btnPlaylists;
-        private System.Windows.Forms.ToolStripTextBox txtBSearch;
         private System.Windows.Forms.ToolStripButton btnSetting;
         private Controls.Slider Silder;
         private System.Windows.Forms.ToolStrip toolStrip2;
@@ -424,6 +440,7 @@
         private addMusicForm addMusicForm1;
         private addMediaQueueForm addMediaQueueForm1;
         private addHomeForm addHomeForm1;
-        public static AxWMPLib.AxWindowsMediaPlayer player;
+        private Controls.Slider slider1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

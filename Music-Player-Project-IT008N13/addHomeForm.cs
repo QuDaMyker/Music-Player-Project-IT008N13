@@ -71,7 +71,7 @@ namespace Music_Player_Project_IT008N13
                     Mp3Tag readerMp3 = new Mp3Tag();
                     if(readerMp3.Title == null)
                     {
-                        dataGridView1.Rows[i].Cells.); = nameSong;
+                        dataGridView1.Rows[i].Cells[1].Value = nameSong;
                     }
                     else
                     {
@@ -123,13 +123,6 @@ namespace Music_Player_Project_IT008N13
         private void addHomeForm_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-        {
-            int indexChanged = dataGridView1.CurrentCell.RowIndex;
-            mainForm.player.URL = Files[dataGridView1.CurrentCell.RowIndex];
-            mainForm.player.Ctlcontrols.play();
         }
     }
 }
