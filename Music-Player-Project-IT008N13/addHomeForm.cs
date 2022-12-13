@@ -71,7 +71,7 @@ namespace Music_Player_Project_IT008N13
                     Mp3Tag readerMp3 = new Mp3Tag();
                     if(readerMp3.Title == null)
                     {
-                        dataGridView1.Rows[i].Cells[1].Value = nameSong;
+                        dataGridView1.Rows[i].Cells[0].Value = nameSong;
                     }
                     else
                     {
@@ -114,15 +114,24 @@ namespace Music_Player_Project_IT008N13
         private void toolStripButtonOpenFolder_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog folderOpen = new FolderBrowserDialog();
-            if(folderOpen.ShowDialog() == DialogResult.OK)
+            if (folderOpen.ShowDialog() == DialogResult.OK)
             {
                 _FolderContainMedia = folderOpen.SelectedPath;
             }
         }
 
-        private void addHomeForm_Load(object sender, EventArgs e)
+        private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            addSongs();
+        }
 
+        private void openFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderOpen = new FolderBrowserDialog();
+            if (folderOpen.ShowDialog() == DialogResult.OK)
+            {
+                _FolderContainMedia = folderOpen.SelectedPath;
+            }
         }
     }
 }

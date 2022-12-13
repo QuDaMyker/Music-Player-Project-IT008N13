@@ -284,5 +284,8 @@
   <ItemGroup>
     <None Include="Resources\icon\spotify.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\down-arrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

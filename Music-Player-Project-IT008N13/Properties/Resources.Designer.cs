@@ -153,6 +153,46 @@ namespace Music_Player_Project_IT008N13.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap down_arrow {
+            get {
+                object obj = ResourceManager.GetObject("down-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap down_arrow1 {
+            get {
+                object obj = ResourceManager.GetObject("down-arrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap down_arrow2 {
+            get {
+                object obj = ResourceManager.GetObject("down-arrow2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap down_arrow3 {
+            get {
+                object obj = ResourceManager.GetObject("down-arrow3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap expand_button {
             get {
                 object obj = ResourceManager.GetObject("expand-button", resourceCulture);
@@ -426,6 +466,16 @@ namespace Music_Player_Project_IT008N13.Properties {
         internal static System.Drawing.Bitmap www {
             get {
                 object obj = ResourceManager.GetObject("www", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap www1 {
+            get {
+                object obj = ResourceManager.GetObject("www1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

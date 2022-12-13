@@ -16,5 +16,40 @@ namespace Music_Player_Project_IT008N13
         {
             InitializeComponent();
         }
+
+        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (toggleButton1.Checked == true)
+            {
+                toolStripLabel6.Text = "On";
+            }
+            else
+            {
+                toolStripLabel6.Text = "Off";
+            }
+        }
+
+        private void btnExpand1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExpand2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddfolder1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            folder.ShowDialog();
+
+        }
+
+        private void btnAddfolder2_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            folder.ShowDialog();
+        }
     }
 }

@@ -133,6 +133,9 @@
   <data name="musical-note" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\musical-note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="down-arrow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="paint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\paint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,14 +151,11 @@
   <data name="theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\theme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="playlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\playlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnPlaylists" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\btnPlaylists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="playlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon\playlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="folder (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\folder (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -186,6 +186,12 @@
   </data>
   <data name="expand-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\expand-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\spotify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="speaker-filled-audio-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\speaker-filled-audio-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,10 +229,19 @@
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="down-arrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sound-wave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\sound-wave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon\spotify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="www1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\www.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down-arrow3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\down-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

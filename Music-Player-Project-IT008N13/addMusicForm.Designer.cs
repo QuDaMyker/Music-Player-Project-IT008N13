@@ -34,21 +34,22 @@
             // labelSetting
             // 
             this.labelSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSetting.Location = new System.Drawing.Point(68, 26);
+            this.labelSetting.Location = new System.Drawing.Point(51, 21);
+            this.labelSetting.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSetting.Name = "labelSetting";
-            this.labelSetting.Size = new System.Drawing.Size(195, 57);
+            this.labelSetting.Size = new System.Drawing.Size(146, 46);
             this.labelSetting.TabIndex = 5;
             this.labelSetting.Text = "Music";
             // 
             // addMusicForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.Controls.Add(this.labelSetting);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "addMusicForm";
-            this.Size = new System.Drawing.Size(1396, 796);
+            this.Size = new System.Drawing.Size(1047, 647);
             this.ResumeLayout(false);
 
         }

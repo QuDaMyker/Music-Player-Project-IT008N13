@@ -12,10 +12,12 @@ namespace Music_Player_Project_IT008N13
 {
     public partial class mainForm : Form
     {
+        private bool is_Play = true;
         private Button currentButton;
         public mainForm()
         {
             InitializeComponent();
+            ActiveButton(btnHome);
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {
@@ -28,7 +30,7 @@ namespace Music_Player_Project_IT008N13
             ToolStripButton btn = (ToolStripButton)btnSender;
             DisableButton(btn, btn.Tag);
             btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular);
-            btn.BackColor = Color.LightSkyBlue;
+            btn.BackColor = Color.LightSeaGreen;
             btn.ForeColor = Color.White;
         }
 
@@ -41,7 +43,7 @@ namespace Music_Player_Project_IT008N13
                     ToolStripButton btn = previousButton as ToolStripButton;
                     btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular);
                     btn.ForeColor = Color.Black;
-                    btn.BackColor = System.Drawing.Color.LightBlue;
+                    btn.BackColor = System.Drawing.Color.Teal;
                 }
             }
 
@@ -127,7 +129,29 @@ namespace Music_Player_Project_IT008N13
         private void btnPlayPause_Click(object sender, EventArgs e)
         {
             ToolStripButton btn = sender as ToolStripButton;
-            btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.pause;
+            if (is_Play == true)
+            {
+                btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.pause;
+                is_Play = false;
+            }
+            else
+            {
+                btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.play;
+                is_Play = true;
+            }
+                
+                
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void slider1_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
