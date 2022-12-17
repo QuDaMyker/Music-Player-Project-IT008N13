@@ -32,13 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelLibraries = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.toolStripButtonOpenFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonOpenFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openURLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.square1 = new Music_Player_Project_IT008N13.Square();
+            this.square2 = new Music_Player_Project_IT008N13.Square();
+            this.square3 = new Music_Player_Project_IT008N13.Square();
+            this.square4 = new Music_Player_Project_IT008N13.Square();
+            this.square5 = new Music_Player_Project_IT008N13.Square();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,13 +77,36 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(100, 153);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(612, 441);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(784, 404);
+            this.dataGridView1.Size = new System.Drawing.Size(310, 83);
             this.dataGridView1.TabIndex = 7;
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 45);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonOpenFile,
+            this.toolStripSeparator,
+            this.toolStripSplitButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(796, 23);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(138, 45);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButtonOpenFile
             // 
@@ -91,11 +119,6 @@
             this.toolStripButtonOpenFile.Text = "Open File    ";
             this.toolStripButtonOpenFile.Click += new System.EventHandler(this.toolStripButtonOpenFile_Click);
             // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 45);
-            // 
             // toolStripSplitButton1
             // 
             this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -106,7 +129,7 @@
             this.toolStripSplitButton1.Image = global::Music_Player_Project_IT008N13.Properties.Resources.down_arrow;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(36, 42);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(36, 24);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
             // openFileToolStripMenuItem
@@ -132,34 +155,61 @@
             this.openURLToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.openURLToolStripMenuItem.Text = "Open URL";
             // 
-            // toolStrip1
+            // square1
             // 
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonOpenFile,
-            this.toolStripSeparator,
-            this.toolStripSplitButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(796, 23);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(138, 45);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.square1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square1.Location = new System.Drawing.Point(64, 100);
+            this.square1.Name = "square1";
+            this.square1.Size = new System.Drawing.Size(160, 170);
+            this.square1.TabIndex = 8;
+            // 
+            // square2
+            // 
+            this.square2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square2.Location = new System.Drawing.Point(230, 100);
+            this.square2.Name = "square2";
+            this.square2.Size = new System.Drawing.Size(160, 170);
+            this.square2.TabIndex = 9;
+            // 
+            // square3
+            // 
+            this.square3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square3.Location = new System.Drawing.Point(396, 100);
+            this.square3.Name = "square3";
+            this.square3.Size = new System.Drawing.Size(160, 170);
+            this.square3.TabIndex = 10;
+            // 
+            // square4
+            // 
+            this.square4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square4.Location = new System.Drawing.Point(562, 100);
+            this.square4.Name = "square4";
+            this.square4.Size = new System.Drawing.Size(160, 170);
+            this.square4.TabIndex = 11;
+            // 
+            // square5
+            // 
+            this.square5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square5.Location = new System.Drawing.Point(734, 100);
+            this.square5.Name = "square5";
+            this.square5.Size = new System.Drawing.Size(160, 170);
+            this.square5.TabIndex = 12;
             // 
             // addHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.Controls.Add(this.square5);
+            this.Controls.Add(this.square4);
+            this.Controls.Add(this.square3);
+            this.Controls.Add(this.square2);
+            this.Controls.Add(this.square1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelLibraries);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addHomeForm";
             this.Size = new System.Drawing.Size(1018, 648);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -180,5 +230,10 @@
         private System.Windows.Forms.ToolStripMenuItem openFolderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openURLToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private Square square1;
+        private Square square2;
+        private Square square3;
+        private Square square4;
+        private Square square5;
     }
 }
