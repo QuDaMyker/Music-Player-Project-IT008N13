@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addHomeForm));
             this.label1 = new System.Windows.Forms.Label();
             this.labelLibraries = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonOpenFile = new System.Windows.Forms.ToolStripButton();
@@ -39,13 +38,14 @@
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openURLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.square1 = new Music_Player_Project_IT008N13.Square();
-            this.square2 = new Music_Player_Project_IT008N13.Square();
-            this.square3 = new Music_Player_Project_IT008N13.Square();
-            this.square4 = new Music_Player_Project_IT008N13.Square();
             this.square5 = new Music_Player_Project_IT008N13.Square();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.square4 = new Music_Player_Project_IT008N13.Square();
+            this.square3 = new Music_Player_Project_IT008N13.Square();
+            this.square2 = new Music_Player_Project_IT008N13.Square();
+            this.square1 = new Music_Player_Project_IT008N13.Square();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,23 +67,6 @@
             this.labelLibraries.Size = new System.Drawing.Size(150, 27);
             this.labelLibraries.TabIndex = 6;
             this.labelLibraries.Text = "Recent media";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(612, 441);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(310, 83);
-            this.dataGridView1.TabIndex = 7;
             // 
             // toolStripSeparator
             // 
@@ -129,7 +112,7 @@
             this.toolStripSplitButton1.Image = global::Music_Player_Project_IT008N13.Properties.Resources.down_arrow;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(36, 24);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(36, 42);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
             // openFileToolStripMenuItem
@@ -155,29 +138,13 @@
             this.openURLToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.openURLToolStripMenuItem.Text = "Open URL";
             // 
-            // square1
+            // square5
             // 
-            this.square1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.square1.Location = new System.Drawing.Point(64, 100);
-            this.square1.Name = "square1";
-            this.square1.Size = new System.Drawing.Size(160, 170);
-            this.square1.TabIndex = 8;
-            // 
-            // square2
-            // 
-            this.square2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.square2.Location = new System.Drawing.Point(230, 100);
-            this.square2.Name = "square2";
-            this.square2.Size = new System.Drawing.Size(160, 170);
-            this.square2.TabIndex = 9;
-            // 
-            // square3
-            // 
-            this.square3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.square3.Location = new System.Drawing.Point(396, 100);
-            this.square3.Name = "square3";
-            this.square3.Size = new System.Drawing.Size(160, 170);
-            this.square3.TabIndex = 10;
+            this.square5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square5.Location = new System.Drawing.Point(734, 100);
+            this.square5.Name = "square5";
+            this.square5.Size = new System.Drawing.Size(160, 170);
+            this.square5.TabIndex = 12;
             // 
             // square4
             // 
@@ -187,13 +154,46 @@
             this.square4.Size = new System.Drawing.Size(160, 170);
             this.square4.TabIndex = 11;
             // 
-            // square5
+            // square3
             // 
-            this.square5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.square5.Location = new System.Drawing.Point(734, 100);
-            this.square5.Name = "square5";
-            this.square5.Size = new System.Drawing.Size(160, 170);
-            this.square5.TabIndex = 12;
+            this.square3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square3.Location = new System.Drawing.Point(396, 100);
+            this.square3.Name = "square3";
+            this.square3.Size = new System.Drawing.Size(160, 170);
+            this.square3.TabIndex = 10;
+            // 
+            // square2
+            // 
+            this.square2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square2.Location = new System.Drawing.Point(230, 100);
+            this.square2.Name = "square2";
+            this.square2.Size = new System.Drawing.Size(160, 170);
+            this.square2.TabIndex = 9;
+            // 
+            // square1
+            // 
+            this.square1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.square1.Location = new System.Drawing.Point(64, 100);
+            this.square1.Name = "square1";
+            this.square1.Size = new System.Drawing.Size(160, 170);
+            this.square1.TabIndex = 8;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(612, 441);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(310, 83);
+            this.dataGridView1.TabIndex = 7;
             // 
             // addHomeForm
             // 
@@ -212,9 +212,9 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addHomeForm";
             this.Size = new System.Drawing.Size(1018, 648);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,7 +222,6 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelLibraries;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ToolStripButton toolStripButtonOpenFile;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
@@ -235,5 +234,6 @@
         private Square square3;
         private Square square4;
         private Square square5;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

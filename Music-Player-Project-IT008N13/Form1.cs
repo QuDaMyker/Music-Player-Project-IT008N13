@@ -30,7 +30,7 @@ namespace Music_Player_Project_IT008N13
             ToolStripButton btn = (ToolStripButton)btnSender;
             DisableButton(btn, btn.Tag);
             btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular);
-            btn.BackColor = Color.LightSeaGreen;
+            btn.BackColor = Color.Coral;
             btn.ForeColor = Color.White;
         }
 
@@ -43,7 +43,7 @@ namespace Music_Player_Project_IT008N13
                     ToolStripButton btn = previousButton as ToolStripButton;
                     btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular);
                     btn.ForeColor = Color.Black;
-                    btn.BackColor = System.Drawing.Color.Teal;
+                    btn.BackColor = System.Drawing.Color.LightSalmon;
                 }
             }
 
