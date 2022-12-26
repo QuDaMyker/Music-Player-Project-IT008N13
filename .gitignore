@@ -4,3 +4,7 @@
 bin,
 obj
 New Text Document.txt
+bin/
+obj/
+Debug/
+Release/
