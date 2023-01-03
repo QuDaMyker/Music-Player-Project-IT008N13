@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addHomeForm));
             this.label1 = new System.Windows.Forms.Label();
             this.labelLibraries = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.openFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openURLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,7 +108,7 @@
             this.toolStripSplitButton1.Image = global::Music_Player_Project_IT008N13.Properties.Resources.down_arrow;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(36, 24);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(36, 42);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
             // openFileToolStripMenuItem
@@ -140,6 +142,10 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(950, 482);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            // 
             // addHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,5 +175,6 @@
         private System.Windows.Forms.ToolStripMenuItem openURLToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

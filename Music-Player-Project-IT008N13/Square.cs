@@ -1,4 +1,5 @@
 ﻿using AxWMPLib;
+using Music_Player_Project_IT008N13.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,13 +89,22 @@ namespace Music_Player_Project_IT008N13
             {
                 if (btnPlayPause == null)
                 {
+
                 }
                     btn_play_pause.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.pausedisplay;
                     //btn_play_pause.BackgroundImage = btnPlayPause;
                 is_Play = true;
                 global::Music_Player_Project_IT008N13.mainForm.player.URL= _urlSong;
                 global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
+                
             }
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            global::Music_Player_Project_IT008N13.mainForm.slider1.Maximum = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.duration;
+            global::Music_Player_Project_IT008N13.mainForm.slider1.Value = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition;
         }
     }
 }

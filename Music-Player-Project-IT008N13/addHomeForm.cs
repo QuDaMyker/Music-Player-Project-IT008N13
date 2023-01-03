@@ -65,9 +65,15 @@ namespace Music_Player_Project_IT008N13
                 {
                     string nameSong = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3", "").ToUpper();
                     squares[i] = new Square(nameSong, Files[i]);
+                    squares[i].Click += new EventHandler(squares_Click);
+                    timer1.Start();
                     flowLayoutPanel1.Controls.Add(squares[i]);
                 }
             }
+        }
+        private void squares_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Click");
         }
         private void btnOpenFIle_Click(object sender, EventArgs e)
         {
@@ -101,5 +107,7 @@ namespace Music_Player_Project_IT008N13
                 _FolderContainMedia = folderOpen.SelectedPath;
             }
         }
+
+        
     }
 }

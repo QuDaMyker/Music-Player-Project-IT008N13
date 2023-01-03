@@ -48,7 +48,7 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.btnVolume = new System.Windows.Forms.ToolStripButton();
-            this.Silder = new Music_Player_Project_IT008N13.Controls.Slider();
+            slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
             this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
             this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
@@ -265,7 +265,7 @@
             this.panelControl.Controls.Add(this.trackBar1);
             this.panelControl.Controls.Add(this.toolStrip2);
             this.panelControl.Controls.Add(this.toolStrip3);
-            this.panelControl.Controls.Add(this.Silder);
+            this.panelControl.Controls.Add(slider1);
             this.panelControl.Location = new System.Drawing.Point(0, 649);
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(1256, 110);
@@ -307,22 +307,22 @@
             this.btnVolume.Text = "toolStripButton12";
             this.btnVolume.ToolTipText = "Volume";
             // 
-            // Silder
+            // slider1
             // 
-            this.Silder.ChannelColor = System.Drawing.Color.LightSalmon;
-            this.Silder.ChannelHeight = 6;
-            this.Silder.ForeBackColor = System.Drawing.Color.Transparent;
-            this.Silder.ForeColor = System.Drawing.Color.Transparent;
-            this.Silder.Location = new System.Drawing.Point(54, 3);
-            this.Silder.Name = "Silder";
-            this.Silder.ShowMaximum = false;
-            this.Silder.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
-            this.Silder.Size = new System.Drawing.Size(1153, 23);
-            this.Silder.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.Silder.SliderHeight = 6;
-            this.Silder.SymbolAfter = "";
-            this.Silder.SymbolBefore = "";
-            this.Silder.TabIndex = 2;
+            slider1.ChannelColor = System.Drawing.Color.LightSalmon;
+            slider1.ChannelHeight = 6;
+            slider1.ForeBackColor = System.Drawing.Color.Transparent;
+            slider1.ForeColor = System.Drawing.Color.Transparent;
+            slider1.Location = new System.Drawing.Point(54, 3);
+            slider1.Name = "slider1";
+            slider1.ShowMaximum = false;
+            slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
+            slider1.Size = new System.Drawing.Size(1153, 23);
+            slider1.SliderColor = System.Drawing.Color.RoyalBlue;
+            slider1.SliderHeight = 6;
+            slider1.SymbolAfter = "";
+            slider1.SymbolBefore = "";
+            slider1.TabIndex = 2;
             // 
             // addHomeForm1
             // 
@@ -432,7 +432,7 @@
         private System.Windows.Forms.ToolStripButton btnPlayQueue;
         private System.Windows.Forms.ToolStripButton btnPlaylists;
         private System.Windows.Forms.ToolStripButton btnSetting;
-        private Controls.Slider Silder;
+        public static Controls.Slider slider1;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton btnShuffle;
         private System.Windows.Forms.ToolStripButton btnPrevious;

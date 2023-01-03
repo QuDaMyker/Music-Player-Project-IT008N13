@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Music_Player_Project_IT008N13
 {
@@ -19,6 +20,7 @@ namespace Music_Player_Project_IT008N13
         {
             InitializeComponent();
             ActiveButton(btnHome);
+            //<name of your media player control here>.Ctlcontrols.currentPositionString;
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {
@@ -154,13 +156,11 @@ namespace Music_Player_Project_IT008N13
         {
 
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void player_ControlAdded(object sender, ControlEventArgs e)
         {
-            if(player.playState == WMPLib.WMPPlayState.wmppsPlaying)
-            {
-                
-            }
+            
         }
+
+        
     }
 }
