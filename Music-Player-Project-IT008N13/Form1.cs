@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Music_Player_Project_IT008N13.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -152,6 +153,14 @@ namespace Music_Player_Project_IT008N13
         private void slider1_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                
+            }
         }
     }
 }

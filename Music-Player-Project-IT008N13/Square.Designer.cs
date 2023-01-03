@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNameSong = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_play_pause = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labelNameSong
             // 
-            this.label1.BackColor = System.Drawing.Color.MintCream;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Song 1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNameSong.BackColor = System.Drawing.Color.MintCream;
+            this.labelNameSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameSong.Location = new System.Drawing.Point(0, 150);
+            this.labelNameSong.Name = "labelNameSong";
+            this.labelNameSong.Size = new System.Drawing.Size(160, 20);
+            this.labelNameSong.TabIndex = 2;
+            this.labelNameSong.Text = "Song 1";
+            this.labelNameSong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -74,7 +74,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btn_play_pause);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelNameSong);
             this.DoubleBuffered = true;
             this.Name = "Square";
             this.Size = new System.Drawing.Size(160, 170);
@@ -85,7 +85,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNameSong;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_play_pause;
     }

@@ -49,17 +49,19 @@
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.btnVolume = new System.Windows.Forms.ToolStripButton();
             this.Silder = new Music_Player_Project_IT008N13.Controls.Slider();
+            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
             this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
-            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
+            player = new AxWMPLib.AxWindowsMediaPlayer();
             this.toolStripControl.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.toolStrip3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStripControl
@@ -322,6 +324,17 @@
             this.Silder.SymbolBefore = "";
             this.Silder.TabIndex = 2;
             // 
+            // addHomeForm1
+            // 
+            this.addHomeForm1.BackColor = System.Drawing.Color.MintCream;
+            this.addHomeForm1.FileContainMedia = "";
+            this.addHomeForm1.FolderContainMedia = "";
+            this.addHomeForm1.Location = new System.Drawing.Point(209, 0);
+            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(2);
+            this.addHomeForm1.Name = "addHomeForm1";
+            this.addHomeForm1.Size = new System.Drawing.Size(1047, 649);
+            this.addHomeForm1.TabIndex = 10;
+            // 
             // addMediaQueueForm1
             // 
             this.addMediaQueueForm1.BackColor = System.Drawing.SystemColors.Control;
@@ -367,22 +380,22 @@
             this.addVideoForm1.Size = new System.Drawing.Size(1047, 647);
             this.addVideoForm1.TabIndex = 5;
             // 
-            // addHomeForm1
+            // player
             // 
-            this.addHomeForm1.BackColor = System.Drawing.Color.MintCream;
-            this.addHomeForm1.FileContainMedia = "";
-            this.addHomeForm1.FolderContainMedia = "";
-            this.addHomeForm1.Location = new System.Drawing.Point(209, 0);
-            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(2);
-            this.addHomeForm1.Name = "addHomeForm1";
-            this.addHomeForm1.Size = new System.Drawing.Size(1047, 649);
-            this.addHomeForm1.TabIndex = 10;
+            player.Enabled = true;
+            player.Location = new System.Drawing.Point(27, 410);
+            player.Name = "player";
+            player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            player.Size = new System.Drawing.Size(145, 123);
+            player.TabIndex = 11;
+            player.Visible = false;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1256, 755);
+            this.Controls.Add(player);
             this.Controls.Add(this.addHomeForm1);
             this.Controls.Add(this.addMediaQueueForm1);
             this.Controls.Add(this.addMusicForm1);
@@ -404,6 +417,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.toolStrip3.ResumeLayout(false);
             this.toolStrip3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -436,5 +450,6 @@
         private System.Windows.Forms.ToolStripTextBox txtBSearch;
         private System.Windows.Forms.TrackBar trackBar1;
         private addHomeForm addHomeForm1;
+        public static AxWMPLib.AxWindowsMediaPlayer player;
     }
 }
