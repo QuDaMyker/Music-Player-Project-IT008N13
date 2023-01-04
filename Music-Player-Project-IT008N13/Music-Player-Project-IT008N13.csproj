@@ -302,5 +302,8 @@
   <ItemGroup>
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icon\mute.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

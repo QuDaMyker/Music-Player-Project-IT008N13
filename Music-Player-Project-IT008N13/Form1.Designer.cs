@@ -45,17 +45,21 @@
             this.btnNext = new System.Windows.Forms.ToolStripButton();
             this.btnLoop = new System.Windows.Forms.ToolStripButton();
             this.panelControl = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbVolumn = new System.Windows.Forms.Label();
+            lbDurationItem = new System.Windows.Forms.Label();
+            lbCurrentDuration = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.btnVolume = new System.Windows.Forms.ToolStripButton();
             slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
+            player = new AxWMPLib.AxWindowsMediaPlayer();
             this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
             this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
-            player = new AxWMPLib.AxWindowsMediaPlayer();
             this.toolStripControl.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
@@ -88,7 +92,6 @@
             // 
             // txtBSearch
             // 
-            this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBSearch.Margin = new System.Windows.Forms.Padding(10, 100, 10, 10);
             this.txtBSearch.Name = "txtBSearch";
             this.txtBSearch.Size = new System.Drawing.Size(187, 23);
@@ -262,6 +265,10 @@
             // panelControl
             // 
             this.panelControl.BackColor = System.Drawing.SystemColors.Control;
+            this.panelControl.Controls.Add(this.label1);
+            this.panelControl.Controls.Add(this.lbVolumn);
+            this.panelControl.Controls.Add(lbDurationItem);
+            this.panelControl.Controls.Add(lbCurrentDuration);
             this.panelControl.Controls.Add(this.trackBar1);
             this.panelControl.Controls.Add(this.toolStrip2);
             this.panelControl.Controls.Add(this.toolStrip3);
@@ -271,14 +278,55 @@
             this.panelControl.Size = new System.Drawing.Size(1256, 110);
             this.panelControl.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1190, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "%";
+            // 
+            // lbVolumn
+            // 
+            this.lbVolumn.AutoSize = true;
+            this.lbVolumn.Location = new System.Drawing.Point(1159, 47);
+            this.lbVolumn.Name = "lbVolumn";
+            this.lbVolumn.Size = new System.Drawing.Size(19, 13);
+            this.lbVolumn.TabIndex = 13;
+            this.lbVolumn.Text = "15";
+            // 
+            // lbDurationItem
+            // 
+            lbDurationItem.AutoSize = true;
+            lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbDurationItem.Location = new System.Drawing.Point(1139, 9);
+            lbDurationItem.Name = "lbDurationItem";
+            lbDurationItem.Size = new System.Drawing.Size(66, 25);
+            lbDurationItem.TabIndex = 12;
+            lbDurationItem.Text = "00:00";
+            // 
+            // lbCurrentDuration
+            // 
+            lbCurrentDuration.AutoSize = true;
+            lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbCurrentDuration.Location = new System.Drawing.Point(132, 9);
+            lbCurrentDuration.Name = "lbCurrentDuration";
+            lbCurrentDuration.Size = new System.Drawing.Size(66, 25);
+            lbCurrentDuration.TabIndex = 12;
+            lbCurrentDuration.Text = "00:00";
+            // 
             // trackBar1
             // 
             this.trackBar1.BackColor = System.Drawing.SystemColors.Control;
-            this.trackBar1.Location = new System.Drawing.Point(1115, 60);
+            this.trackBar1.Location = new System.Drawing.Point(1133, 60);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(81, 45);
+            this.trackBar1.Size = new System.Drawing.Size(94, 45);
             this.trackBar1.TabIndex = 11;
+            this.trackBar1.Value = 15;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // toolStrip3
             // 
@@ -306,6 +354,7 @@
             this.btnVolume.Size = new System.Drawing.Size(40, 44);
             this.btnVolume.Text = "toolStripButton12";
             this.btnVolume.ToolTipText = "Volume";
+            this.btnVolume.Click += new System.EventHandler(this.btnVolume_Click);
             // 
             // slider1
             // 
@@ -313,16 +362,26 @@
             slider1.ChannelHeight = 6;
             slider1.ForeBackColor = System.Drawing.Color.Transparent;
             slider1.ForeColor = System.Drawing.Color.Transparent;
-            slider1.Location = new System.Drawing.Point(54, 3);
+            slider1.Location = new System.Drawing.Point(137, 21);
             slider1.Name = "slider1";
             slider1.ShowMaximum = false;
             slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
-            slider1.Size = new System.Drawing.Size(1153, 23);
+            slider1.Size = new System.Drawing.Size(1072, 23);
             slider1.SliderColor = System.Drawing.Color.RoyalBlue;
             slider1.SliderHeight = 6;
             slider1.SymbolAfter = "";
             slider1.SymbolBefore = "";
             slider1.TabIndex = 2;
+            // 
+            // player
+            // 
+            player.Enabled = true;
+            player.Location = new System.Drawing.Point(27, 410);
+            player.Name = "player";
+            player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            player.Size = new System.Drawing.Size(145, 123);
+            player.TabIndex = 11;
+            player.Visible = false;
             // 
             // addHomeForm1
             // 
@@ -380,16 +439,6 @@
             this.addVideoForm1.Size = new System.Drawing.Size(1047, 647);
             this.addVideoForm1.TabIndex = 5;
             // 
-            // player
-            // 
-            player.Enabled = true;
-            player.Location = new System.Drawing.Point(27, 410);
-            player.Name = "player";
-            player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            player.Size = new System.Drawing.Size(145, 123);
-            player.TabIndex = 11;
-            player.Visible = false;
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,7 +481,6 @@
         private System.Windows.Forms.ToolStripButton btnPlayQueue;
         private System.Windows.Forms.ToolStripButton btnPlaylists;
         private System.Windows.Forms.ToolStripButton btnSetting;
-        public static Controls.Slider slider1;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton btnShuffle;
         private System.Windows.Forms.ToolStripButton btnPrevious;
@@ -450,6 +498,11 @@
         private System.Windows.Forms.ToolStripTextBox txtBSearch;
         private System.Windows.Forms.TrackBar trackBar1;
         private addHomeForm addHomeForm1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbVolumn;
+        public static System.Windows.Forms.Label lbDurationItem;
+        public static System.Windows.Forms.Label lbCurrentDuration;
+        public static Controls.Slider slider1;
         public static AxWMPLib.AxWindowsMediaPlayer player;
     }
 }

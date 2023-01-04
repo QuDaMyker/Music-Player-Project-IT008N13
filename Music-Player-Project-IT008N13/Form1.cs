@@ -15,6 +15,7 @@ namespace Music_Player_Project_IT008N13
     public partial class mainForm : Form
     {
         private bool is_Play = true;
+        private bool is_Muted = true;
         private Button currentButton;
         public mainForm()
         {
@@ -161,6 +162,31 @@ namespace Music_Player_Project_IT008N13
             
         }
 
-        
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            player.settings.volume = trackBar1.Value;
+            lbVolumn.Text = trackBar1.Value.ToString();
+        }
+
+        private void btnVolume_Click(object sender, EventArgs e)
+        {
+            ToolStripButton btn = sender as ToolStripButton;
+            if (is_Muted)
+            {
+                is_Muted = !is_Muted;
+                btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.mute;
+                trackBar1.Value = 0;
+                player.settings.volume = trackBar1.Value;
+                lbVolumn.Text = trackBar1.Value.ToString();
+            }
+            else
+            {
+                is_Muted = !is_Muted;
+                btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.speaker_filled_audio_tool;
+                trackBar1.Value = 15;
+                player.settings.volume = trackBar1.Value;
+                lbVolumn.Text = trackBar1.Value.ToString();
+            }
+        }
     }
 }
