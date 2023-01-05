@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.labelSetting = new System.Windows.Forms.Label();
+            this.weCantFindAnyMusic1 = new Music_Player_Project_IT008N13.WeCantFindAnyMusic();
             this.SuspendLayout();
             // 
             // labelSetting
@@ -41,13 +42,22 @@
             this.labelSetting.TabIndex = 5;
             this.labelSetting.Text = "Music";
             // 
+            // weCantFindAnyMusic1
+            // 
+            this.weCantFindAnyMusic1.BackColor = System.Drawing.Color.Transparent;
+            this.weCantFindAnyMusic1.Location = new System.Drawing.Point(181, 147);
+            this.weCantFindAnyMusic1.Name = "weCantFindAnyMusic1";
+            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(633, 299);
+            this.weCantFindAnyMusic1.TabIndex = 6;
+            // 
             // addMusicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.Controls.Add(this.weCantFindAnyMusic1);
             this.Controls.Add(this.labelSetting);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addMusicForm";
             this.Size = new System.Drawing.Size(1047, 647);
             this.ResumeLayout(false);
@@ -56,5 +66,6 @@
 
         #endregion
         private System.Windows.Forms.Label labelSetting;
+        private WeCantFindAnyMusic weCantFindAnyMusic1;
     }
 }

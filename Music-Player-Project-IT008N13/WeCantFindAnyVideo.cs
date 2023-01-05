@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Music_Player_Project_IT008N13
 {
-    public partial class WeCantFindAnyMusic : UserControl
+    public partial class WeCantFindAnyVideo : UserControl
     {
         private Image image;
         private Bitmap bitmap;
-        public WeCantFindAnyMusic()
+        public WeCantFindAnyVideo()
         {
             InitializeComponent();
             Load_Image();
@@ -33,8 +33,7 @@ namespace Music_Player_Project_IT008N13
             if (dialog.ShowDialog() == DialogResult.OK)
             {
 
-            }    
+            }
         }
     }
-    
 }

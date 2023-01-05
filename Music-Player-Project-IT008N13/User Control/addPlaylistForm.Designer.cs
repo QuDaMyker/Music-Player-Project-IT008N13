@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.labelPlaylist = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStrip1.SuspendLayout();
+            this.customButton1 = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.SuspendLayout();
             // 
             // labelPlaylist
@@ -44,38 +42,34 @@
             this.labelPlaylist.TabIndex = 1;
             this.labelPlaylist.Text = "Playlists";
             // 
-            // toolStrip1
+            // customButton1
             // 
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator1});
-            this.toolStrip1.Location = new System.Drawing.Point(291, 192);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(449, 222);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 222);
+            this.customButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.customButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButton1.BorderRadius = 40;
+            this.customButton1.BorderSize = 0;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(323, 163);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(340, 137);
+            this.customButton1.TabIndex = 3;
+            this.customButton1.Text = "customButton1";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
             // 
             // addPlaylistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.customButton1);
             this.Controls.Add(this.labelPlaylist);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addPlaylistForm";
             this.Size = new System.Drawing.Size(1047, 647);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -83,7 +77,6 @@
         #endregion
 
         private System.Windows.Forms.Label labelPlaylist;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private Controls.CustomButton customButton1;
     }
 }

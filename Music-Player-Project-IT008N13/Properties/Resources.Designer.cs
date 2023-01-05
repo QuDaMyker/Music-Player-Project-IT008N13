@@ -303,6 +303,16 @@ namespace Music_Player_Project_IT008N13.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap music_NotFile {
+            get {
+                object obj = ResourceManager.GetObject("music_NotFile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap musical_note {
             get {
                 object obj = ResourceManager.GetObject("musical-note", resourceCulture);
@@ -476,6 +486,16 @@ namespace Music_Player_Project_IT008N13.Properties {
         internal static System.Drawing.Bitmap spotify {
             get {
                 object obj = ResourceManager.GetObject("spotify", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tape {
+            get {
+                object obj = ResourceManager.GetObject("tape", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
