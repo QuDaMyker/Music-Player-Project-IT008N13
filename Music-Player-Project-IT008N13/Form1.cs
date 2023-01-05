@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using TagLib;
 
 namespace Music_Player_Project_IT008N13
 {
@@ -137,15 +138,14 @@ namespace Music_Player_Project_IT008N13
             {
                 btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.pause;
                 is_Play = false;
+                player.Ctlcontrols.pause();
             }
             else
             {
                 btn.Image = global::Music_Player_Project_IT008N13.Properties.Resources.play;
                 is_Play = true;
+                player.Ctlcontrols.play();
             }
-                
-                
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -187,6 +187,21 @@ namespace Music_Player_Project_IT008N13
                 player.settings.volume = trackBar1.Value;
                 lbVolumn.Text = trackBar1.Value.ToString();
             }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            player.Ctlcontrols.next();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            player.Ctlcontrols.previous();
+        }
+
+        private void btnShuffle_Click(object sender, EventArgs e)
+        {
+            //player.Ctlcontrols.Suffer
         }
     }
 }

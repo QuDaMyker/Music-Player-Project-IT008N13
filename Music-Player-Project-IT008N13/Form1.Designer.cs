@@ -92,6 +92,7 @@
             // 
             // txtBSearch
             // 
+            this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBSearch.Margin = new System.Windows.Forms.Padding(10, 100, 10, 10);
             this.txtBSearch.Name = "txtBSearch";
             this.txtBSearch.Size = new System.Drawing.Size(187, 23);
@@ -216,6 +217,7 @@
             this.btnShuffle.Padding = new System.Windows.Forms.Padding(10);
             this.btnShuffle.Size = new System.Drawing.Size(44, 44);
             this.btnShuffle.Text = "Shuffle";
+            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
             // 
             // btnPrevious
             // 
@@ -228,6 +230,7 @@
             this.btnPrevious.Text = "toolStripButton8";
             this.btnPrevious.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnPrevious.ToolTipText = "Previous";
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnPlayPause
             // 
@@ -250,6 +253,7 @@
             this.btnNext.Padding = new System.Windows.Forms.Padding(10);
             this.btnNext.Size = new System.Drawing.Size(44, 44);
             this.btnNext.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnLoop
             // 
