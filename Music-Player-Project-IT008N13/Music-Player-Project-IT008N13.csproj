@@ -82,6 +82,12 @@
     <Compile Include="addVideoForm.Designer.cs">
       <DependentUpon>addVideoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CircleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\HXV.cs" />
     <Compile Include="Controls\Slider.cs">
       <SubType>Component</SubType>
@@ -102,6 +108,12 @@
     </Compile>
     <Compile Include="Square.Designer.cs">
       <DependentUpon>Square.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="WeCantFindAnyMusic.cs">
       <SubType>UserControl</SubType>
@@ -127,6 +139,9 @@
     <EmbeddedResource Include="addVideoForm.resx">
       <DependentUpon>addVideoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CircleButton.resx">
+      <DependentUpon>CircleButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ToggleButton.resx">
       <DependentUpon>ToggleButton.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="Square.resx">
       <DependentUpon>Square.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WeCantFindAnyMusic.resx">
       <DependentUpon>WeCantFindAnyMusic.cs</DependentUpon>
@@ -303,6 +321,8 @@
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon\dots.png" />
+    <None Include="Resources\icon\more.png" />
     <Content Include="Resources\icon\mute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
