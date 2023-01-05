@@ -39,7 +39,7 @@
             // labelNameSong
             // 
             this.labelNameSong.BackColor = System.Drawing.Color.MintCream;
-            this.labelNameSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameSong.Location = new System.Drawing.Point(0, 150);
             this.labelNameSong.Name = "labelNameSong";
             this.labelNameSong.Size = new System.Drawing.Size(160, 20);

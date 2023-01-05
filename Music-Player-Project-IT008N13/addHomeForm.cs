@@ -11,6 +11,7 @@ using System.IO;
 using AxWMPLib;
 using HXV;
 using WMPLib;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace Music_Player_Project_IT008N13
 {
@@ -21,6 +22,8 @@ namespace Music_Player_Project_IT008N13
         static string[] FileInFolder;
         static string[] Files;
         public static Square[] squares;
+
+        DataGridView dataRecentHomePage = new DataGridView();
         
         public string FolderContainMedia
         {
@@ -41,6 +44,8 @@ namespace Music_Player_Project_IT008N13
         public addHomeForm()
         {
             InitializeComponent();
+
+            dataRecentHomePage.ColumnCount = 3;
         }
         private void addSongs()
         {
@@ -63,8 +68,37 @@ namespace Music_Player_Project_IT008N13
                 squares = new Square[Files.Length];
                 for (int i = 0; i < Files.Length; i++)
                 {
-                    string nameSong = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3", "").ToUpper();
-                    squares[i] = new Square(nameSong, Files[i]);
+                    string nameSong = String.Empty;
+                    string UrlPictureBox = String.Empty;
+                    var tfile = TagLib.File.Create($@"{Files[i]}");
+                    if(String.IsNullOrEmpty(tfile.Tag.Title))
+                    {
+                        nameSong = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3", "").ToUpper();
+                    }
+                    else
+                    {
+                        nameSong = tfile.Tag.Title;
+                    }
+                    // check url anh, artist...
+                    // add database
+                    //TagLib.File file = TagLib.File.Create(openFileDialog.FileName);
+
+                    
+                    var mStream = new MemoryStream();
+                    var firstPicture = tfile.Tag.Pictures.FirstOrDefault();
+                   
+                    if (firstPicture != null)
+                    {
+                        byte[] pData = firstPicture.Data.Data;
+                        mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+                        Bitmap bm = new Bitmap(mStream, false);
+                        mStream.Dispose();
+                        squares[i] = new Square(nameSong, Files[i], bm);
+                    }
+                    else
+                    {
+                        squares[i] = new Square(nameSong, Files[i]);
+                    }
                     squares[i].Click += new EventHandler(squares_Click);
                     timer1.Start();
                     flowLayoutPanel1.Controls.Add(squares[i]);

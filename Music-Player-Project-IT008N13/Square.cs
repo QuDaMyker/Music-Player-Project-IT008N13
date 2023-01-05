@@ -39,12 +39,35 @@ namespace Music_Player_Project_IT008N13
                 urlSong = value;
             }
         }
+        private string urlPictureBox = String.Empty;
+        public string _urlPictureBox
+        {
+            get
+            {
+                return urlPictureBox;
+            }
+            set
+            {
+                urlPictureBox = value;
+            }
+        }
         public Square() { }
         public Square(string tenSong, string UrlSong)
         {
             InitializeComponent();
             _nameSong = tenSong;
             _urlSong = UrlSong;
+            
+            //MessageBox.Show(tfile.Tag.Title);
+            _init();
+        }
+        public Square(string tenSong, string UrlSong, Bitmap bm)
+        {
+            InitializeComponent();
+            _nameSong = tenSong;
+            _urlSong = UrlSong;
+            pictureBox1.Image = bm;
+            //MessageBox.Show(tfile.Tag.Title);
             _init();
         }
         private void _init()
