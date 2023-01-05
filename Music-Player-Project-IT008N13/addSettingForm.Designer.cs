@@ -103,7 +103,7 @@
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Controls.Add(this.labelLibraries);
             this.panel1.Location = new System.Drawing.Point(57, 70);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(938, 108);
             this.panel1.TabIndex = 2;
@@ -146,7 +146,7 @@
             this.panel2.Controls.Add(this.toolStrip4);
             this.panel2.Controls.Add(this.labelPersonalization);
             this.panel2.Location = new System.Drawing.Point(57, 193);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(938, 110);
             this.panel2.TabIndex = 4;
@@ -199,7 +199,7 @@
             this.panel3.Controls.Add(this.labelOnOff);
             this.panel3.Controls.Add(this.labelMedia);
             this.panel3.Location = new System.Drawing.Point(57, 317);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(938, 63);
             this.panel3.TabIndex = 5;
@@ -208,7 +208,7 @@
             // 
             this.toggleButton1.AutoSize = true;
             this.toggleButton1.Location = new System.Drawing.Point(819, 34);
-            this.toggleButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.toggleButton1.Margin = new System.Windows.Forms.Padding(2);
             this.toggleButton1.MinimumSize = new System.Drawing.Size(34, 18);
             this.toggleButton1.Name = "toggleButton1";
             this.toggleButton1.OffBackColor = System.Drawing.Color.Gray;
@@ -257,7 +257,7 @@
             this.panel4.Controls.Add(this.labelVersion);
             this.panel4.Controls.Add(this.labelAboutMediaPlayer);
             this.panel4.Location = new System.Drawing.Point(57, 398);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(938, 63);
             this.panel4.TabIndex = 6;
@@ -288,7 +288,7 @@
             this.panel5.Controls.Add(this.linklablehelp);
             this.panel5.Controls.Add(this.labelApp);
             this.panel5.Location = new System.Drawing.Point(57, 507);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(938, 102);
             this.panel5.TabIndex = 7;
@@ -440,7 +440,7 @@
             // btnAddfolder1
             // 
             this.btnAddfolder1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddfolder1.Image = ((System.Drawing.Image)(resources.GetObject("btnAddfolder1.Image")));
+            this.btnAddfolder1.Image = global::Music_Player_Project_IT008N13.Properties.Resources.add_folder__1_;
             this.btnAddfolder1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddfolder1.Margin = new System.Windows.Forms.Padding(0, 1, 40, 2);
             this.btnAddfolder1.Name = "btnAddfolder1";
@@ -469,7 +469,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelSetting);
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "addSettingForm";
             this.Size = new System.Drawing.Size(1047, 647);
             this.panel1.ResumeLayout(false);
