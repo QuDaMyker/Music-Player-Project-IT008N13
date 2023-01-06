@@ -21,7 +21,7 @@ namespace Music_Player_Project_IT008N13
         }
         private void Load_Image()
         {
-            bitmap = new Bitmap(global::Music_Player_Project_IT008N13.Properties.Resources.add_folder, new Size(30, 30));
+            bitmap = new Bitmap(global::Music_Player_Project_IT008N13.Properties.Resources.add_folder, new Size(25, 25));
             buttonAddFolder.Image = bitmap;
             buttonAddFolder.ImageAlign = ContentAlignment.MiddleLeft;
             buttonAddFolder.TextImageRelation = TextImageRelation.ImageBeforeText;

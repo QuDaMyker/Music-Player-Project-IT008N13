@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,8 +50,20 @@
     <Reference Include="TagLibSharp, Version=2.3.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL">
       <HintPath>..\packages\TagLibSharp.2.3.0\lib\net462\TagLibSharp.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\DropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuColorTable.cs" />
+    <Compile Include="Controls\MenuRenderer.cs" />
+    <Compile Include="InitialUI\MeetTheNewMediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InitialUI\MeetTheNewMediaPlayer.Designer.cs">
+      <DependentUpon>MeetTheNewMediaPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\addHomeForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,18 +127,21 @@
     <Compile Include="Music design User Control\Square.Designer.cs">
       <DependentUpon>Square.cs</DependentUpon>
     </Compile>
-    <Compile Include="WeCantFindAnyMusic.cs">
+    <Compile Include="InitialUI\WeCantFindAnyMusic.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WeCantFindAnyMusic.Designer.cs">
+    <Compile Include="InitialUI\WeCantFindAnyMusic.Designer.cs">
       <DependentUpon>WeCantFindAnyMusic.cs</DependentUpon>
     </Compile>
-    <Compile Include="WeCantFindAnyVideo.cs">
+    <Compile Include="InitialUI\WeCantFindAnyVideo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WeCantFindAnyVideo.Designer.cs">
+    <Compile Include="InitialUI\WeCantFindAnyVideo.Designer.cs">
       <DependentUpon>WeCantFindAnyVideo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="InitialUI\MeetTheNewMediaPlayer.resx">
+      <DependentUpon>MeetTheNewMediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control\addHomeForm.resx">
       <DependentUpon>addHomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,10 +183,10 @@
     <EmbeddedResource Include="Music design User Control\Square.resx">
       <DependentUpon>Square.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WeCantFindAnyMusic.resx">
+    <EmbeddedResource Include="InitialUI\WeCantFindAnyMusic.resx">
       <DependentUpon>WeCantFindAnyMusic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WeCantFindAnyVideo.resx">
+    <EmbeddedResource Include="InitialUI\WeCantFindAnyVideo.resx">
       <DependentUpon>WeCantFindAnyVideo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -330,6 +348,7 @@
     <None Include="Resources\icon\music_NotFile.png" />
     <None Include="Resources\icon\add-folder %282%29.png" />
     <None Include="Resources\icon\add-folder-_2_.ico" />
+    <None Include="Resources\icon\listen.png" />
     <Content Include="Resources\icon\mute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -45,10 +45,10 @@
             // weCantFindAnyVideo1
             // 
             this.weCantFindAnyVideo1.BackColor = System.Drawing.Color.Transparent;
-            this.weCantFindAnyVideo1.Location = new System.Drawing.Point(181, 147);
+            this.weCantFindAnyVideo1.Location = new System.Drawing.Point(150, 183);
             this.weCantFindAnyVideo1.Name = "weCantFindAnyVideo1";
-            this.weCantFindAnyVideo1.Size = new System.Drawing.Size(633, 299);
-            this.weCantFindAnyVideo1.TabIndex = 10;
+            this.weCantFindAnyVideo1.Size = new System.Drawing.Size(669, 251);
+            this.weCantFindAnyVideo1.TabIndex = 9;
             // 
             // addVideoForm
             // 

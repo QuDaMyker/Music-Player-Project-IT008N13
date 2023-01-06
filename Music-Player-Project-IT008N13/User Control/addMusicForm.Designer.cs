@@ -45,9 +45,9 @@
             // weCantFindAnyMusic1
             // 
             this.weCantFindAnyMusic1.BackColor = System.Drawing.Color.Transparent;
-            this.weCantFindAnyMusic1.Location = new System.Drawing.Point(181, 147);
+            this.weCantFindAnyMusic1.Location = new System.Drawing.Point(150, 183);
             this.weCantFindAnyMusic1.Name = "weCantFindAnyMusic1";
-            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(633, 299);
+            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(669, 251);
             this.weCantFindAnyMusic1.TabIndex = 6;
             // 
             // addMusicForm

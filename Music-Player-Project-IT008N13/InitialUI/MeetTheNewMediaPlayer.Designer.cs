@@ -1,6 +1,6 @@
-﻿namespace Music_Player_Project_IT008N13
+﻿namespace Music_Player_Project_IT008N13.InitialUI
 {
-    partial class WeCantFindAnyMusic
+    partial class MeetTheNewMediaPlayer
     {
         /// <summary> 
         /// Required designer variable.
@@ -42,10 +42,10 @@
             this.panel1.Controls.Add(this.buttonAddFolder);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(251, 26);
+            this.panel1.Location = new System.Drawing.Point(353, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 184);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(443, 225);
+            this.panel1.TabIndex = 2;
             // 
             // buttonAddFolder
             // 
@@ -60,9 +60,9 @@
             this.buttonAddFolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddFolder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonAddFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAddFolder.Location = new System.Drawing.Point(12, 125);
+            this.buttonAddFolder.Location = new System.Drawing.Point(12, 156);
             this.buttonAddFolder.Name = "buttonAddFolder";
-            this.buttonAddFolder.Size = new System.Drawing.Size(126, 47);
+            this.buttonAddFolder.Size = new System.Drawing.Size(120, 30);
             this.buttonAddFolder.TabIndex = 2;
             this.buttonAddFolder.Text = "Add folder";
             this.buttonAddFolder.TextColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -72,14 +72,14 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(9, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(344, 17);
+            this.label2.Size = new System.Drawing.Size(363, 53);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Your music library doesn\'t content any music content.";
+            this.label2.Text = "Use this app to play your audio and video files and explore your personal librari" +
+    "es";
             // 
             // label1
             // 
@@ -88,29 +88,29 @@
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(6, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(334, 31);
+            this.label1.Size = new System.Drawing.Size(340, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "We couldn\'t find any music";
+            this.label1.Text = "Meet the new Media Player";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.music_NotFile;
+            this.pictureBox1.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.listen;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 205);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(327, 289);
+            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // WeCantFindAnyMusic
+            // MeetTheNewMediaPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "WeCantFindAnyMusic";
-            this.Size = new System.Drawing.Size(660, 273);
+            this.Name = "MeetTheNewMediaPlayer";
+            this.Size = new System.Drawing.Size(826, 395);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
