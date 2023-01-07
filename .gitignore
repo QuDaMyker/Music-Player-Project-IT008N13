@@ -4,14 +4,12 @@
 bin,
 obj
 New Text Document.txt
-*bin/
-!historyCurretnSong.txt
+bin/
 obj/
-*Debug/
-!Music-Player-Project-IT008N13\bin\Debug\historyCurretnSong.txt
-!Music-Player-Project-IT008N13/bin/Debug/historyCurretnSong.txt
+Debug/
 Release/
 .vs/
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/csharp
 # Edit at https://www.toptal.com/developers/gitignore?templates=csharp

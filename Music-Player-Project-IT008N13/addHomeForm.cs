@@ -13,6 +13,7 @@ using HXV;
 using WMPLib;
 using System.Runtime.InteropServices.ComTypes;
 using System.Security.Principal;
+using System.Reflection;
 
 namespace Music_Player_Project_IT008N13
 {
@@ -110,7 +111,7 @@ namespace Music_Player_Project_IT008N13
         }
         private void _importFormFileHistoryCurrentSong()
         {
-            string[] lines = File.ReadAllLines(@"historyCurretnSong.txt");
+            string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
             string[] values;
             for (int i = 0; i < lines.Length; i++)
             {
@@ -125,7 +126,7 @@ namespace Music_Player_Project_IT008N13
         }
         private void _exportToFileFileHistoryCurrentSong()
         {
-            TextWriter writer = new StreamWriter(@"historyCurretnSong.txt");
+            TextWriter writer = new StreamWriter($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
             for (int i = 0; i < squares.Length; i++)
             {
                 writer.Write(dataRecentHomePage.Rows[i].Cells[0].Value.ToString() + "|");
