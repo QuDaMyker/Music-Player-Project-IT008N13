@@ -8,7 +8,8 @@ New Text Document.txt
 !historyCurretnSong.txt
 obj/
 *Debug/
-!historyCurretnSong.txt
+!Music-Player-Project-IT008N13\bin\Debug\historyCurretnSong.txt
+!Music-Player-Project-IT008N13/bin/Debug/historyCurretnSong.txt
 Release/
 .vs/
 
