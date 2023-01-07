@@ -64,6 +64,12 @@
     <Compile Include="InitialUI\MeetTheNewMediaPlayer.Designer.cs">
       <DependentUpon>MeetTheNewMediaPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Music design User Control\Playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music design User Control\Playlist.Designer.cs">
+      <DependentUpon>Playlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\addHomeForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="InitialUI\MeetTheNewMediaPlayer.resx">
       <DependentUpon>MeetTheNewMediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music design User Control\Playlist.resx">
+      <DependentUpon>Playlist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\addHomeForm.resx">
       <DependentUpon>addHomeForm.cs</DependentUpon>
@@ -343,6 +352,7 @@
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon\stop-button.png" />
     <None Include="Resources\icon\tape.png" />
     <None Include="Resources\icon\more.png" />
     <None Include="Resources\icon\music_NotFile.png" />
