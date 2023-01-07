@@ -16,6 +16,7 @@ namespace Music_Player_Project_IT008N13
     {
         private bool is_Play = false;
         private string nameSong = String.Empty;
+        private bool havingURL = false;
         public string _nameSong
         {
             get
@@ -89,24 +90,25 @@ namespace Music_Player_Project_IT008N13
                 btnPlayPause = value;
             }
         }
-        private void loadSlider()
-        {
-            
-        }
         private void btn_play_pause_Click_1(object sender, EventArgs e)
         {
+            if(havingURL == false)
+            {
+                global::Music_Player_Project_IT008N13.mainForm.player.URL = _urlSong;
+                havingURL = true;
+            }
             if (is_Play == true)
             {
                 btn_play_pause.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.playdisplay;
                 is_Play = false;
-                global::Music_Player_Project_IT008N13.mainForm.player.URL = String.Empty;
+                //global::Music_Player_Project_IT008N13.mainForm.player.URL = String.Empty;
                 global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.pause();
             }
             else
             {
                 btn_play_pause.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.pausedisplay;
                 is_Play = true;
-                global::Music_Player_Project_IT008N13.mainForm.player.URL= _urlSong;
+                //global::Music_Player_Project_IT008N13.mainForm.player.URL= _urlSong;
                 global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
                 
             }
