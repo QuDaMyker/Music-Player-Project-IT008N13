@@ -52,7 +52,7 @@
             this.customButton1.FlatAppearance.BorderSize = 0;
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(323, 163);
+            this.customButton1.Location = new System.Drawing.Point(58, 70);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(340, 137);
             this.customButton1.TabIndex = 3;
