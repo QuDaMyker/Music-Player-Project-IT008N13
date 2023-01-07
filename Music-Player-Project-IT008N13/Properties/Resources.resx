@@ -169,8 +169,13 @@
   <data name="btnHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\btnHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="add-folder (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\add-folder (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="listen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\listen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> QuDa-SrcCode
   </data>
   <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -195,6 +200,9 @@
   </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\btnMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="expand-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\expand-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +231,11 @@
   <data name="add-folder (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\add-folder (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon\btnMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add-folder (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\add-folder (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speaker-filled-audio-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\speaker-filled-audio-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="speaker-filled-audio-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\speaker-filled-audio-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -270,5 +281,7 @@
   </data>
   <data name="listen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\listen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stop-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\stop-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

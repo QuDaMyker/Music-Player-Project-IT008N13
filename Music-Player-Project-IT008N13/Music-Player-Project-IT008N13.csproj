@@ -64,6 +64,15 @@
     <Compile Include="InitialUI\MeetTheNewMediaPlayer.Designer.cs">
       <DependentUpon>MeetTheNewMediaPlayer.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Music design User Control\Playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music design User Control\Playlist.Designer.cs">
+      <DependentUpon>Playlist.cs</DependentUpon>
+    </Compile>
+>>>>>>> QuDa-SrcCode
     <Compile Include="User Control\addHomeForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +151,12 @@
     <EmbeddedResource Include="InitialUI\MeetTheNewMediaPlayer.resx">
       <DependentUpon>MeetTheNewMediaPlayer.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="Music design User Control\Playlist.resx">
+      <DependentUpon>Playlist.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> QuDa-SrcCode
     <EmbeddedResource Include="User Control\addHomeForm.resx">
       <DependentUpon>addHomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +358,10 @@
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <None Include="Resources\icon\stop-button.png" />
+>>>>>>> QuDa-SrcCode
     <None Include="Resources\icon\tape.png" />
     <None Include="Resources\icon\more.png" />
     <None Include="Resources\icon\music_NotFile.png" />
