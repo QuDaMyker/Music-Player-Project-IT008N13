@@ -14,6 +14,9 @@ using WMPLib;
 using System.Runtime.InteropServices.ComTypes;
 using System.Security.Principal;
 using System.Reflection;
+using System.Windows.Media;
+using Music_Player_Project_IT008N13.Music_design_User_Control;
+
 
 namespace Music_Player_Project_IT008N13
 {
@@ -24,7 +27,13 @@ namespace Music_Player_Project_IT008N13
         static string[] FileInFolder;
         static string[] Files;
         public static Square[] squares;
-
+        //
+        //
+        MediaPlayer _mediaPlayer;
+        //
+        //
+        WMPLib.WindowsMediaPlayer wpplayer;
+        //
         DataGridView dataRecentHomePage;
         
         public string FolderContainMedia
@@ -46,7 +55,9 @@ namespace Music_Player_Project_IT008N13
         public addHomeForm()
         {
             InitializeComponent();
-            _initDataGridViewCurrentSong();            
+            wpplayer = new WMPLib.WindowsMediaPlayer();
+            _initDataGridViewCurrentSong();
+            //global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.pause();
         }
         public void _initDataGridViewCurrentSong()
         {
@@ -58,12 +69,9 @@ namespace Music_Player_Project_IT008N13
             dataRecentHomePage.Columns[1].Name = "Name Song";
             dataRecentHomePage.Columns[2].ValueType = typeof(string);
             dataRecentHomePage.Columns[2].Name = "URL Song";
-            /*dataRecentHomePage.Columns[3].ValueType = typeof(string);
-            dataRecentHomePage.Columns[3].Name = "STT";*/
             try
             {
                 _importFormFileHistoryCurrentSong();
-                //MessageBox.Show(dataRecentHomePage.RowCount.ToString());
                 squares = new Square[dataRecentHomePage.RowCount - 1];
                 for (int i = 0; i < dataRecentHomePage.RowCount - 1; i++)
                 {
@@ -99,15 +107,23 @@ namespace Music_Player_Project_IT008N13
                     {
                         squares[i] = new Square(nameSong, dataRecentHomePage.Rows[i].Cells[2].Value.ToString());
                     }
-                    squares[i].Click += new EventHandler(squares_Click);
+                    squares[i].onAction += squares_Click;
                     flowLayoutPanel1.Controls.Add(squares[i]);
                 }
             }
             catch
             {
 
-               
             }
+        }
+        private void addToMediaPlayer(AxWMPLib.AxWindowsMediaPlayer player, string _urlSong)
+        {
+            var myPlayList = player.playlistCollection.newPlaylist("MyPlayList");
+
+            var mediaItem = player.newMedia(_urlSong);
+            myPlayList.appendItem(mediaItem);
+
+            player.currentPlaylist = myPlayList;
         }
         private void _importFormFileHistoryCurrentSong()
         {
@@ -138,6 +154,7 @@ namespace Music_Player_Project_IT008N13
         }
         private void addSongs()
         {
+            var myPlayList = global::Music_Player_Project_IT008N13.mainForm.player.playlistCollection.newPlaylist("MyPlayList");
             OpenFileDialog fileOpen = new OpenFileDialog();
             fileOpen.Filter = "MP3 File |*.mp3|" +
                 "MP4 File |*.mp4|" +
@@ -147,6 +164,52 @@ namespace Music_Player_Project_IT008N13
                 "All files (*.*)|*.*";
             fileOpen.FilterIndex = 0;
             fileOpen.Multiselect = true;
+            if (fileOpen.ShowDialog() == DialogResult.OK)
+            {
+                foreach (string file in fileOpen.FileNames)
+                {
+                    var mediaItem = global::Music_Player_Project_IT008N13.mainForm.player.newMedia(file);
+                    myPlayList.appendItem(mediaItem);
+                }
+            }
+            global::Music_Player_Project_IT008N13.mainForm.player.currentPlaylist = myPlayList;
+
+            /*var filePicker = new Windows.Storage.Pickers.FileOpenPicker();
+
+            //make a collection of all video types you want to support (for testing we are adding just 3).
+            string[] fileTypes = new string[] { ".wmv", ".mp4", ".mkv" };
+
+            //Add your fileTypes to the FileTypeFilter list of filePicker.
+            foreach (string fileType in fileTypes)
+            {
+                filePicker.FileTypeFilter.Add(fileType);
+            }
+
+            //Set picker start location to the video library
+            filePicker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
+
+            //Retrieve file from picker
+            StorageFile file = await filePicker.PickSingleFileAsync();
+
+            if (!(file is null))
+            {
+                _mediaSource = MediaSource.CreateFromStorageFile(file);
+                _mediaPlayer = new MediaPlayer();
+                _mediaPlayer.Source = _mediaSource;
+                mediaPlayerElement.SetMediaPlayer(_mediaPlayer);
+            }*/
+
+            /*
+            OpenFileDialog fileOpen = new OpenFileDialog();
+            fileOpen.Filter = "MP3 File |*.mp3|" +
+                "MP4 File |*.mp4|" +
+                "MKV File |*.mkv|" +
+                "M3U8 File |*.m3u8|" +
+                "FLAC File |*.flac|" +
+                "All files (*.*)|*.*";
+            fileOpen.FilterIndex = 0;
+            fileOpen.Multiselect = true;
+            
             if (fileOpen.ShowDialog() == DialogResult.OK)
             {
                 Files = fileOpen.FileNames;
@@ -192,6 +255,7 @@ namespace Music_Player_Project_IT008N13
                 }
                 _exportToFileFileHistoryCurrentSong();
             }
+            */
         }
         private void squares_Click(object sender, EventArgs e)
         {
@@ -229,7 +293,8 @@ namespace Music_Player_Project_IT008N13
                 _FolderContainMedia = folderOpen.SelectedPath;
             }
         }
-
+        public event EventHandler ItemSelected = null;
+        //private void 
         
     }
 }

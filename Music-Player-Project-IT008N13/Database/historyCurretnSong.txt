@@ -1,24 +1,25 @@
 0|EVERYTHINGGOON - COPY|C:\Users\quocd\Downloads\musiclttq\everythinggoon - Copy.mp3
-1|EVERYTHINGGOON|C:\Users\quocd\Downloads\musiclttq\everythinggoon.mp3
-2|PHAICHANGEMDAYEU - COPY|C:\Users\quocd\Downloads\musiclttq\phaichangemdayeu - Copy.mp3
-0|EVERYTHINGGOON - COPY|C:\Users\quocd\Downloads\musiclttq\everythinggoon - Copy.mp3
-1|EVERYTHINGGOON|C:\Users\quocd\Downloads\musiclttq\everythinggoon.mp3
-2|PHAICHANGEMDAYEU - COPY|C:\Users\quocd\Downloads\musiclttq\phaichangemdayeu - Copy.mp3
-3|PHAICHANGEMDAYEU|C:\Users\quocd\Downloads\musiclttq\phaichangemdayeu.mp3
-4|NEUKHONGPHAILAYEU - COPY|C:\Users\quocd\Downloads\musiclttq\neukhongphailayeu - Copy.mp3
-5|NEUKHONGPHAILAYEU|C:\Users\quocd\Downloads\musiclttq\neukhongphailayeu.mp3
-6|DOTOC2 - COPY|C:\Users\quocd\Downloads\musiclttq\dotoc2 - Copy.mp3
-7|DOTOC2|C:\Users\quocd\Downloads\musiclttq\dotoc2.mp3
-8|MAYHONGDUALOI - COPY|C:\Users\quocd\Downloads\musiclttq\mayhongdualoi - Copy.mp3
-9|MAYHONGDUALOI|C:\Users\quocd\Downloads\musiclttq\mayhongdualoi.mp3
-10|BATCOCCONTYM - COPY|C:\Users\quocd\Downloads\musiclttq\batcoccontym - Copy.mp3
-11|BATCOCCONTYM|C:\Users\quocd\Downloads\musiclttq\batcoccontym.mp3
-12|CUOITHOI - COPY|C:\Users\quocd\Downloads\musiclttq\cuoithoi - Copy.mp3
-13|CUOITHOI|C:\Users\quocd\Downloads\musiclttq\cuoithoi.mp3
-14|YOURSMILE - COPY|C:\Users\quocd\Downloads\musiclttq\yoursmile - Copy.mp3
-15|YOURSMILE|C:\Users\quocd\Downloads\musiclttq\yoursmile.mp3
-16|MATMOC - COPY|C:\Users\quocd\Downloads\musiclttq\matmoc - Copy.mp3
-17|MATMOC|C:\Users\quocd\Downloads\musiclttq\matmoc.mp3
-18|VAOHA - COPY|C:\Users\quocd\Downloads\musiclttq\vaoha - Copy.mp3
-19|VAOHA|C:\Users\quocd\Downloads\musiclttq\vaoha.mp3
-20|SHAYYNANG - COPY|C:\Users\quocd\Downloads\musiclttq\shayynang - Copy.mp3
+0|RECORDING|C:\Users\quocd\Downloads\musiclttq\Recording.mp3
+1|EVERYTHINGGOON - COPY|C:\Users\quocd\Downloads\musiclttq\everythinggoon - Copy.mp3
+2|EVERYTHINGGOON|C:\Users\quocd\Downloads\musiclttq\everythinggoon.mp3
+3|PHAICHANGEMDAYEU - COPY|C:\Users\quocd\Downloads\musiclttq\phaichangemdayeu - Copy.mp3
+4|PHAICHANGEMDAYEU|C:\Users\quocd\Downloads\musiclttq\phaichangemdayeu.mp3
+5|NEUKHONGPHAILAYEU - COPY|C:\Users\quocd\Downloads\musiclttq\neukhongphailayeu - Copy.mp3
+6|NEUKHONGPHAILAYEU|C:\Users\quocd\Downloads\musiclttq\neukhongphailayeu.mp3
+7|DOTOC2 - COPY|C:\Users\quocd\Downloads\musiclttq\dotoc2 - Copy.mp3
+8|DOTOC2|C:\Users\quocd\Downloads\musiclttq\dotoc2.mp3
+9|MAYHONGDUALOI - COPY|C:\Users\quocd\Downloads\musiclttq\mayhongdualoi - Copy.mp3
+10|MAYHONGDUALOI|C:\Users\quocd\Downloads\musiclttq\mayhongdualoi.mp3
+11|BATCOCCONTYM - COPY|C:\Users\quocd\Downloads\musiclttq\batcoccontym - Copy.mp3
+12|BATCOCCONTYM|C:\Users\quocd\Downloads\musiclttq\batcoccontym.mp3
+13|CUOITHOI - COPY|C:\Users\quocd\Downloads\musiclttq\cuoithoi - Copy.mp3
+14|CUOITHOI|C:\Users\quocd\Downloads\musiclttq\cuoithoi.mp3
+15|YOURSMILE - COPY|C:\Users\quocd\Downloads\musiclttq\yoursmile - Copy.mp3
+16|YOURSMILE|C:\Users\quocd\Downloads\musiclttq\yoursmile.mp3
+17|MATMOC - COPY|C:\Users\quocd\Downloads\musiclttq\matmoc - Copy.mp3
+18|MATMOC|C:\Users\quocd\Downloads\musiclttq\matmoc.mp3
+19|VAOHA - COPY|C:\Users\quocd\Downloads\musiclttq\vaoha - Copy.mp3
+20|VAOHA|C:\Users\quocd\Downloads\musiclttq\vaoha.mp3
+21|SHAYYNANG - COPY|C:\Users\quocd\Downloads\musiclttq\shayynang - Copy.mp3
+22|SHAYYNANG|C:\Users\quocd\Downloads\musiclttq\shayynang.mp3
+23|NGATUKHONGDEN - COPY|C:\Users\quocd\Downloads\musiclttq\ngatukhongden - Copy.mp3

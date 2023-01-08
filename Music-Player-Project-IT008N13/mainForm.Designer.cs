@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.toolStripControl = new System.Windows.Forms.ToolStrip();
             this.txtBSearch = new System.Windows.Forms.ToolStripTextBox();
@@ -60,6 +61,7 @@
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStripControl.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
@@ -385,7 +387,6 @@
             player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
             player.Size = new System.Drawing.Size(145, 123);
             player.TabIndex = 11;
-            player.Visible = false;
             // 
             // addHomeForm1
             // 
@@ -442,6 +443,10 @@
             this.addVideoForm1.Name = "addVideoForm1";
             this.addVideoForm1.Size = new System.Drawing.Size(1047, 647);
             this.addVideoForm1.TabIndex = 5;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.nextSongWhenFullValueSlider);
             // 
             // mainForm
             // 
@@ -504,6 +509,7 @@
         private addHomeForm addHomeForm1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbVolumn;
+        private System.Windows.Forms.Timer timer1;
         public static System.Windows.Forms.Label lbDurationItem;
         public static System.Windows.Forms.Label lbCurrentDuration;
         public static Controls.Slider slider1;

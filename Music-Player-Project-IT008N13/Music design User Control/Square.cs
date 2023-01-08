@@ -112,7 +112,6 @@ namespace Music_Player_Project_IT008N13
             }
             timer1.Start();
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             global::Music_Player_Project_IT008N13.mainForm.slider1.Maximum = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.duration;
@@ -120,7 +119,20 @@ namespace Music_Player_Project_IT008N13
             //MessageBox.Show(global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition.ToString());
             global::Music_Player_Project_IT008N13.mainForm.lbCurrentDuration.Text = global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPositionString;
             global::Music_Player_Project_IT008N13.mainForm.lbDurationItem.Text = global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.durationString;
+            if((int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.duration == (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition)
+            {
+                
+            }
 
+        }
+        public event EventHandler onAction = null;
+        private void actionBtn_Click(object sender, EventArgs e)
+        {
+            is_Play = !is_Play;
+            if (onAction != null)
+            {
+                onAction.Invoke(this, e);
+            }
         }
 
     }
