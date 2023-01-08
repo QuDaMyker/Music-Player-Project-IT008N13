@@ -310,7 +310,7 @@
             lbDurationItem.Name = "lbDurationItem";
             lbDurationItem.Size = new System.Drawing.Size(66, 25);
             lbDurationItem.TabIndex = 12;
-            lbDurationItem.Text = "00:00";
+            lbDurationItem.Text = "50:00";
             // 
             // lbCurrentDuration
             // 
@@ -378,6 +378,7 @@
             slider1.SymbolAfter = "";
             slider1.SymbolBefore = "";
             slider1.TabIndex = 2;
+            slider1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.slider1_MouseDown);
             // 
             // player
             // 

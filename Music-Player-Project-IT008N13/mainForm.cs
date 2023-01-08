@@ -48,37 +48,36 @@ namespace Music_Player_Project_IT008N13
             try
             {
                 _importFormFileHistoryCurrentSong();
-                for (int i = 0; i < dataMainForm.RowCount - 1; i++)
-                {
-                    var myPlayList = player.playlistCollection.newPlaylist("MyPlayList");
-
-                    var mediaItem = player.newMedia(dataMainForm.Rows[i].Cells[2].Value.ToString());
-                    myPlayList.appendItem(mediaItem);
-
-                    player.currentPlaylist = myPlayList;
-                }
             }
-            catch (Exception)
+            catch 
             {
 
-                throw;
+                
             }
 
         }
         private void _importFormFileHistoryCurrentSong()
         {
-            string[] lines =  File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
-            string[] values;
-            for (int i = 0; i < lines.Length; i++)
+            try
             {
-                values = lines[i].ToString().Split('|');
-                string[] row = new string[values.Length];
-                for (int j = 0; j < values.Length; j++)
+                string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
+                string[] values;
+                for (int i = 0; i < lines.Length; i++)
                 {
-                    row[j] = values[j].Trim();
+                    values = lines[i].ToString().Split('|');
+                    string[] row = new string[values.Length];
+                    for (int j = 0; j < values.Length; j++)
+                    {
+                        row[j] = values[j].Trim();
+                    }
+                    dataMainForm.Rows.Add(row);
                 }
-                dataMainForm.Rows.Add(row);
             }
+            catch
+            {
+
+            }
+            
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {
@@ -293,27 +292,11 @@ namespace Music_Player_Project_IT008N13
                 }
                 player.Ctlcontrols.next();
             }
+        }
 
-            /*if ((int)slider1.Value == (int)slider1.Maximum)
-            {
-                for (int i = 0; i < dataMainForm.RowCount - 1; i++)
-                {
-                    if (dataMainForm.Rows[i].Cells[2].Value.ToString() == player.URL)
-                    {
-                        if (i == dataMainForm.RowCount - 2)
-                        {
-                            player.URL = dataMainForm.Rows[0].Cells[2].Value.ToString();
-                            break;
-                        }
-                        else
-                        {
-                            player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
-                            break;
-                        }
-                    }
-                }
-                player.Ctlcontrols.next();
-            }*/
+        private void slider1_MouseDown(object sender, MouseEventArgs e)
+        {
+            player.Ctlcontrols.currentPosition = player.currentMedia.duration * e.X / slider1.Width;
         }
     }
 }

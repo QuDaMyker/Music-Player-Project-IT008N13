@@ -29,11 +29,6 @@ namespace Music_Player_Project_IT008N13
         public static Square[] squares;
         //
         //
-        MediaPlayer _mediaPlayer;
-        //
-        //
-        WMPLib.WindowsMediaPlayer wpplayer;
-        //
         DataGridView dataRecentHomePage;
         
         public string FolderContainMedia
@@ -55,7 +50,6 @@ namespace Music_Player_Project_IT008N13
         public addHomeForm()
         {
             InitializeComponent();
-            wpplayer = new WMPLib.WindowsMediaPlayer();
             _initDataGridViewCurrentSong();
             //global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.pause();
         }
@@ -75,9 +69,9 @@ namespace Music_Player_Project_IT008N13
                 squares = new Square[dataRecentHomePage.RowCount - 1];
                 for (int i = 0; i < dataRecentHomePage.RowCount - 1; i++)
                 {
+                    squares[i] = new Square();
                     string nameSong = String.Empty;
                     string UrlPictureBox = String.Empty;
-                    //MessageBox.Show(dataRecentHomePage.Rows[i].Cells[2].Value.ToString());
                     var tfile = TagLib.File.Create($@"{dataRecentHomePage.Rows[i].Cells[2].Value}");
                     if (String.IsNullOrEmpty(tfile.Tag.Title))
                     {
@@ -87,27 +81,24 @@ namespace Music_Player_Project_IT008N13
                     {
                         nameSong = tfile.Tag.Title;
                     }
-                    // check url anh, artist...
-                    // add database
-                    //TagLib.File file = TagLib.File.Create(openFileDialog.FileName);
-
-
+                    squares[i]._Title = nameSong;
+                    squares[i]._URL = dataRecentHomePage.Rows[i].Cells[2].Value.ToString();
                     var mStream = new MemoryStream();
                     var firstPicture = tfile.Tag.Pictures.FirstOrDefault();
-
                     if (firstPicture != null)
                     {
                         byte[] pData = firstPicture.Data.Data;
                         mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
                         Bitmap bm = new Bitmap(mStream, false);
                         mStream.Dispose();
-                        squares[i] = new Square(nameSong, dataRecentHomePage.Rows[i].Cells[2].Value.ToString(), bm);
+                        squares[i]._Thumbnail = bm;
                     }
                     else
                     {
-                        squares[i] = new Square(nameSong, dataRecentHomePage.Rows[i].Cells[2].Value.ToString());
+                        squares[i]._Thumbnail = null;
                     }
-                    squares[i].onAction += squares_Click;
+                    squares[i].onAction += new EventHandler(square_onAction);
+                    //timer1.Start();
                     flowLayoutPanel1.Controls.Add(squares[i]);
                 }
             }
@@ -115,15 +106,21 @@ namespace Music_Player_Project_IT008N13
             {
 
             }
+            //var myPlayList = global::Music_Player_Project_IT008N13.mainForm.player.playlistCollection.newPlaylist("MyPlayList");
+            //addToMediaPlayer(Music_Player_Project_IT008N13.mainForm.player);
         }
-        private void addToMediaPlayer(AxWMPLib.AxWindowsMediaPlayer player, string _urlSong)
+        private void addToMediaPlayer(AxWMPLib.AxWindowsMediaPlayer player)
         {
-            var myPlayList = player.playlistCollection.newPlaylist("MyPlayList");
-
-            var mediaItem = player.newMedia(_urlSong);
-            myPlayList.appendItem(mediaItem);
-
-            player.currentPlaylist = myPlayList;
+            var pl = player.playlistCollection.newPlaylist("plList");
+            string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
+            string[] values;
+            for (int i = 0; i < lines.Length; i++)
+            {
+                values = lines[i].ToString().Split('|');
+                string[] row = new string[values.Length];
+                pl.appendItem(player.newMedia($@"{values[2]}"));
+            }
+            player.currentPlaylist = pl;
         }
         private void _importFormFileHistoryCurrentSong()
         {
@@ -154,7 +151,6 @@ namespace Music_Player_Project_IT008N13
         }
         private void addSongs()
         {
-            var myPlayList = global::Music_Player_Project_IT008N13.mainForm.player.playlistCollection.newPlaylist("MyPlayList");
             OpenFileDialog fileOpen = new OpenFileDialog();
             fileOpen.Filter = "MP3 File |*.mp3|" +
                 "MP4 File |*.mp4|" +
@@ -164,62 +160,26 @@ namespace Music_Player_Project_IT008N13
                 "All files (*.*)|*.*";
             fileOpen.FilterIndex = 0;
             fileOpen.Multiselect = true;
-            if (fileOpen.ShowDialog() == DialogResult.OK)
-            {
-                foreach (string file in fileOpen.FileNames)
-                {
-                    var mediaItem = global::Music_Player_Project_IT008N13.mainForm.player.newMedia(file);
-                    myPlayList.appendItem(mediaItem);
-                }
-            }
-            global::Music_Player_Project_IT008N13.mainForm.player.currentPlaylist = myPlayList;
-
-            /*var filePicker = new Windows.Storage.Pickers.FileOpenPicker();
-
-            //make a collection of all video types you want to support (for testing we are adding just 3).
-            string[] fileTypes = new string[] { ".wmv", ".mp4", ".mkv" };
-
-            //Add your fileTypes to the FileTypeFilter list of filePicker.
-            foreach (string fileType in fileTypes)
-            {
-                filePicker.FileTypeFilter.Add(fileType);
-            }
-
-            //Set picker start location to the video library
-            filePicker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
-
-            //Retrieve file from picker
-            StorageFile file = await filePicker.PickSingleFileAsync();
-
-            if (!(file is null))
-            {
-                _mediaSource = MediaSource.CreateFromStorageFile(file);
-                _mediaPlayer = new MediaPlayer();
-                _mediaPlayer.Source = _mediaSource;
-                mediaPlayerElement.SetMediaPlayer(_mediaPlayer);
-            }*/
-
-            /*
-            OpenFileDialog fileOpen = new OpenFileDialog();
-            fileOpen.Filter = "MP3 File |*.mp3|" +
-                "MP4 File |*.mp4|" +
-                "MKV File |*.mkv|" +
-                "M3U8 File |*.m3u8|" +
-                "FLAC File |*.flac|" +
-                "All files (*.*)|*.*";
-            fileOpen.FilterIndex = 0;
-            fileOpen.Multiselect = true;
-            
             if (fileOpen.ShowDialog() == DialogResult.OK)
             {
                 Files = fileOpen.FileNames;
                 squares = new Square[Files.Length];
-                for (int i = 0; i < Files.Length; i++)
+                //var playlist = Music_Player_Project_IT008N13.mainForm.player.playlistCollection.newPlaylist("myplaylist");
+                var myPlayList = global::Music_Player_Project_IT008N13.mainForm.player.playlistCollection.newPlaylist("MyPlayList");
+
+                foreach (string file in fileOpen.FileNames)
                 {
+                    var mediaItem = Music_Player_Project_IT008N13.mainForm.player.newMedia(file);
+                    myPlayList.appendItem(mediaItem);
+                }
+                Music_Player_Project_IT008N13.mainForm.player.currentPlaylist = myPlayList;
+                for (int i = 0; i < squares.Length; i++)
+                {
+                    squares[i] = new Square();
                     string nameSong = String.Empty;
                     string UrlPictureBox = String.Empty;
                     var tfile = TagLib.File.Create($@"{Files[i]}");
-                    if(String.IsNullOrEmpty(tfile.Tag.Title))
+                    if (String.IsNullOrEmpty(tfile.Tag.Title))
                     {
                         nameSong = Files[i].Substring(Files[i].LastIndexOf("\\") + 1).Replace(".mp3", "").ToUpper();
                     }
@@ -227,35 +187,28 @@ namespace Music_Player_Project_IT008N13
                     {
                         nameSong = tfile.Tag.Title;
                     }
-                    // check url anh, artist...
-                    // add database
-                    //TagLib.File file = TagLib.File.Create(openFileDialog.FileName);
-
-                    
+                    squares[i]._Title = nameSong;
                     var mStream = new MemoryStream();
                     var firstPicture = tfile.Tag.Pictures.FirstOrDefault();
-                   
                     if (firstPicture != null)
                     {
                         byte[] pData = firstPicture.Data.Data;
                         mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
                         Bitmap bm = new Bitmap(mStream, false);
                         mStream.Dispose();
-                        squares[i] = new Square(nameSong, Files[i], bm);
+                        squares[i]._Thumbnail = bm;
                     }
                     else
                     {
-                        squares[i] = new Square(nameSong, Files[i]);
+                        squares[i]._Thumbnail = null;
                     }
-                    squares[i].Click += new EventHandler(squares_Click);
+                    squares[i].onAction += new EventHandler(square_onAction);
                     //timer1.Start();
                     string[] dataAddToDataRecentHomePage = { $"{i}", $"{nameSong}", $"{Files[i]}" };
                     dataRecentHomePage.Rows.Add(dataAddToDataRecentHomePage);
                     flowLayoutPanel1.Controls.Add(squares[i]);
                 }
-                _exportToFileFileHistoryCurrentSong();
-            }
-            */
+            }            
         }
         private void squares_Click(object sender, EventArgs e)
         {
@@ -294,7 +247,75 @@ namespace Music_Player_Project_IT008N13
             }
         }
         public event EventHandler ItemSelected = null;
+
+        private void square_onAction(object sender, EventArgs e)
+        {
+            if(((Square)sender)._URL != Music_Player_Project_IT008N13.mainForm.player.URL)
+            {
+                for (int i = 0; i < squares.Length; i++)
+                {
+                    squares[i]._isPlaying = false;
+                }
+            //
+            //
+                ((Square)sender)._isPlaying = true;
+                //MessageBox.Show(((Square)sender)._URL);
+                Music_Player_Project_IT008N13.mainForm.player.URL = ((Square)sender)._URL;
+                Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
+                string song = (string)(((Square)sender).Tag);
+                timer1.Start();
+                //
+                //
+            }
+            else
+            {
+                if(((Square)sender)._isPlaying == true)
+                {
+                    ((Square)sender)._isPlaying = false;
+                    Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.pause();
+                }
+                else
+                {
+                    ((Square)sender)._isPlaying = true;
+                    Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
+                }
+                
+            }
+
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            global::Music_Player_Project_IT008N13.mainForm.slider1.Maximum = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.duration;
+            global::Music_Player_Project_IT008N13.mainForm.slider1.Value = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition;
+            //MessageBox.Show(global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition.ToString());
+            global::Music_Player_Project_IT008N13.mainForm.lbCurrentDuration.Text = global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPositionString;
+            global::Music_Player_Project_IT008N13.mainForm.lbDurationItem.Text = global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.durationString;
+
+            if(Music_Player_Project_IT008N13.mainForm.player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+                for (int i = 0; i < squares.Length; i++)
+                {
+                    if (squares[i]._URL == Music_Player_Project_IT008N13.mainForm.player.URL)
+                    {
+                        if (i == squares.Length - 1)
+                        {
+                            Music_Player_Project_IT008N13.mainForm.player.URL = squares[0]._URL;
+                        }
+                        else
+                        {
+                            Music_Player_Project_IT008N13.mainForm.player.URL = squares[i + 1]._URL;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
         //private void 
-        
+
     }
 }
