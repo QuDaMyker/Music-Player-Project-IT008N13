@@ -20,18 +20,37 @@ namespace Music_Player_Project_IT008N13
         private Button currentButton;
         private Pen pen = new Pen(Color.FromArgb(50, 50, 50), 2);
         private ImageButtonMenuBar imageMenuBar = new ImageButtonMenuBar();
+        private imagebuttonExit_Max_Min imageButtonControlApp = new imagebuttonExit_Max_Min();
         public mainForm()
         {
             
             InitializeComponent();
-            
+            Graphics g = CreateGraphics();
+            g.DrawLine(pen, new Point(0, 216), new Point(316, 216));
+            Active_Button(btnHome);
+
         }
-        
+        private void Active_Button(object sender)
+        {
+            CustomButton button = (CustomButton)sender;
+            button.BackColor = Color.FromArgb(45, 45, 45);
+        }
+        private void Disable_Button(object sender)
+        {
+            foreach(object button in panelMenuBar.Controls)
+            {
+                if (button.GetType() == typeof(CustomButton))
+                {
+                    CustomButton currentButton = (CustomButton)button;
+                    currentButton.BackColor = Color.Transparent;
+                }
+            }
+        }
 
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            
+            Active_Button(sender);
             addHomeForm1.Show();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
@@ -42,8 +61,7 @@ namespace Music_Player_Project_IT008N13
 
         private void bbtnMusicLibrary_Click(object sender, EventArgs e)
         {
-           
-
+            Active_Button(sender);
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
             addMusicForm1.Show();
@@ -54,11 +72,7 @@ namespace Music_Player_Project_IT008N13
 
         private void btnVideoLibrary_Click(object sender, EventArgs e)
         {
-
-
-           
-
-
+            Active_Button(sender);
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
@@ -69,8 +83,7 @@ namespace Music_Player_Project_IT008N13
 
         private void btnPlayQueue_Click(object sender, EventArgs e)
         {
-           
-
+            Active_Button(sender);
             addHomeForm1.Hide();
             addMediaQueueForm1.Show();
             addMusicForm1.Hide();
@@ -81,9 +94,7 @@ namespace Music_Player_Project_IT008N13
 
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
-
-            
-
+            Active_Button(sender);
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
@@ -94,6 +105,7 @@ namespace Music_Player_Project_IT008N13
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
+            Active_Button(sender); 
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
@@ -185,6 +197,7 @@ namespace Music_Player_Project_IT008N13
             Load_Image_MenuBar();
             Graphics g = CreateGraphics();
             g.DrawLine(pen, new Point(0, 216), new Point(316, 216));
+            Load_Image_Minimize_Maximize_Exit();
         }
         private void Load_Image_MenuBar()
         {
@@ -227,7 +240,36 @@ namespace Music_Player_Project_IT008N13
             btnSetting.Image = imageMenuBar.ImagebtnSetting;
             btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
             btnSetting.TextImageRelation = TextImageRelation.ImageBeforeText;
+        }
+        private void Load_Image_Minimize_Maximize_Exit()
+        {
+            // btn Exit
+            btnExit.BackgroundImage = imageButtonControlApp.ImageButtonExit;
+            btnExit.BackgroundImageLayout = ImageLayout.Center;
 
+            // btn Minimize
+            btnMinimize.BackgroundImage = imageButtonControlApp.ImageButtonMinimize;
+            btnMinimize.BackgroundImageLayout = ImageLayout.Center;
+
+            // btn Maximize 
+            btnMaximize.BackgroundImage = imageButtonControlApp.ImageButtonMaximize;
+            btnMaximize.BackgroundImageLayout = ImageLayout.Center;
+
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            // maximize app
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            // minimize app 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

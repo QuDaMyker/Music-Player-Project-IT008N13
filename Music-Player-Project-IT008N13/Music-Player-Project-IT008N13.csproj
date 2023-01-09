@@ -60,6 +60,7 @@
     <Compile Include="Controls\MenuRenderer.cs" />
     <Compile Include="ImageButtonMenuBar.cs" />
     <Compile Include="ImageControlUser.cs" />
+    <Compile Include="imagebuttonExit_Max_Min.cs" />
     <Compile Include="InitialUI\MeetTheNewMediaPlayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -370,6 +371,11 @@
     <None Include="Resources\icon\imagebtnSetting.png" />
     <None Include="Resources\icon\imagebtnVideoLibrary.png" />
     <None Include="Resources\icon\dropimage.png" />
+    <None Include="Resources\icon\exit.png" />
+    <None Include="Resources\icon\maximize.png" />
+    <None Include="Resources\icon\minimize.png" />
+    <None Include="Resources\icon\full_screen.png" />
+    <None Include="Resources\icon\minus.png" />
     <Content Include="Resources\icon\mute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
