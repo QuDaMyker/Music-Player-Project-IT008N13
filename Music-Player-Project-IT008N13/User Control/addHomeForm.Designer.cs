@@ -41,13 +41,18 @@
             this.openURLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.customButton1 = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.customButton3 = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.toolStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 21);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 46);
@@ -57,7 +62,8 @@
             // labelLibraries
             // 
             this.labelLibraries.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLibraries.Location = new System.Drawing.Point(59, 70);
+            this.labelLibraries.ForeColor = System.Drawing.Color.White;
+            this.labelLibraries.Location = new System.Drawing.Point(50, 125);
             this.labelLibraries.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelLibraries.Name = "labelLibraries";
             this.labelLibraries.Size = new System.Drawing.Size(150, 27);
@@ -81,9 +87,9 @@
             this.toolStripButtonOpenFile,
             this.toolStripSeparator,
             this.toolStripSplitButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(796, 23);
+            this.toolStrip1.Location = new System.Drawing.Point(581, 50);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(138, 45);
+            this.toolStrip1.Size = new System.Drawing.Size(170, 45);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -137,29 +143,78 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(46, 114);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(55, 177);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(950, 303);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(956, 323);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
             // timer1
             // 
             this.timer1.Interval = 5000;
             // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.customButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.customButton1.BorderRadius = 0;
+            this.customButton1.BorderSize = 2;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(0, 0);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(112, 28);
+            this.customButton1.TabIndex = 8;
+            this.customButton1.Text = "Open files()";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.customButton1);
+            this.panel1.Controls.Add(this.customButton3);
+            this.panel1.Location = new System.Drawing.Point(857, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(157, 31);
+            this.panel1.TabIndex = 11;
+            // 
+            // customButton3
+            // 
+            this.customButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.customButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.customButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.customButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.customButton3.BorderRadius = 0;
+            this.customButton3.BorderSize = 2;
+            this.customButton3.FlatAppearance.BorderSize = 0;
+            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton3.ForeColor = System.Drawing.Color.White;
+            this.customButton3.Location = new System.Drawing.Point(111, 0);
+            this.customButton3.Name = "customButton3";
+            this.customButton3.Size = new System.Drawing.Size(43, 28);
+            this.customButton3.TabIndex = 10;
+            this.customButton3.TextColor = System.Drawing.Color.White;
+            this.customButton3.UseVisualStyleBackColor = false;
+            // 
             // addHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MintCream;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.labelLibraries);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addHomeForm";
-            this.Size = new System.Drawing.Size(1018, 648);
+            this.Size = new System.Drawing.Size(1084, 790);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -176,5 +231,8 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Timer timer1;
+        private Controls.CustomButton customButton1;
+        private Controls.CustomButton customButton3;
+        private System.Windows.Forms.Panel panel1;
     }
 }

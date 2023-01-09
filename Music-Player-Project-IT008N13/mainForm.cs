@@ -18,46 +18,20 @@ namespace Music_Player_Project_IT008N13
         private bool is_Play = true;
         private bool is_Muted = true;
         private Button currentButton;
+        private Pen pen = new Pen(Color.FromArgb(50, 50, 50), 2);
+        private ImageButtonMenuBar imageMenuBar = new ImageButtonMenuBar();
         public mainForm()
         {
+            
             InitializeComponent();
-            ActiveButton(btnHome);
-            //<name of your media player control here>.Ctlcontrols.currentPositionString;
+            
         }
-        private void OpenChildForm(Form childForm, object btnSender)
-        {
-            childForm.Location = new Point(209, 0);
-            childForm.Size = new Size(1047, 647);
-            childForm.ShowDialog();
-        }
-        private void ActiveButton(object btnSender)
-        {
-            ToolStripButton btn = (ToolStripButton)btnSender;
-            DisableButton(btn, btn.Tag);
-            btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular);
-            btn.BackColor = Color.Coral;
-            btn.ForeColor = Color.White;
-        }
-
-        private void DisableButton(object btnSender, object tagButton)
-        {
-            foreach (Object previousButton in toolStripControl.Items)
-            {
-                if (previousButton.GetType() == typeof(ToolStripButton))
-                {
-                    ToolStripButton btn = previousButton as ToolStripButton;
-                    btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular);
-                    btn.ForeColor = Color.Black;
-                    btn.BackColor = System.Drawing.Color.LightSalmon;
-                }
-            }
-
-        }
+        
 
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
+            
             addHomeForm1.Show();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
@@ -68,7 +42,7 @@ namespace Music_Player_Project_IT008N13
 
         private void bbtnMusicLibrary_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
+           
 
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
@@ -82,7 +56,7 @@ namespace Music_Player_Project_IT008N13
         {
 
 
-            ActiveButton(sender);
+           
 
 
             addHomeForm1.Hide();
@@ -95,7 +69,7 @@ namespace Music_Player_Project_IT008N13
 
         private void btnPlayQueue_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
+           
 
             addHomeForm1.Hide();
             addMediaQueueForm1.Show();
@@ -108,7 +82,7 @@ namespace Music_Player_Project_IT008N13
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
 
-            ActiveButton(sender);
+            
 
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
@@ -120,9 +94,6 @@ namespace Music_Player_Project_IT008N13
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-
-
             addHomeForm1.Hide();
             addMediaQueueForm1.Hide();
             addMusicForm1.Hide();
@@ -202,6 +173,61 @@ namespace Music_Player_Project_IT008N13
         private void btnShuffle_Click(object sender, EventArgs e)
         {
             //player.Ctlcontrols.Suffer
+        }
+
+        private void customButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            Load_Image_MenuBar();
+            Graphics g = CreateGraphics();
+            g.DrawLine(pen, new Point(0, 216), new Point(316, 216));
+        }
+        private void Load_Image_MenuBar()
+        {
+            // btnHome
+            btnHome.Image = imageMenuBar.ImagebtnHome;
+            btnHome.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHome.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            //btn Music Library
+            btnMusicLibrary.Image = imageMenuBar.ImagebtnMusicLibrary;
+            btnMusicLibrary.ImageAlign = ContentAlignment.MiddleLeft;
+            btnMusicLibrary.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // btn Video Library
+            btnVideoLibrary.Image = imageMenuBar.ImagebtnVideoLibrary;
+            btnVideoLibrary.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVideoLibrary.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // btn Play Queue
+            btnPlayQueue.Image = imageMenuBar.ImagebtnPlayQueue;
+            btnPlayQueue.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPlayQueue.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // btn Play Lists Main
+            btnPlayListsMain.Image = imageMenuBar.ImagebtnPlayListsMain;
+            btnPlayListsMain.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPlayListsMain.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // btn Play Lists Child 1 -- Example
+            btnPlayListChild1.Image = imageMenuBar.ImagebtnPlayListsChild;
+            btnPlayListChild1.ImageAlign = ContentAlignment.MiddleCenter;
+            btnPlayListChild1.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // btn Play Lists Child 2 -- Example
+            btnPlayListChild2.Image = imageMenuBar.ImagebtnPlayListsChild;
+            btnPlayListChild2.ImageAlign = ContentAlignment.MiddleCenter;   
+            btnPlayListChild2.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // btn Setting
+            btnSetting.Image = imageMenuBar.ImagebtnSetting;
+            btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSetting.TextImageRelation = TextImageRelation.ImageBeforeText;
+
         }
     }
 }

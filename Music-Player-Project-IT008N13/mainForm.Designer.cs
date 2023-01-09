@@ -1,4 +1,7 @@
-﻿namespace Music_Player_Project_IT008N13
+﻿using Music_Player_Project_IT008N13.Controls;
+using System.Windows.Forms;
+
+namespace Music_Player_Project_IT008N13
 {
     partial class mainForm
     {
@@ -29,15 +32,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.toolStripControl = new System.Windows.Forms.ToolStrip();
-            this.txtBSearch = new System.Windows.Forms.ToolStripTextBox();
-            this.btnHome = new System.Windows.Forms.ToolStripButton();
-            this.bbtnMusicLibrary = new System.Windows.Forms.ToolStripButton();
-            this.btnVideoLibrary = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnPlayQueue = new System.Windows.Forms.ToolStripButton();
-            this.btnPlaylists = new System.Windows.Forms.ToolStripButton();
-            this.btnSetting = new System.Windows.Forms.ToolStripButton();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnShuffle = new System.Windows.Forms.ToolStripButton();
             this.btnPrevious = new System.Windows.Forms.ToolStripButton();
@@ -54,140 +48,39 @@
             this.btnVolume = new System.Windows.Forms.ToolStripButton();
             slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
             player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
-            this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
-            this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
-            this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
+            this.btnHome = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnMusicLibrary = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnVideoLibrary = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnPlayQueue = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPlayListChild2 = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnPlayListChild1 = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnPlayListsMain = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnSetting = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.labelNameApp = new System.Windows.Forms.Label();
+            this.ptBImageApp = new System.Windows.Forms.PictureBox();
+            this.backBtn = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.txtBSearch = new System.Windows.Forms.TextBox();
+            this.panelMenuBar = new System.Windows.Forms.Panel();
+            this.panelUserControl = new System.Windows.Forms.Panel();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
+            this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
+            this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
             this.addVideoForm1 = new Music_Player_Project_IT008N13.addVideoForm();
-            this.toolStripControl.SuspendLayout();
+            this.addMusicForm1 = new Music_Player_Project_IT008N13.addMusicForm();
+            this.addHomeForm1 = new Music_Player_Project_IT008N13.addHomeForm();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.toolStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panelTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptBImageApp)).BeginInit();
+            this.panelMenuBar.SuspendLayout();
+            this.panelUserControl.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStripControl
-            // 
-            this.toolStripControl.AutoSize = false;
-            this.toolStripControl.BackColor = System.Drawing.Color.LightSalmon;
-            this.toolStripControl.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolStripControl.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripControl.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtBSearch,
-            this.btnHome,
-            this.bbtnMusicLibrary,
-            this.btnVideoLibrary,
-            this.toolStripSeparator1,
-            this.btnPlayQueue,
-            this.btnPlaylists,
-            this.btnSetting});
-            this.toolStripControl.Location = new System.Drawing.Point(0, 0);
-            this.toolStripControl.Name = "toolStripControl";
-            this.toolStripControl.Size = new System.Drawing.Size(209, 755);
-            this.toolStripControl.TabIndex = 0;
-            this.toolStripControl.Text = "toolStrip1";
-            // 
-            // txtBSearch
-            // 
-            this.txtBSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBSearch.Margin = new System.Windows.Forms.Padding(10, 100, 10, 10);
-            this.txtBSearch.Name = "txtBSearch";
-            this.txtBSearch.Size = new System.Drawing.Size(187, 23);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Coral;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(10);
-            this.btnHome.Size = new System.Drawing.Size(207, 44);
-            this.btnHome.Text = "Home";
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // bbtnMusicLibrary
-            // 
-            this.bbtnMusicLibrary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnMusicLibrary.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bbtnMusicLibrary.Image = ((System.Drawing.Image)(resources.GetObject("bbtnMusicLibrary.Image")));
-            this.bbtnMusicLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bbtnMusicLibrary.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.bbtnMusicLibrary.Margin = new System.Windows.Forms.Padding(0);
-            this.bbtnMusicLibrary.Name = "bbtnMusicLibrary";
-            this.bbtnMusicLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.bbtnMusicLibrary.Size = new System.Drawing.Size(207, 44);
-            this.bbtnMusicLibrary.Text = "Music library";
-            this.bbtnMusicLibrary.Click += new System.EventHandler(this.bbtnMusicLibrary_Click);
-            // 
-            // btnVideoLibrary
-            // 
-            this.btnVideoLibrary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVideoLibrary.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnVideoLibrary.Image = ((System.Drawing.Image)(resources.GetObject("btnVideoLibrary.Image")));
-            this.btnVideoLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVideoLibrary.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnVideoLibrary.Margin = new System.Windows.Forms.Padding(0);
-            this.btnVideoLibrary.Name = "btnVideoLibrary";
-            this.btnVideoLibrary.Padding = new System.Windows.Forms.Padding(10);
-            this.btnVideoLibrary.Size = new System.Drawing.Size(207, 44);
-            this.btnVideoLibrary.Text = "Video library";
-            this.btnVideoLibrary.Click += new System.EventHandler(this.btnVideoLibrary_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.toolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(207, 6);
-            // 
-            // btnPlayQueue
-            // 
-            this.btnPlayQueue.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlayQueue.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPlayQueue.Image = ((System.Drawing.Image)(resources.GetObject("btnPlayQueue.Image")));
-            this.btnPlayQueue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlayQueue.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPlayQueue.Margin = new System.Windows.Forms.Padding(0);
-            this.btnPlayQueue.Name = "btnPlayQueue";
-            this.btnPlayQueue.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlayQueue.Size = new System.Drawing.Size(207, 44);
-            this.btnPlayQueue.Text = "Play queue";
-            this.btnPlayQueue.Click += new System.EventHandler(this.btnPlayQueue_Click);
-            // 
-            // btnPlaylists
-            // 
-            this.btnPlaylists.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaylists.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPlaylists.Image = ((System.Drawing.Image)(resources.GetObject("btnPlaylists.Image")));
-            this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylists.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPlaylists.Margin = new System.Windows.Forms.Padding(0, 0, 0, 200);
-            this.btnPlaylists.Name = "btnPlaylists";
-            this.btnPlaylists.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPlaylists.Size = new System.Drawing.Size(207, 44);
-            this.btnPlaylists.Text = "Playlists";
-            this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Padding = new System.Windows.Forms.Padding(10);
-            this.btnSetting.Size = new System.Drawing.Size(207, 44);
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // toolStrip2
             // 
@@ -277,9 +170,10 @@
             this.panelControl.Controls.Add(this.toolStrip2);
             this.panelControl.Controls.Add(this.toolStrip3);
             this.panelControl.Controls.Add(slider1);
-            this.panelControl.Location = new System.Drawing.Point(0, 649);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl.Location = new System.Drawing.Point(0, 790);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(1256, 110);
+            this.panelControl.Size = new System.Drawing.Size(1400, 110);
             this.panelControl.TabIndex = 4;
             // 
             // label1
@@ -380,89 +274,367 @@
             // player
             // 
             player.Enabled = true;
-            player.Location = new System.Drawing.Point(27, 410);
+            player.Location = new System.Drawing.Point(374, 362);
             player.Name = "player";
             player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            player.Size = new System.Drawing.Size(145, 123);
+            player.Size = new System.Drawing.Size(135, 117);
             player.TabIndex = 11;
             player.Visible = false;
             // 
-            // addHomeForm1
+            // btnHome
             // 
-            this.addHomeForm1.BackColor = System.Drawing.Color.MintCream;
-            this.addHomeForm1.FileContainMedia = "";
-            this.addHomeForm1.FolderContainMedia = "";
-            this.addHomeForm1.Location = new System.Drawing.Point(209, 0);
-            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(2);
-            this.addHomeForm1.Name = "addHomeForm1";
-            this.addHomeForm1.Size = new System.Drawing.Size(1047, 649);
-            this.addHomeForm1.TabIndex = 10;
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHome.BorderRadius = 8;
+            this.btnHome.BorderSize = 0;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Location = new System.Drawing.Point(2, 93);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(312, 36);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextColor = System.Drawing.Color.White;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // addMediaQueueForm1
+            // btnMusicLibrary
             // 
-            this.addMediaQueueForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addMediaQueueForm1.Location = new System.Drawing.Point(209, 2);
-            this.addMediaQueueForm1.Margin = new System.Windows.Forms.Padding(0);
-            this.addMediaQueueForm1.Name = "addMediaQueueForm1";
-            this.addMediaQueueForm1.Size = new System.Drawing.Size(1047, 647);
-            this.addMediaQueueForm1.TabIndex = 9;
+            this.btnMusicLibrary.BackColor = System.Drawing.Color.Transparent;
+            this.btnMusicLibrary.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnMusicLibrary.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMusicLibrary.BorderRadius = 8;
+            this.btnMusicLibrary.BorderSize = 0;
+            this.btnMusicLibrary.FlatAppearance.BorderSize = 0;
+            this.btnMusicLibrary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnMusicLibrary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnMusicLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMusicLibrary.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMusicLibrary.ForeColor = System.Drawing.Color.White;
+            this.btnMusicLibrary.Location = new System.Drawing.Point(2, 131);
+            this.btnMusicLibrary.Name = "btnMusicLibrary";
+            this.btnMusicLibrary.Size = new System.Drawing.Size(312, 36);
+            this.btnMusicLibrary.TabIndex = 1;
+            this.btnMusicLibrary.Text = "Music library";
+            this.btnMusicLibrary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMusicLibrary.TextColor = System.Drawing.Color.White;
+            this.btnMusicLibrary.UseVisualStyleBackColor = false;
+            this.btnMusicLibrary.Click += new System.EventHandler(this.bbtnMusicLibrary_Click);
             // 
-            // addMusicForm1
+            // btnVideoLibrary
             // 
-            this.addMusicForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addMusicForm1.Location = new System.Drawing.Point(209, 1);
-            this.addMusicForm1.Margin = new System.Windows.Forms.Padding(2);
-            this.addMusicForm1.Name = "addMusicForm1";
-            this.addMusicForm1.Size = new System.Drawing.Size(1047, 647);
-            this.addMusicForm1.TabIndex = 8;
+            this.btnVideoLibrary.BackColor = System.Drawing.Color.Transparent;
+            this.btnVideoLibrary.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnVideoLibrary.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVideoLibrary.BorderRadius = 8;
+            this.btnVideoLibrary.BorderSize = 0;
+            this.btnVideoLibrary.FlatAppearance.BorderSize = 0;
+            this.btnVideoLibrary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnVideoLibrary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnVideoLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVideoLibrary.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVideoLibrary.ForeColor = System.Drawing.Color.White;
+            this.btnVideoLibrary.Location = new System.Drawing.Point(2, 169);
+            this.btnVideoLibrary.Name = "btnVideoLibrary";
+            this.btnVideoLibrary.Size = new System.Drawing.Size(312, 36);
+            this.btnVideoLibrary.TabIndex = 2;
+            this.btnVideoLibrary.Text = "Video library";
+            this.btnVideoLibrary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVideoLibrary.TextColor = System.Drawing.Color.White;
+            this.btnVideoLibrary.UseVisualStyleBackColor = false;
+            this.btnVideoLibrary.Click += new System.EventHandler(this.btnVideoLibrary_Click);
             // 
-            // addPlaylistForm1
+            // btnPlayQueue
             // 
-            this.addPlaylistForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addPlaylistForm1.Location = new System.Drawing.Point(209, 1);
-            this.addPlaylistForm1.Margin = new System.Windows.Forms.Padding(2);
-            this.addPlaylistForm1.Name = "addPlaylistForm1";
-            this.addPlaylistForm1.Size = new System.Drawing.Size(1047, 647);
-            this.addPlaylistForm1.TabIndex = 7;
+            this.btnPlayQueue.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlayQueue.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnPlayQueue.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPlayQueue.BorderRadius = 8;
+            this.btnPlayQueue.BorderSize = 0;
+            this.btnPlayQueue.FlatAppearance.BorderSize = 0;
+            this.btnPlayQueue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayQueue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayQueue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayQueue.ForeColor = System.Drawing.Color.White;
+            this.btnPlayQueue.Location = new System.Drawing.Point(2, 222);
+            this.btnPlayQueue.Name = "btnPlayQueue";
+            this.btnPlayQueue.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayQueue.TabIndex = 3;
+            this.btnPlayQueue.Text = "Play queue";
+            this.btnPlayQueue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlayQueue.TextColor = System.Drawing.Color.White;
+            this.btnPlayQueue.UseVisualStyleBackColor = false;
+            this.btnPlayQueue.Click += new System.EventHandler(this.btnPlayQueue_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnPlayListChild2);
+            this.panel1.Controls.Add(this.btnPlayListChild1);
+            this.panel1.Controls.Add(this.btnPlayListsMain);
+            this.panel1.Location = new System.Drawing.Point(2, 260);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(316, 148);
+            this.panel1.TabIndex = 4;
+            // 
+            // btnPlayListChild2
+            // 
+            this.btnPlayListChild2.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlayListChild2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnPlayListChild2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPlayListChild2.BorderRadius = 8;
+            this.btnPlayListChild2.BorderSize = 0;
+            this.btnPlayListChild2.FlatAppearance.BorderSize = 0;
+            this.btnPlayListChild2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayListChild2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayListChild2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayListChild2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayListChild2.ForeColor = System.Drawing.Color.White;
+            this.btnPlayListChild2.Location = new System.Drawing.Point(2, 81);
+            this.btnPlayListChild2.Name = "btnPlayListChild2";
+            this.btnPlayListChild2.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayListChild2.TabIndex = 7;
+            this.btnPlayListChild2.Text = "Playlist2";
+            this.btnPlayListChild2.TextColor = System.Drawing.Color.White;
+            this.btnPlayListChild2.UseVisualStyleBackColor = false;
+            // 
+            // btnPlayListChild1
+            // 
+            this.btnPlayListChild1.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlayListChild1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnPlayListChild1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPlayListChild1.BorderRadius = 8;
+            this.btnPlayListChild1.BorderSize = 0;
+            this.btnPlayListChild1.FlatAppearance.BorderSize = 0;
+            this.btnPlayListChild1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayListChild1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayListChild1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayListChild1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayListChild1.ForeColor = System.Drawing.Color.White;
+            this.btnPlayListChild1.Location = new System.Drawing.Point(2, 42);
+            this.btnPlayListChild1.Name = "btnPlayListChild1";
+            this.btnPlayListChild1.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayListChild1.TabIndex = 6;
+            this.btnPlayListChild1.Text = "Playlist1";
+            this.btnPlayListChild1.TextColor = System.Drawing.Color.White;
+            this.btnPlayListChild1.UseVisualStyleBackColor = false;
+            // 
+            // btnPlayListsMain
+            // 
+            this.btnPlayListsMain.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlayListsMain.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnPlayListsMain.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPlayListsMain.BorderRadius = 8;
+            this.btnPlayListsMain.BorderSize = 0;
+            this.btnPlayListsMain.FlatAppearance.BorderSize = 0;
+            this.btnPlayListsMain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayListsMain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnPlayListsMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayListsMain.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayListsMain.ForeColor = System.Drawing.Color.White;
+            this.btnPlayListsMain.Location = new System.Drawing.Point(2, 3);
+            this.btnPlayListsMain.Name = "btnPlayListsMain";
+            this.btnPlayListsMain.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayListsMain.TabIndex = 5;
+            this.btnPlayListsMain.Text = "Playlists";
+            this.btnPlayListsMain.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlayListsMain.TextColor = System.Drawing.Color.White;
+            this.btnPlayListsMain.UseVisualStyleBackColor = false;
+            this.btnPlayListsMain.Click += new System.EventHandler(this.btnPlaylists_Click);
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnSetting.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSetting.BorderRadius = 8;
+            this.btnSetting.BorderSize = 0;
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.Location = new System.Drawing.Point(2, 748);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(312, 36);
+            this.btnSetting.TabIndex = 5;
+            this.btnSetting.Text = "Setting";
+            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSetting.TextColor = System.Drawing.Color.White;
+            this.btnSetting.UseVisualStyleBackColor = false;
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.Controls.Add(this.labelNameApp);
+            this.panelTitle.Controls.Add(this.ptBImageApp);
+            this.panelTitle.Controls.Add(this.backBtn);
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(316, 48);
+            this.panelTitle.TabIndex = 6;
+            // 
+            // labelNameApp
+            // 
+            this.labelNameApp.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameApp.ForeColor = System.Drawing.Color.White;
+            this.labelNameApp.Location = new System.Drawing.Point(104, 14);
+            this.labelNameApp.Name = "labelNameApp";
+            this.labelNameApp.Size = new System.Drawing.Size(100, 23);
+            this.labelNameApp.TabIndex = 2;
+            this.labelNameApp.Text = "Media player";
+            // 
+            // ptBImageApp
+            // 
+            this.ptBImageApp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptBImageApp.BackgroundImage")));
+            this.ptBImageApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptBImageApp.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptBImageApp.InitialImage")));
+            this.ptBImageApp.Location = new System.Drawing.Point(63, 7);
+            this.ptBImageApp.Name = "ptBImageApp";
+            this.ptBImageApp.Size = new System.Drawing.Size(35, 35);
+            this.ptBImageApp.TabIndex = 1;
+            this.ptBImageApp.TabStop = false;
+            // 
+            // backBtn
+            // 
+            this.backBtn.BackColor = System.Drawing.Color.Transparent;
+            this.backBtn.BackgroundColor = System.Drawing.Color.Transparent;
+            this.backBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backBtn.BackgroundImage")));
+            this.backBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.backBtn.BorderRadius = 7;
+            this.backBtn.BorderSize = 0;
+            this.backBtn.FlatAppearance.BorderSize = 0;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.ForeColor = System.Drawing.Color.White;
+            this.backBtn.Location = new System.Drawing.Point(12, 14);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(23, 20);
+            this.backBtn.TabIndex = 0;
+            this.backBtn.TextColor = System.Drawing.Color.White;
+            this.backBtn.UseVisualStyleBackColor = false;
+            // 
+            // txtBSearch
+            // 
+            this.txtBSearch.Location = new System.Drawing.Point(14, 48);
+            this.txtBSearch.Multiline = true;
+            this.txtBSearch.Name = "txtBSearch";
+            this.txtBSearch.Size = new System.Drawing.Size(288, 31);
+            this.txtBSearch.TabIndex = 7;
+            // 
+            // panelMenuBar
+            // 
+            this.panelMenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelMenuBar.Controls.Add(this.txtBSearch);
+            this.panelMenuBar.Controls.Add(this.panelTitle);
+            this.panelMenuBar.Controls.Add(this.btnSetting);
+            this.panelMenuBar.Controls.Add(this.panel1);
+            this.panelMenuBar.Controls.Add(this.btnPlayQueue);
+            this.panelMenuBar.Controls.Add(this.btnVideoLibrary);
+            this.panelMenuBar.Controls.Add(this.btnMusicLibrary);
+            this.panelMenuBar.Controls.Add(this.btnHome);
+            this.panelMenuBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenuBar.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuBar.Name = "panelMenuBar";
+            this.panelMenuBar.Size = new System.Drawing.Size(316, 790);
+            this.panelMenuBar.TabIndex = 12;
+            // 
+            // panelUserControl
+            // 
+            this.panelUserControl.Controls.Add(this.addHomeForm1);
+            this.panelUserControl.Controls.Add(this.addMusicForm1);
+            this.panelUserControl.Controls.Add(this.addVideoForm1);
+            this.panelUserControl.Controls.Add(this.addMediaQueueForm1);
+            this.panelUserControl.Controls.Add(this.addPlaylistForm1);
+            this.panelUserControl.Controls.Add(this.addSettingForm1);
+            this.panelUserControl.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelUserControl.Location = new System.Drawing.Point(316, 0);
+            this.panelUserControl.Name = "panelUserControl";
+            this.panelUserControl.Size = new System.Drawing.Size(1084, 790);
+            this.panelUserControl.TabIndex = 13;
             // 
             // addSettingForm1
             // 
-            this.addSettingForm1.BackColor = System.Drawing.SystemColors.Control;
-            this.addSettingForm1.Location = new System.Drawing.Point(209, 0);
+            this.addSettingForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addSettingForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addSettingForm1.Location = new System.Drawing.Point(0, 0);
             this.addSettingForm1.Margin = new System.Windows.Forms.Padding(8);
             this.addSettingForm1.Name = "addSettingForm1";
-            this.addSettingForm1.Size = new System.Drawing.Size(1047, 647);
-            this.addSettingForm1.TabIndex = 6;
+            this.addSettingForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addSettingForm1.TabIndex = 0;
+            // 
+            // addPlaylistForm1
+            // 
+            this.addPlaylistForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addPlaylistForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addPlaylistForm1.Location = new System.Drawing.Point(0, 0);
+            this.addPlaylistForm1.Margin = new System.Windows.Forms.Padding(2);
+            this.addPlaylistForm1.Name = "addPlaylistForm1";
+            this.addPlaylistForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addPlaylistForm1.TabIndex = 1;
+            // 
+            // addMediaQueueForm1
+            // 
+            this.addMediaQueueForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addMediaQueueForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addMediaQueueForm1.Location = new System.Drawing.Point(0, 0);
+            this.addMediaQueueForm1.Margin = new System.Windows.Forms.Padding(0);
+            this.addMediaQueueForm1.Name = "addMediaQueueForm1";
+            this.addMediaQueueForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addMediaQueueForm1.TabIndex = 2;
             // 
             // addVideoForm1
             // 
-            this.addVideoForm1.BackColor = System.Drawing.Color.White;
-            this.addVideoForm1.Location = new System.Drawing.Point(209, 0);
+            this.addVideoForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addVideoForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addVideoForm1.Location = new System.Drawing.Point(0, 0);
             this.addVideoForm1.Margin = new System.Windows.Forms.Padding(2);
             this.addVideoForm1.Name = "addVideoForm1";
-            this.addVideoForm1.Size = new System.Drawing.Size(1047, 647);
-            this.addVideoForm1.TabIndex = 5;
+            this.addVideoForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addVideoForm1.TabIndex = 3;
+            // 
+            // addMusicForm1
+            // 
+            this.addMusicForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addMusicForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addMusicForm1.Location = new System.Drawing.Point(0, 0);
+            this.addMusicForm1.Margin = new System.Windows.Forms.Padding(2);
+            this.addMusicForm1.Name = "addMusicForm1";
+            this.addMusicForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addMusicForm1.TabIndex = 4;
+            // 
+            // addHomeForm1
+            // 
+            this.addHomeForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addHomeForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addHomeForm1.FileContainMedia = "";
+            this.addHomeForm1.FolderContainMedia = "";
+            this.addHomeForm1.Location = new System.Drawing.Point(0, 0);
+            this.addHomeForm1.Margin = new System.Windows.Forms.Padding(2);
+            this.addHomeForm1.Name = "addHomeForm1";
+            this.addHomeForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addHomeForm1.TabIndex = 5;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1256, 755);
+            this.ClientSize = new System.Drawing.Size(1400, 900);
+            this.Controls.Add(this.panelUserControl);
+            this.Controls.Add(this.panelMenuBar);
             this.Controls.Add(player);
-            this.Controls.Add(this.addHomeForm1);
-            this.Controls.Add(this.addMediaQueueForm1);
-            this.Controls.Add(this.addMusicForm1);
-            this.Controls.Add(this.addPlaylistForm1);
-            this.Controls.Add(this.addSettingForm1);
-            this.Controls.Add(this.addVideoForm1);
             this.Controls.Add(this.panelControl);
-            this.Controls.Add(this.toolStripControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainForm";
             this.Text = "Media Player Project";
-            this.toolStripControl.ResumeLayout(false);
-            this.toolStripControl.PerformLayout();
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.panelControl.ResumeLayout(false);
@@ -471,20 +643,17 @@
             this.toolStrip3.ResumeLayout(false);
             this.toolStrip3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panelTitle.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptBImageApp)).EndInit();
+            this.panelMenuBar.ResumeLayout(false);
+            this.panelMenuBar.PerformLayout();
+            this.panelUserControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStripControl;
-        private System.Windows.Forms.ToolStripButton btnHome;
-        private System.Windows.Forms.ToolStripButton bbtnMusicLibrary;
-        private System.Windows.Forms.ToolStripButton btnVideoLibrary;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnPlayQueue;
-        private System.Windows.Forms.ToolStripButton btnPlaylists;
-        private System.Windows.Forms.ToolStripButton btnSetting;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton btnShuffle;
         private System.Windows.Forms.ToolStripButton btnPrevious;
@@ -494,19 +663,34 @@
         private System.Windows.Forms.Panel panelControl;
         private System.Windows.Forms.ToolStrip toolStrip3;
         private System.Windows.Forms.ToolStripButton btnVolume;
-        private addVideoForm addVideoForm1;
-        private addSettingForm addSettingForm1;
-        private addPlaylistForm addPlaylistForm1;
-        private addMusicForm addMusicForm1;
-        private addMediaQueueForm addMediaQueueForm1;
-        private System.Windows.Forms.ToolStripTextBox txtBSearch;
         private System.Windows.Forms.TrackBar trackBar1;
-        private addHomeForm addHomeForm1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbVolumn;
-        public static System.Windows.Forms.Label lbDurationItem;
-        public static System.Windows.Forms.Label lbCurrentDuration;
-        public static Controls.Slider slider1;
-        public static AxWMPLib.AxWindowsMediaPlayer player;
+        private CustomButton btnHome;
+        private CustomButton btnMusicLibrary;
+        private CustomButton btnVideoLibrary;
+        private CustomButton btnPlayQueue;
+        private Panel panel1;
+        private CustomButton btnPlayListChild2;
+        private CustomButton btnPlayListChild1;
+        private CustomButton btnPlayListsMain;
+        private CustomButton btnSetting;
+        private Panel panelTitle;
+        private Label labelNameApp;
+        private PictureBox ptBImageApp;
+        private CustomButton backBtn;
+        private TextBox txtBSearch;
+        private Panel panelMenuBar;
+        private Panel panelUserControl;
+        private addHomeForm addHomeForm1;
+        private addMusicForm addMusicForm1;
+        private addVideoForm addVideoForm1;
+        private addMediaQueueForm addMediaQueueForm1;
+        private addPlaylistForm addPlaylistForm1;
+        private addSettingForm addSettingForm1;
+        static public Label lbDurationItem;
+        static public Label lbCurrentDuration;
+        static public Slider slider1;
+        static public AxWMPLib.AxWindowsMediaPlayer player;
     }
 }

@@ -58,6 +58,8 @@
     </Compile>
     <Compile Include="Controls\MenuColorTable.cs" />
     <Compile Include="Controls\MenuRenderer.cs" />
+    <Compile Include="ImageButtonMenuBar.cs" />
+    <Compile Include="ImageControlUser.cs" />
     <Compile Include="InitialUI\MeetTheNewMediaPlayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -352,6 +354,7 @@
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon\video_tape.png" />
     <None Include="Resources\icon\stop-button.png" />
     <None Include="Resources\icon\tape.png" />
     <None Include="Resources\icon\more.png" />
@@ -359,6 +362,14 @@
     <None Include="Resources\icon\add-folder %282%29.png" />
     <None Include="Resources\icon\add-folder-_2_.ico" />
     <None Include="Resources\icon\listen.png" />
+    <None Include="Resources\icon\imagebtnHome.png" />
+    <None Include="Resources\icon\imagebtnMusicLibrary.png" />
+    <None Include="Resources\icon\imagebtnPlayListChild.png" />
+    <None Include="Resources\icon\imagebtnPlayListMain.png" />
+    <None Include="Resources\icon\imagebtnPlayQueue.png" />
+    <None Include="Resources\icon\imagebtnSetting.png" />
+    <None Include="Resources\icon\imagebtnVideoLibrary.png" />
+    <None Include="Resources\icon\dropimage.png" />
     <Content Include="Resources\icon\mute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
