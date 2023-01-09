@@ -44,9 +44,6 @@ namespace Music_Player_Project_IT008N13
                 {
                     btn_play_pause.BackgroundImage = Music_Player_Project_IT008N13.Properties.Resources.playdisplay;
                 }
-
-
-
             }
         }
         
@@ -74,15 +71,6 @@ namespace Music_Player_Project_IT008N13
             set { Duration = value; }
         }
         public event EventHandler onAction = null;
-        /*private void actionPlay_Click(object sender, EventArgs e)
-        {
-            isPlaying = !isPlaying;
-            if(onAction!= null)
-            {
-                onAction.Invoke(this, e);
-            }
-        }*/
-
         private void btn_play_pause_Click(object sender, EventArgs e)
         {
             isPlaying = !isPlaying;

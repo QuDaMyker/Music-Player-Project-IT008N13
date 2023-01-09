@@ -106,13 +106,16 @@ namespace Music_Player_Project_IT008N13
             {
 
             }
+
             //var myPlayList = global::Music_Player_Project_IT008N13.mainForm.player.playlistCollection.newPlaylist("MyPlayList");
             //addToMediaPlayer(Music_Player_Project_IT008N13.mainForm.player);
+
+
         }
         private void addToMediaPlayer(AxWMPLib.AxWindowsMediaPlayer player)
         {
             var pl = player.playlistCollection.newPlaylist("plList");
-            string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
+            string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurrentSong.txt");
             string[] values;
             for (int i = 0; i < lines.Length; i++)
             {
@@ -124,22 +127,30 @@ namespace Music_Player_Project_IT008N13
         }
         private void _importFormFileHistoryCurrentSong()
         {
-            string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
+            string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurrentSong.txt");
             string[] values;
             for (int i = 0; i < lines.Length; i++)
             {
                 values = lines[i].ToString().Split('|');
-                string[] row = new string[values.Length];
-                for (int j = 0; j < values.Length; j++)
+                if (File.Exists(values[2])) 
                 {
-                    row[j] = values[j].Trim();
+                    string[] row = new string[values.Length];
+                    for (int j = 0; j < values.Length; j++)
+                    {
+                        row[j] = values[j].Trim();
+                    }
+                    dataRecentHomePage.Rows.Add(row);
                 }
-                dataRecentHomePage.Rows.Add(row);
+                else
+                {
+                    continue;
+                }    
+                
             }
         }
         private void _exportToFileFileHistoryCurrentSong()
         {
-            TextWriter writer = new StreamWriter($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurretnSong.txt");
+            TextWriter writer = new StreamWriter($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurrentSong.txt");
             for (int i = 0; i < squares.Length; i++)
             {
                 writer.Write(dataRecentHomePage.Rows[i].Cells[0].Value.ToString() + "|");
@@ -208,7 +219,9 @@ namespace Music_Player_Project_IT008N13
                     dataRecentHomePage.Rows.Add(dataAddToDataRecentHomePage);
                     flowLayoutPanel1.Controls.Add(squares[i]);
                 }
-            }            
+            }
+            Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.stop();
+            _exportToFileFileHistoryCurrentSong();
         }
         private void squares_Click(object sender, EventArgs e)
         {
@@ -252,40 +265,40 @@ namespace Music_Player_Project_IT008N13
         {
             if(((Square)sender)._URL != Music_Player_Project_IT008N13.mainForm.player.URL)
             {
-                for (int i = 0; i < squares.Length; i++)
+                //MessageBox.Show(squares.Length.ToString());
+                for (int i = 0; i < squares.Length - 1; i++)
                 {
                     squares[i]._isPlaying = false;
                 }
             //
             //
                 ((Square)sender)._isPlaying = true;
+                MessageBox.Show(((Square)sender)._isPlaying.ToString());
                 //MessageBox.Show(((Square)sender)._URL);
                 Music_Player_Project_IT008N13.mainForm.player.URL = ((Square)sender)._URL;
                 Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
                 string song = (string)(((Square)sender).Tag);
-                timer1.Start();
+                //timer1.Start();
                 //
                 //
             }
             else
             {
+                //MessageBox.Show(((Square)sender)._isPlaying.ToString());
                 if(((Square)sender)._isPlaying == true)
                 {
                     ((Square)sender)._isPlaying = false;
                     Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.pause();
+                    //Music_Player_Project_IT008N13.mainForm.btnPlayPause.Image = Properties.Resources.pausedisplay;
                 }
                 else
                 {
                     ((Square)sender)._isPlaying = true;
                     Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
+                    //Music_Player_Project_IT008N13.mainForm.btnPlayPause.Image = Properties.Resources.pausedisplay;
                 }
-                
             }
-
-
-
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             global::Music_Player_Project_IT008N13.mainForm.slider1.Maximum = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.duration;
@@ -313,9 +326,5 @@ namespace Music_Player_Project_IT008N13
             }
 
         }
-
-
-        //private void 
-
     }
 }

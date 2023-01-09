@@ -42,7 +42,7 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnShuffle = new System.Windows.Forms.ToolStripButton();
             this.btnPrevious = new System.Windows.Forms.ToolStripButton();
-            this.btnPlayPause = new System.Windows.Forms.ToolStripButton();
+            btnPlayPause = new System.Windows.Forms.ToolStripButton();
             this.btnNext = new System.Windows.Forms.ToolStripButton();
             this.btnLoop = new System.Windows.Forms.ToolStripButton();
             this.panelControl = new System.Windows.Forms.Panel();
@@ -201,7 +201,7 @@
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnShuffle,
             this.btnPrevious,
-            this.btnPlayPause,
+            btnPlayPause,
             this.btnNext,
             this.btnLoop});
             this.toolStrip2.Location = new System.Drawing.Point(558, 47);
@@ -236,15 +236,15 @@
             // 
             // btnPlayPause
             // 
-            this.btnPlayPause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnPlayPause.Image = global::Music_Player_Project_IT008N13.Properties.Resources.play;
-            this.btnPlayPause.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPlayPause.Name = "btnPlayPause";
-            this.btnPlayPause.Padding = new System.Windows.Forms.Padding(20);
-            this.btnPlayPause.Size = new System.Drawing.Size(64, 44);
-            this.btnPlayPause.Text = "toolStripButton9";
-            this.btnPlayPause.ToolTipText = "Play";
-            this.btnPlayPause.Click += new System.EventHandler(this.btnPlayPause_Click);
+            btnPlayPause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            btnPlayPause.Image = global::Music_Player_Project_IT008N13.Properties.Resources.play;
+            btnPlayPause.ImageTransparentColor = System.Drawing.Color.Magenta;
+            btnPlayPause.Name = "btnPlayPause";
+            btnPlayPause.Padding = new System.Windows.Forms.Padding(20);
+            btnPlayPause.Size = new System.Drawing.Size(64, 44);
+            btnPlayPause.Text = "toolStripButton9";
+            btnPlayPause.ToolTipText = "Play";
+            btnPlayPause.Click += new System.EventHandler(this.btnPlayPause_Click);
             // 
             // btnNext
             // 
@@ -378,6 +378,8 @@
             slider1.SymbolAfter = "";
             slider1.SymbolBefore = "";
             slider1.TabIndex = 2;
+            slider1.Minimum = 0;
+            slider1.Maximum = 10000;
             slider1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.slider1_MouseDown);
             // 
             // player
@@ -388,6 +390,7 @@
             player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
             player.Size = new System.Drawing.Size(145, 123);
             player.TabIndex = 11;
+            player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
             // 
             // addHomeForm1
             // 
@@ -447,7 +450,8 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.nextSongWhenFullValueSlider);
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.TrackSlider);
             // 
             // mainForm
             // 
@@ -494,7 +498,6 @@
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton btnShuffle;
         private System.Windows.Forms.ToolStripButton btnPrevious;
-        private System.Windows.Forms.ToolStripButton btnPlayPause;
         private System.Windows.Forms.ToolStripButton btnNext;
         private System.Windows.Forms.ToolStripButton btnLoop;
         private System.Windows.Forms.Panel panelControl;
@@ -511,6 +514,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbVolumn;
         private System.Windows.Forms.Timer timer1;
+        public static System.Windows.Forms.ToolStripButton btnPlayPause;
         public static System.Windows.Forms.Label lbDurationItem;
         public static System.Windows.Forms.Label lbCurrentDuration;
         public static Controls.Slider slider1;
