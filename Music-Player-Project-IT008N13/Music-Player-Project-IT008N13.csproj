@@ -376,6 +376,7 @@
     <None Include="Resources\icon\minimize.png" />
     <None Include="Resources\icon\full_screen.png" />
     <None Include="Resources\icon\minus.png" />
+    <None Include="Resources\icon\imageApp.png" />
     <Content Include="Resources\icon\mute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

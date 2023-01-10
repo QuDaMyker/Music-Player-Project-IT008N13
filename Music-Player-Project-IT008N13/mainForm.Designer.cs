@@ -62,6 +62,7 @@ namespace Music_Player_Project_IT008N13
             this.backBtn = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.txtBSearch = new System.Windows.Forms.TextBox();
             this.panelMenuBar = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panelUserControl = new System.Windows.Forms.Panel();
             this.panelControlSizeExitApp = new System.Windows.Forms.Panel();
             this.btnMinimize = new Music_Player_Project_IT008N13.Controls.CustomButton();
@@ -74,6 +75,7 @@ namespace Music_Player_Project_IT008N13
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             player = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panelDragForm = new System.Windows.Forms.Panel();
             this.toolStrip2.SuspendLayout();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -82,6 +84,7 @@ namespace Music_Player_Project_IT008N13
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptBImageApp)).BeginInit();
             this.panelMenuBar.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panelUserControl.SuspendLayout();
             this.panelControlSizeExitApp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
@@ -100,9 +103,9 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayPause,
             this.btnNext,
             this.btnLoop});
-            this.toolStrip2.Location = new System.Drawing.Point(558, 47);
+            this.toolStrip2.Location = new System.Drawing.Point(558, 29);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(241, 47);
+            this.toolStrip2.Size = new System.Drawing.Size(276, 79);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -113,7 +116,7 @@ namespace Music_Player_Project_IT008N13
             this.btnShuffle.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnShuffle.Name = "btnShuffle";
             this.btnShuffle.Padding = new System.Windows.Forms.Padding(10);
-            this.btnShuffle.Size = new System.Drawing.Size(44, 44);
+            this.btnShuffle.Size = new System.Drawing.Size(44, 76);
             this.btnShuffle.Text = "Shuffle";
             this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
             // 
@@ -124,7 +127,7 @@ namespace Music_Player_Project_IT008N13
             this.btnPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPrevious.Size = new System.Drawing.Size(44, 44);
+            this.btnPrevious.Size = new System.Drawing.Size(44, 76);
             this.btnPrevious.Text = "toolStripButton8";
             this.btnPrevious.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnPrevious.ToolTipText = "Previous";
@@ -137,7 +140,7 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayPause.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPlayPause.Name = "btnPlayPause";
             this.btnPlayPause.Padding = new System.Windows.Forms.Padding(20);
-            this.btnPlayPause.Size = new System.Drawing.Size(64, 44);
+            this.btnPlayPause.Size = new System.Drawing.Size(64, 76);
             this.btnPlayPause.Text = "toolStripButton9";
             this.btnPlayPause.ToolTipText = "Play";
             this.btnPlayPause.Click += new System.EventHandler(this.btnPlayPause_Click);
@@ -149,7 +152,7 @@ namespace Music_Player_Project_IT008N13
             this.btnNext.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNext.Name = "btnNext";
             this.btnNext.Padding = new System.Windows.Forms.Padding(10);
-            this.btnNext.Size = new System.Drawing.Size(44, 44);
+            this.btnNext.Size = new System.Drawing.Size(44, 76);
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
@@ -160,17 +163,18 @@ namespace Music_Player_Project_IT008N13
             this.btnLoop.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnLoop.Name = "btnLoop";
             this.btnLoop.Padding = new System.Windows.Forms.Padding(10);
-            this.btnLoop.Size = new System.Drawing.Size(44, 44);
+            this.btnLoop.Size = new System.Drawing.Size(44, 76);
             this.btnLoop.Text = "toolStripButton11";
             this.btnLoop.ToolTipText = "Loop";
             // 
             // panelControl
             // 
-            this.panelControl.BackColor = System.Drawing.SystemColors.Control;
+            this.panelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelControl.Controls.Add(this.label1);
             this.panelControl.Controls.Add(this.lbVolumn);
-            this.panelControl.Controls.Add(lbDurationItem);
             this.panelControl.Controls.Add(lbCurrentDuration);
+            this.panelControl.Controls.Add(lbDurationItem);
             this.panelControl.Controls.Add(this.trackBar1);
             this.panelControl.Controls.Add(this.toolStrip2);
             this.panelControl.Controls.Add(this.toolStrip3);
@@ -184,7 +188,8 @@ namespace Music_Player_Project_IT008N13
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1190, 47);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1175, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 13;
@@ -193,6 +198,7 @@ namespace Music_Player_Project_IT008N13
             // lbVolumn
             // 
             this.lbVolumn.AutoSize = true;
+            this.lbVolumn.ForeColor = System.Drawing.Color.White;
             this.lbVolumn.Location = new System.Drawing.Point(1159, 47);
             this.lbVolumn.Name = "lbVolumn";
             this.lbVolumn.Size = new System.Drawing.Size(19, 13);
@@ -202,27 +208,29 @@ namespace Music_Player_Project_IT008N13
             // lbDurationItem
             // 
             lbDurationItem.AutoSize = true;
-            lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lbDurationItem.Location = new System.Drawing.Point(1139, 9);
+            lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbDurationItem.ForeColor = System.Drawing.Color.White;
+            lbDurationItem.Location = new System.Drawing.Point(1353, 15);
             lbDurationItem.Name = "lbDurationItem";
-            lbDurationItem.Size = new System.Drawing.Size(66, 25);
+            lbDurationItem.Size = new System.Drawing.Size(34, 13);
             lbDurationItem.TabIndex = 12;
             lbDurationItem.Text = "00:00";
             // 
             // lbCurrentDuration
             // 
             lbCurrentDuration.AutoSize = true;
-            lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lbCurrentDuration.Location = new System.Drawing.Point(132, 9);
+            lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbCurrentDuration.ForeColor = System.Drawing.Color.White;
+            lbCurrentDuration.Location = new System.Drawing.Point(10, 15);
             lbCurrentDuration.Name = "lbCurrentDuration";
-            lbCurrentDuration.Size = new System.Drawing.Size(66, 25);
+            lbCurrentDuration.Size = new System.Drawing.Size(34, 13);
             lbCurrentDuration.TabIndex = 12;
             lbCurrentDuration.Text = "00:00";
             // 
             // trackBar1
             // 
-            this.trackBar1.BackColor = System.Drawing.SystemColors.Control;
-            this.trackBar1.Location = new System.Drawing.Point(1133, 60);
+            this.trackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.trackBar1.Location = new System.Drawing.Point(1145, 62);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
@@ -240,7 +248,7 @@ namespace Music_Player_Project_IT008N13
             this.toolStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnVolume});
-            this.toolStrip3.Location = new System.Drawing.Point(1072, 47);
+            this.toolStrip3.Location = new System.Drawing.Point(1046, 47);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Padding = new System.Windows.Forms.Padding(10);
             this.toolStrip3.Size = new System.Drawing.Size(85, 47);
@@ -261,15 +269,15 @@ namespace Music_Player_Project_IT008N13
             // 
             // slider1
             // 
-            slider1.ChannelColor = System.Drawing.Color.LightSalmon;
+            slider1.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             slider1.ChannelHeight = 6;
             slider1.ForeBackColor = System.Drawing.Color.Transparent;
             slider1.ForeColor = System.Drawing.Color.Transparent;
-            slider1.Location = new System.Drawing.Point(137, 21);
+            slider1.Location = new System.Drawing.Point(64, 15);
             slider1.Name = "slider1";
             slider1.ShowMaximum = false;
             slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
-            slider1.Size = new System.Drawing.Size(1072, 23);
+            slider1.Size = new System.Drawing.Size(1271, 11);
             slider1.SliderColor = System.Drawing.Color.RoyalBlue;
             slider1.SliderHeight = 6;
             slider1.SymbolAfter = "";
@@ -289,9 +297,9 @@ namespace Music_Player_Project_IT008N13
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(2, 93);
+            this.btnHome.Location = new System.Drawing.Point(4, 93);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(312, 36);
+            this.btnHome.Size = new System.Drawing.Size(304, 36);
             this.btnHome.TabIndex = 0;
             this.btnHome.Tag = "home";
             this.btnHome.Text = "Home";
@@ -313,9 +321,9 @@ namespace Music_Player_Project_IT008N13
             this.btnMusicLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMusicLibrary.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMusicLibrary.ForeColor = System.Drawing.Color.White;
-            this.btnMusicLibrary.Location = new System.Drawing.Point(2, 131);
+            this.btnMusicLibrary.Location = new System.Drawing.Point(4, 131);
             this.btnMusicLibrary.Name = "btnMusicLibrary";
-            this.btnMusicLibrary.Size = new System.Drawing.Size(312, 36);
+            this.btnMusicLibrary.Size = new System.Drawing.Size(304, 36);
             this.btnMusicLibrary.TabIndex = 1;
             this.btnMusicLibrary.Tag = "music library";
             this.btnMusicLibrary.Text = "Music library";
@@ -337,9 +345,9 @@ namespace Music_Player_Project_IT008N13
             this.btnVideoLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVideoLibrary.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVideoLibrary.ForeColor = System.Drawing.Color.White;
-            this.btnVideoLibrary.Location = new System.Drawing.Point(2, 169);
+            this.btnVideoLibrary.Location = new System.Drawing.Point(4, 169);
             this.btnVideoLibrary.Name = "btnVideoLibrary";
-            this.btnVideoLibrary.Size = new System.Drawing.Size(312, 36);
+            this.btnVideoLibrary.Size = new System.Drawing.Size(304, 36);
             this.btnVideoLibrary.TabIndex = 2;
             this.btnVideoLibrary.Tag = "video library";
             this.btnVideoLibrary.Text = "Video library";
@@ -361,9 +369,9 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayQueue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayQueue.ForeColor = System.Drawing.Color.White;
-            this.btnPlayQueue.Location = new System.Drawing.Point(2, 222);
+            this.btnPlayQueue.Location = new System.Drawing.Point(4, 218);
             this.btnPlayQueue.Name = "btnPlayQueue";
-            this.btnPlayQueue.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayQueue.Size = new System.Drawing.Size(304, 36);
             this.btnPlayQueue.TabIndex = 3;
             this.btnPlayQueue.Tag = "play queue";
             this.btnPlayQueue.Text = "Play queue";
@@ -377,7 +385,7 @@ namespace Music_Player_Project_IT008N13
             this.panel1.Controls.Add(this.btnPlayListChild2);
             this.panel1.Controls.Add(this.btnPlayListChild1);
             this.panel1.Controls.Add(this.btnPlayListsMain);
-            this.panel1.Location = new System.Drawing.Point(0, 260);
+            this.panel1.Location = new System.Drawing.Point(0, 256);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 148);
             this.panel1.TabIndex = 4;
@@ -395,9 +403,9 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayListChild2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayListChild2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListChild2.ForeColor = System.Drawing.Color.White;
-            this.btnPlayListChild2.Location = new System.Drawing.Point(2, 76);
+            this.btnPlayListChild2.Location = new System.Drawing.Point(4, 76);
             this.btnPlayListChild2.Name = "btnPlayListChild2";
-            this.btnPlayListChild2.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayListChild2.Size = new System.Drawing.Size(304, 36);
             this.btnPlayListChild2.TabIndex = 7;
             this.btnPlayListChild2.Tag = "playlists2";
             this.btnPlayListChild2.Text = "Playlist2";
@@ -417,9 +425,9 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayListChild1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayListChild1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListChild1.ForeColor = System.Drawing.Color.White;
-            this.btnPlayListChild1.Location = new System.Drawing.Point(2, 38);
+            this.btnPlayListChild1.Location = new System.Drawing.Point(4, 38);
             this.btnPlayListChild1.Name = "btnPlayListChild1";
-            this.btnPlayListChild1.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayListChild1.Size = new System.Drawing.Size(304, 36);
             this.btnPlayListChild1.TabIndex = 6;
             this.btnPlayListChild1.Tag = "playlists1";
             this.btnPlayListChild1.Text = "Playlist1";
@@ -439,9 +447,9 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayListsMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayListsMain.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListsMain.ForeColor = System.Drawing.Color.White;
-            this.btnPlayListsMain.Location = new System.Drawing.Point(2, 0);
+            this.btnPlayListsMain.Location = new System.Drawing.Point(4, 0);
             this.btnPlayListsMain.Name = "btnPlayListsMain";
-            this.btnPlayListsMain.Size = new System.Drawing.Size(312, 36);
+            this.btnPlayListsMain.Size = new System.Drawing.Size(304, 36);
             this.btnPlayListsMain.TabIndex = 5;
             this.btnPlayListsMain.Tag = "playlists";
             this.btnPlayListsMain.Text = "Playlists";
@@ -463,9 +471,9 @@ namespace Music_Player_Project_IT008N13
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetting.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.ForeColor = System.Drawing.Color.White;
-            this.btnSetting.Location = new System.Drawing.Point(2, 744);
+            this.btnSetting.Location = new System.Drawing.Point(4, 744);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(312, 36);
+            this.btnSetting.Size = new System.Drawing.Size(304, 36);
             this.btnSetting.TabIndex = 5;
             this.btnSetting.Tag = "setting";
             this.btnSetting.Text = "Setting";
@@ -496,7 +504,7 @@ namespace Music_Player_Project_IT008N13
             // 
             // ptBImageApp
             // 
-            this.ptBImageApp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptBImageApp.BackgroundImage")));
+            this.ptBImageApp.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.imageApp;
             this.ptBImageApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ptBImageApp.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptBImageApp.InitialImage")));
             this.ptBImageApp.Location = new System.Drawing.Point(63, 7);
@@ -526,7 +534,7 @@ namespace Music_Player_Project_IT008N13
             // 
             // txtBSearch
             // 
-            this.txtBSearch.Location = new System.Drawing.Point(14, 48);
+            this.txtBSearch.Location = new System.Drawing.Point(12, 48);
             this.txtBSearch.Multiline = true;
             this.txtBSearch.Name = "txtBSearch";
             this.txtBSearch.Size = new System.Drawing.Size(288, 31);
@@ -535,22 +543,35 @@ namespace Music_Player_Project_IT008N13
             // panelMenuBar
             // 
             this.panelMenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelMenuBar.Controls.Add(this.txtBSearch);
-            this.panelMenuBar.Controls.Add(this.panelTitle);
+            this.panelMenuBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenuBar.Controls.Add(this.panel2);
             this.panelMenuBar.Controls.Add(this.btnSetting);
             this.panelMenuBar.Controls.Add(this.panel1);
             this.panelMenuBar.Controls.Add(this.btnPlayQueue);
-            this.panelMenuBar.Controls.Add(this.btnVideoLibrary);
-            this.panelMenuBar.Controls.Add(this.btnMusicLibrary);
-            this.panelMenuBar.Controls.Add(this.btnHome);
             this.panelMenuBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuBar.Location = new System.Drawing.Point(0, 0);
             this.panelMenuBar.Name = "panelMenuBar";
             this.panelMenuBar.Size = new System.Drawing.Size(316, 790);
             this.panelMenuBar.TabIndex = 12;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.txtBSearch);
+            this.panel2.Controls.Add(this.panelTitle);
+            this.panel2.Controls.Add(this.btnHome);
+            this.panel2.Controls.Add(this.btnVideoLibrary);
+            this.panel2.Controls.Add(this.btnMusicLibrary);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(316, 209);
+            this.panel2.TabIndex = 10;
+            // 
             // panelUserControl
             // 
+            this.panelUserControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelUserControl.Controls.Add(this.panelDragForm);
             this.panelUserControl.Controls.Add(this.panelControlSizeExitApp);
             this.panelUserControl.Controls.Add(this.addHomeForm1);
             this.panelUserControl.Controls.Add(this.addMusicForm1);
@@ -566,6 +587,7 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelControlSizeExitApp
             // 
+            this.panelControlSizeExitApp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelControlSizeExitApp.Controls.Add(this.btnMinimize);
             this.panelControlSizeExitApp.Controls.Add(this.btnExit);
             this.panelControlSizeExitApp.Controls.Add(this.btnMaximize);
@@ -637,13 +659,14 @@ namespace Music_Player_Project_IT008N13
             // addHomeForm1
             // 
             this.addHomeForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.addHomeForm1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.addHomeForm1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addHomeForm1.FileContainMedia = "";
             this.addHomeForm1.FolderContainMedia = "";
             this.addHomeForm1.Location = new System.Drawing.Point(0, 0);
             this.addHomeForm1.Margin = new System.Windows.Forms.Padding(2);
             this.addHomeForm1.Name = "addHomeForm1";
-            this.addHomeForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addHomeForm1.Size = new System.Drawing.Size(1082, 788);
             this.addHomeForm1.TabIndex = 5;
             // 
             // addMusicForm1
@@ -653,7 +676,7 @@ namespace Music_Player_Project_IT008N13
             this.addMusicForm1.Location = new System.Drawing.Point(0, 0);
             this.addMusicForm1.Margin = new System.Windows.Forms.Padding(2);
             this.addMusicForm1.Name = "addMusicForm1";
-            this.addMusicForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addMusicForm1.Size = new System.Drawing.Size(1082, 788);
             this.addMusicForm1.TabIndex = 4;
             // 
             // addVideoForm1
@@ -663,7 +686,7 @@ namespace Music_Player_Project_IT008N13
             this.addVideoForm1.Location = new System.Drawing.Point(0, 0);
             this.addVideoForm1.Margin = new System.Windows.Forms.Padding(2);
             this.addVideoForm1.Name = "addVideoForm1";
-            this.addVideoForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addVideoForm1.Size = new System.Drawing.Size(1082, 788);
             this.addVideoForm1.TabIndex = 3;
             // 
             // addMediaQueueForm1
@@ -673,7 +696,7 @@ namespace Music_Player_Project_IT008N13
             this.addMediaQueueForm1.Location = new System.Drawing.Point(0, 0);
             this.addMediaQueueForm1.Margin = new System.Windows.Forms.Padding(0);
             this.addMediaQueueForm1.Name = "addMediaQueueForm1";
-            this.addMediaQueueForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addMediaQueueForm1.Size = new System.Drawing.Size(1082, 788);
             this.addMediaQueueForm1.TabIndex = 2;
             // 
             // addPlaylistForm1
@@ -683,7 +706,7 @@ namespace Music_Player_Project_IT008N13
             this.addPlaylistForm1.Location = new System.Drawing.Point(0, 0);
             this.addPlaylistForm1.Margin = new System.Windows.Forms.Padding(2);
             this.addPlaylistForm1.Name = "addPlaylistForm1";
-            this.addPlaylistForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addPlaylistForm1.Size = new System.Drawing.Size(1082, 788);
             this.addPlaylistForm1.TabIndex = 1;
             // 
             // addSettingForm1
@@ -693,7 +716,7 @@ namespace Music_Player_Project_IT008N13
             this.addSettingForm1.Location = new System.Drawing.Point(0, 0);
             this.addSettingForm1.Margin = new System.Windows.Forms.Padding(8);
             this.addSettingForm1.Name = "addSettingForm1";
-            this.addSettingForm1.Size = new System.Drawing.Size(1084, 790);
+            this.addSettingForm1.Size = new System.Drawing.Size(1082, 788);
             this.addSettingForm1.TabIndex = 0;
             // 
             // player
@@ -706,6 +729,16 @@ namespace Music_Player_Project_IT008N13
             player.TabIndex = 11;
             player.Visible = false;
             // 
+            // panelDragForm
+            // 
+            this.panelDragForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panelDragForm.Location = new System.Drawing.Point(0, 1);
+            this.panelDragForm.Name = "panelDragForm";
+            this.panelDragForm.Size = new System.Drawing.Size(962, 33);
+            this.panelDragForm.TabIndex = 10;
+            this.panelDragForm.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelDragForm_MouseDown);
+            this.panelDragForm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelDragForm_MouseMove);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -716,6 +749,7 @@ namespace Music_Player_Project_IT008N13
             this.Controls.Add(player);
             this.Controls.Add(this.panelControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainForm";
             this.Text = "Media Player Project";
@@ -731,7 +765,8 @@ namespace Music_Player_Project_IT008N13
             this.panelTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptBImageApp)).EndInit();
             this.panelMenuBar.ResumeLayout(false);
-            this.panelMenuBar.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panelUserControl.ResumeLayout(false);
             this.panelControlSizeExitApp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
@@ -778,9 +813,11 @@ namespace Music_Player_Project_IT008N13
         private CustomButton btnMinimize;
         private CustomButton btnExit;
         private CustomButton btnMaximize;
+        private Panel panel2;
         static public Label lbDurationItem;
         static public Label lbCurrentDuration;
         static public Slider slider1;
         static public AxWMPLib.AxWindowsMediaPlayer player;
+        private Panel panelDragForm;
     }
 }

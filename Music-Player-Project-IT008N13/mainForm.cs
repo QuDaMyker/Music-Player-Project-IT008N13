@@ -15,6 +15,7 @@ namespace Music_Player_Project_IT008N13
 {
     public partial class mainForm : Form
     {
+        private Point mouseLocation;
         private bool is_Play = true;
         private bool is_Muted = true;
         private Button currentButton;
@@ -28,7 +29,6 @@ namespace Music_Player_Project_IT008N13
             Graphics g = CreateGraphics();
             g.DrawLine(pen, new Point(0, 216), new Point(316, 216));
             Active_Button(btnHome);
-
         }
         private void Active_Button(object sender)
         {
@@ -51,67 +51,49 @@ namespace Music_Player_Project_IT008N13
         private void btnHome_Click(object sender, EventArgs e)
         {
             Active_Button(sender);
-            addHomeForm1.Show();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();
+            addHomeForm1.BringToFront();
+            panelControlSizeExitApp.BringToFront();
+            panelDragForm.BringToFront();
         }
 
         private void bbtnMusicLibrary_Click(object sender, EventArgs e)
         {
             Active_Button(sender);
-            addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Show();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();
+            addMusicForm1.BringToFront();
+            panelControlSizeExitApp.BringToFront();
+            panelDragForm.BringToFront();
         }
 
         private void btnVideoLibrary_Click(object sender, EventArgs e)
         {
             Active_Button(sender);
-            addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Show();
-            addSettingForm1.Hide();
+            addVideoForm1.BringToFront();
+            panelControlSizeExitApp.BringToFront(); 
+            panelDragForm.BringToFront();
         }
 
         private void btnPlayQueue_Click(object sender, EventArgs e)
         {
             Active_Button(sender);
-            addHomeForm1.Hide();
-            addMediaQueueForm1.Show();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();
+            addMediaQueueForm1.BringToFront();
+            panelControlSizeExitApp.BringToFront();
+            panelDragForm.BringToFront();
         }
 
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
             Active_Button(sender);
-            addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Show();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();
+            addPlaylistForm1.BringToFront();
+            panelControlSizeExitApp.BringToFront();
+            panelDragForm.BringToFront();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
             Active_Button(sender); 
-            addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Show();
+            addSettingForm1.BringToFront();
+            panelControlSizeExitApp.BringToFront();
+            panelDragForm.BringToFront();
         }
 
         private void btnPlayPause_Click(object sender, EventArgs e)
@@ -259,17 +241,32 @@ namespace Music_Player_Project_IT008N13
 
         private void btnMaximize_Click(object sender, EventArgs e)
         {
-            // maximize app
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-            // minimize app 
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panelDragForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void panelDragForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
         }
     }
 }
