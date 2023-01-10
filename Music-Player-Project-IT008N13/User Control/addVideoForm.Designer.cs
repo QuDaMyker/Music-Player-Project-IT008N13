@@ -49,7 +49,7 @@
             this.weCantFindAnyVideo1.BackColor = System.Drawing.Color.Transparent;
             this.weCantFindAnyVideo1.Location = new System.Drawing.Point(200, 180);
             this.weCantFindAnyVideo1.Name = "weCantFindAnyVideo1";
-            this.weCantFindAnyVideo1.Size = new System.Drawing.Size(717, 392);
+            this.weCantFindAnyVideo1.Size = new System.Drawing.Size(693, 393);
             this.weCantFindAnyVideo1.TabIndex = 9;
             // 
             // addVideoForm

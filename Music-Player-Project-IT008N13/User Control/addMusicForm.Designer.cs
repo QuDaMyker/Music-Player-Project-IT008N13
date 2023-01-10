@@ -48,7 +48,7 @@
             this.weCantFindAnyMusic1.BackColor = System.Drawing.Color.Transparent;
             this.weCantFindAnyMusic1.Location = new System.Drawing.Point(200, 180);
             this.weCantFindAnyMusic1.Name = "weCantFindAnyMusic1";
-            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(692, 393);
+            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(652, 365);
             this.weCantFindAnyMusic1.TabIndex = 6;
             // 
             // addMusicForm

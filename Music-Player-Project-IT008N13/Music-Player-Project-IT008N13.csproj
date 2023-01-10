@@ -61,6 +61,7 @@
     <Compile Include="ImageButtonMenuBar.cs" />
     <Compile Include="ImageControlUser.cs" />
     <Compile Include="imagebuttonExit_Max_Min.cs" />
+    <Compile Include="ImageSoureControlPlayer.cs" />
     <Compile Include="InitialUI\MeetTheNewMediaPlayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -355,6 +356,12 @@
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon\volume.png" />
+    <None Include="Resources\icon\shuffle_disable.png" />
+    <None Include="Resources\icon\previous_image.png" />
+    <None Include="Resources\icon\next_image.png" />
+    <None Include="Resources\icon\mute_volume.png" />
+    <None Include="Resources\icon\shuffle_able.png" />
     <None Include="Resources\icon\video_tape.png" />
     <None Include="Resources\icon\stop-button.png" />
     <None Include="Resources\icon\tape.png" />
@@ -377,6 +384,10 @@
     <None Include="Resources\icon\full_screen.png" />
     <None Include="Resources\icon\minus.png" />
     <None Include="Resources\icon\imageApp.png" />
+    <None Include="Resources\icon\loop_able.png" />
+    <None Include="Resources\icon\loop_one.png" />
+    <None Include="Resources\icon\imagebtnPause.png" />
+    <None Include="Resources\icon\loop_disable.png" />
     <Content Include="Resources\icon\mute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

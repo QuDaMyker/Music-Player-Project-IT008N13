@@ -69,12 +69,12 @@
             this.buttonAddFolder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
             this.buttonAddFolder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(121)))), ((int)(((byte)(49)))));
             this.buttonAddFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddFolder.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddFolder.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddFolder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonAddFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAddFolder.Location = new System.Drawing.Point(12, 125);
             this.buttonAddFolder.Name = "buttonAddFolder";
-            this.buttonAddFolder.Size = new System.Drawing.Size(110, 31);
+            this.buttonAddFolder.Size = new System.Drawing.Size(121, 31);
             this.buttonAddFolder.TabIndex = 2;
             this.buttonAddFolder.Text = "Add folder";
             this.buttonAddFolder.TextColor = System.Drawing.SystemColors.ActiveCaptionText;

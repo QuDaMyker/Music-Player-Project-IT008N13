@@ -64,7 +64,7 @@
             this.buttonAddFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAddFolder.Location = new System.Drawing.Point(12, 125);
             this.buttonAddFolder.Name = "buttonAddFolder";
-            this.buttonAddFolder.Size = new System.Drawing.Size(110, 31);
+            this.buttonAddFolder.Size = new System.Drawing.Size(121, 31);
             this.buttonAddFolder.TabIndex = 2;
             this.buttonAddFolder.Text = "Add folder";
             this.buttonAddFolder.TextColor = System.Drawing.SystemColors.ActiveCaptionText;

@@ -23,7 +23,7 @@ namespace Music_Player_Project_IT008N13
         {
             bitmap = new Bitmap(global::Music_Player_Project_IT008N13.Properties.Resources.add_Folder_control, new Size(16, 16));
             buttonAddFolder.Image = bitmap;
-            buttonAddFolder.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonAddFolder.ImageAlign = ContentAlignment.MiddleCenter;
             buttonAddFolder.TextImageRelation = TextImageRelation.ImageBeforeText;
         }
 

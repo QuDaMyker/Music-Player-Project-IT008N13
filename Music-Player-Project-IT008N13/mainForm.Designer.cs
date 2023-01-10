@@ -31,27 +31,27 @@ namespace Music_Player_Project_IT008N13
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.btnShuffle = new System.Windows.Forms.ToolStripButton();
-            this.btnPrevious = new System.Windows.Forms.ToolStripButton();
-            this.btnPlayPause = new System.Windows.Forms.ToolStripButton();
-            this.btnNext = new System.Windows.Forms.ToolStripButton();
-            this.btnLoop = new System.Windows.Forms.ToolStripButton();
             this.panelControl = new System.Windows.Forms.Panel();
+            this.panelVolume = new System.Windows.Forms.Panel();
+            this.btnVolume = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.lbVolumn = new System.Windows.Forms.Label();
-            lbDurationItem = new System.Windows.Forms.Label();
+            this.panelControlPlayer = new System.Windows.Forms.Panel();
+            this.btnShuffle = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnLoop = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnPrevious = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnNext = new Music_Player_Project_IT008N13.Controls.CustomButton();
+            this.btnPlayPause = new Music_Player_Project_IT008N13.Controls.CustomButton();
             lbCurrentDuration = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.btnVolume = new System.Windows.Forms.ToolStripButton();
+            lbDurationItem = new System.Windows.Forms.Label();
             slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
             this.btnHome = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.btnMusicLibrary = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.btnVideoLibrary = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.btnPlayQueue = new Music_Player_Project_IT008N13.Controls.CustomButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnPlayListChild2 = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.btnPlayListChild1 = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.btnPlayListsMain = new Music_Player_Project_IT008N13.Controls.CustomButton();
@@ -63,6 +63,8 @@ namespace Music_Player_Project_IT008N13
             this.txtBSearch = new System.Windows.Forms.TextBox();
             this.panelMenuBar = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelDropDownPlayLists = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelUserControl = new System.Windows.Forms.Panel();
             this.panelControlSizeExitApp = new System.Windows.Forms.Panel();
             this.btnMinimize = new Music_Player_Project_IT008N13.Controls.CustomButton();
@@ -75,121 +77,87 @@ namespace Music_Player_Project_IT008N13
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.panelDragForm = new System.Windows.Forms.Panel();
-            this.toolStrip2.SuspendLayout();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelControl.SuspendLayout();
+            this.panelVolume.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.toolStrip3.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelControlPlayer.SuspendLayout();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptBImageApp)).BeginInit();
             this.panelMenuBar.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelDropDownPlayLists.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelUserControl.SuspendLayout();
             this.panelControlSizeExitApp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
             this.SuspendLayout();
             // 
-            // toolStrip2
-            // 
-            this.toolStrip2.AutoSize = false;
-            this.toolStrip2.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnShuffle,
-            this.btnPrevious,
-            this.btnPlayPause,
-            this.btnNext,
-            this.btnLoop});
-            this.toolStrip2.Location = new System.Drawing.Point(558, 29);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(276, 79);
-            this.toolStrip2.TabIndex = 3;
-            this.toolStrip2.Text = "toolStrip2";
-            // 
-            // btnShuffle
-            // 
-            this.btnShuffle.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnShuffle.Image")));
-            this.btnShuffle.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnShuffle.Name = "btnShuffle";
-            this.btnShuffle.Padding = new System.Windows.Forms.Padding(10);
-            this.btnShuffle.Size = new System.Drawing.Size(44, 76);
-            this.btnShuffle.Text = "Shuffle";
-            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnPrevious.Image = ((System.Drawing.Image)(resources.GetObject("btnPrevious.Image")));
-            this.btnPrevious.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Padding = new System.Windows.Forms.Padding(10);
-            this.btnPrevious.Size = new System.Drawing.Size(44, 76);
-            this.btnPrevious.Text = "toolStripButton8";
-            this.btnPrevious.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnPrevious.ToolTipText = "Previous";
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
-            // btnPlayPause
-            // 
-            this.btnPlayPause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnPlayPause.Image = global::Music_Player_Project_IT008N13.Properties.Resources.play;
-            this.btnPlayPause.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPlayPause.Name = "btnPlayPause";
-            this.btnPlayPause.Padding = new System.Windows.Forms.Padding(20);
-            this.btnPlayPause.Size = new System.Drawing.Size(64, 76);
-            this.btnPlayPause.Text = "toolStripButton9";
-            this.btnPlayPause.ToolTipText = "Play";
-            this.btnPlayPause.Click += new System.EventHandler(this.btnPlayPause_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
-            this.btnNext.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Padding = new System.Windows.Forms.Padding(10);
-            this.btnNext.Size = new System.Drawing.Size(44, 76);
-            this.btnNext.Text = "Next";
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnLoop
-            // 
-            this.btnLoop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnLoop.Image = ((System.Drawing.Image)(resources.GetObject("btnLoop.Image")));
-            this.btnLoop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLoop.Name = "btnLoop";
-            this.btnLoop.Padding = new System.Windows.Forms.Padding(10);
-            this.btnLoop.Size = new System.Drawing.Size(44, 76);
-            this.btnLoop.Text = "toolStripButton11";
-            this.btnLoop.ToolTipText = "Loop";
-            // 
             // panelControl
             // 
+            this.panelControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelControl.Controls.Add(this.label1);
-            this.panelControl.Controls.Add(this.lbVolumn);
+            this.panelControl.Controls.Add(this.panelVolume);
+            this.panelControl.Controls.Add(this.panelControlPlayer);
             this.panelControl.Controls.Add(lbCurrentDuration);
             this.panelControl.Controls.Add(lbDurationItem);
-            this.panelControl.Controls.Add(this.trackBar1);
-            this.panelControl.Controls.Add(this.toolStrip2);
-            this.panelControl.Controls.Add(this.toolStrip3);
             this.panelControl.Controls.Add(slider1);
-            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl.Location = new System.Drawing.Point(0, 790);
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(1400, 110);
             this.panelControl.TabIndex = 4;
             // 
+            // panelVolume
+            // 
+            this.panelVolume.Controls.Add(this.btnVolume);
+            this.panelVolume.Controls.Add(this.trackBar1);
+            this.panelVolume.Controls.Add(this.label1);
+            this.panelVolume.Controls.Add(this.lbVolumn);
+            this.panelVolume.Location = new System.Drawing.Point(1062, 27);
+            this.panelVolume.Name = "panelVolume";
+            this.panelVolume.Size = new System.Drawing.Size(166, 70);
+            this.panelVolume.TabIndex = 16;
+            // 
+            // btnVolume
+            // 
+            this.btnVolume.BackColor = System.Drawing.Color.Transparent;
+            this.btnVolume.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnVolume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVolume.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVolume.BorderRadius = 2;
+            this.btnVolume.BorderSize = 0;
+            this.btnVolume.FlatAppearance.BorderSize = 0;
+            this.btnVolume.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.btnVolume.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnVolume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolume.ForeColor = System.Drawing.Color.White;
+            this.btnVolume.Location = new System.Drawing.Point(3, 20);
+            this.btnVolume.Name = "btnVolume";
+            this.btnVolume.Size = new System.Drawing.Size(35, 35);
+            this.btnVolume.TabIndex = 15;
+            this.btnVolume.TextColor = System.Drawing.Color.White;
+            this.btnVolume.UseVisualStyleBackColor = false;
+            this.btnVolume.Click += new System.EventHandler(this.btnVolume_Click);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.trackBar1.Location = new System.Drawing.Point(43, 20);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(94, 45);
+            this.trackBar1.TabIndex = 11;
+            this.trackBar1.Value = 15;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1175, 47);
+            this.label1.Location = new System.Drawing.Point(79, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 13;
@@ -199,22 +167,124 @@ namespace Music_Player_Project_IT008N13
             // 
             this.lbVolumn.AutoSize = true;
             this.lbVolumn.ForeColor = System.Drawing.Color.White;
-            this.lbVolumn.Location = new System.Drawing.Point(1159, 47);
+            this.lbVolumn.Location = new System.Drawing.Point(54, 5);
             this.lbVolumn.Name = "lbVolumn";
             this.lbVolumn.Size = new System.Drawing.Size(19, 13);
             this.lbVolumn.TabIndex = 13;
             this.lbVolumn.Text = "15";
             // 
-            // lbDurationItem
+            // panelControlPlayer
             // 
-            lbDurationItem.AutoSize = true;
-            lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lbDurationItem.ForeColor = System.Drawing.Color.White;
-            lbDurationItem.Location = new System.Drawing.Point(1353, 15);
-            lbDurationItem.Name = "lbDurationItem";
-            lbDurationItem.Size = new System.Drawing.Size(34, 13);
-            lbDurationItem.TabIndex = 12;
-            lbDurationItem.Text = "00:00";
+            this.panelControlPlayer.Controls.Add(this.btnShuffle);
+            this.panelControlPlayer.Controls.Add(this.btnLoop);
+            this.panelControlPlayer.Controls.Add(this.btnPrevious);
+            this.panelControlPlayer.Controls.Add(this.btnNext);
+            this.panelControlPlayer.Controls.Add(this.btnPlayPause);
+            this.panelControlPlayer.Location = new System.Drawing.Point(558, 32);
+            this.panelControlPlayer.Name = "panelControlPlayer";
+            this.panelControlPlayer.Size = new System.Drawing.Size(234, 70);
+            this.panelControlPlayer.TabIndex = 15;
+            // 
+            // btnShuffle
+            // 
+            this.btnShuffle.BackColor = System.Drawing.Color.Transparent;
+            this.btnShuffle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnShuffle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnShuffle.BorderRadius = 2;
+            this.btnShuffle.BorderSize = 0;
+            this.btnShuffle.FlatAppearance.BorderSize = 0;
+            this.btnShuffle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.btnShuffle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShuffle.ForeColor = System.Drawing.Color.White;
+            this.btnShuffle.Location = new System.Drawing.Point(0, 20);
+            this.btnShuffle.Name = "btnShuffle";
+            this.btnShuffle.Size = new System.Drawing.Size(35, 35);
+            this.btnShuffle.TabIndex = 10;
+            this.btnShuffle.TextColor = System.Drawing.Color.White;
+            this.btnShuffle.UseVisualStyleBackColor = false;
+            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
+            // 
+            // btnLoop
+            // 
+            this.btnLoop.BackColor = System.Drawing.Color.Transparent;
+            this.btnLoop.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnLoop.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnLoop.BorderRadius = 2;
+            this.btnLoop.BorderSize = 0;
+            this.btnLoop.FlatAppearance.BorderSize = 0;
+            this.btnLoop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.btnLoop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnLoop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoop.ForeColor = System.Drawing.Color.White;
+            this.btnLoop.Location = new System.Drawing.Point(199, 20);
+            this.btnLoop.Name = "btnLoop";
+            this.btnLoop.Size = new System.Drawing.Size(35, 35);
+            this.btnLoop.TabIndex = 14;
+            this.btnLoop.TextColor = System.Drawing.Color.White;
+            this.btnLoop.UseVisualStyleBackColor = false;
+            this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrevious.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnPrevious.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPrevious.BorderRadius = 2;
+            this.btnPrevious.BorderSize = 0;
+            this.btnPrevious.FlatAppearance.BorderSize = 0;
+            this.btnPrevious.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.btnPrevious.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrevious.ForeColor = System.Drawing.Color.White;
+            this.btnPrevious.Location = new System.Drawing.Point(41, 20);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(35, 35);
+            this.btnPrevious.TabIndex = 11;
+            this.btnPrevious.TextColor = System.Drawing.Color.White;
+            this.btnPrevious.UseVisualStyleBackColor = false;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNext.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNext.BorderRadius = 2;
+            this.btnNext.BorderSize = 0;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(158, 20);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(35, 35);
+            this.btnNext.TabIndex = 13;
+            this.btnNext.TextColor = System.Drawing.Color.White;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnPlayPause
+            // 
+            this.btnPlayPause.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlayPause.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnPlayPause.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPlayPause.BorderRadius = 60;
+            this.btnPlayPause.BorderSize = 0;
+            this.btnPlayPause.FlatAppearance.BorderSize = 0;
+            this.btnPlayPause.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.btnPlayPause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnPlayPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayPause.ForeColor = System.Drawing.Color.White;
+            this.btnPlayPause.Location = new System.Drawing.Point(82, 0);
+            this.btnPlayPause.Name = "btnPlayPause";
+            this.btnPlayPause.Size = new System.Drawing.Size(70, 70);
+            this.btnPlayPause.TabIndex = 12;
+            this.btnPlayPause.TextColor = System.Drawing.Color.White;
+            this.btnPlayPause.UseVisualStyleBackColor = false;
+            this.btnPlayPause.Click += new System.EventHandler(this.btnPlayPause_Click);
             // 
             // lbCurrentDuration
             // 
@@ -226,49 +296,19 @@ namespace Music_Player_Project_IT008N13
             lbCurrentDuration.Size = new System.Drawing.Size(34, 13);
             lbCurrentDuration.TabIndex = 12;
             lbCurrentDuration.Text = "00:00";
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.trackBar1.Location = new System.Drawing.Point(1145, 62);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(94, 45);
-            this.trackBar1.TabIndex = 11;
-            this.trackBar1.Value = 15;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // toolStrip3
-            // 
-            this.toolStrip3.AutoSize = false;
-            this.toolStrip3.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip3.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnVolume});
-            this.toolStrip3.Location = new System.Drawing.Point(1046, 47);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStrip3.Size = new System.Drawing.Size(85, 47);
-            this.toolStrip3.TabIndex = 5;
-            this.toolStrip3.Text = "toolStrip3";
-            // 
-            // btnVolume
-            // 
-            this.btnVolume.AutoSize = false;
-            this.btnVolume.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnVolume.Image = ((System.Drawing.Image)(resources.GetObject("btnVolume.Image")));
-            this.btnVolume.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnVolume.Name = "btnVolume";
-            this.btnVolume.Size = new System.Drawing.Size(40, 44);
-            this.btnVolume.Text = "toolStripButton12";
-            this.btnVolume.ToolTipText = "Volume";
-            this.btnVolume.Click += new System.EventHandler(this.btnVolume_Click);
-            // 
-            // slider1
-            // 
+            
+
+            
+            lbDurationItem.AutoSize = true;
+            lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbDurationItem.ForeColor = System.Drawing.Color.White;
+            lbDurationItem.Location = new System.Drawing.Point(1353, 15);
+            lbDurationItem.Name = "lbDurationItem";
+            lbDurationItem.Size = new System.Drawing.Size(34, 13);
+            lbDurationItem.TabIndex = 12;
+            lbDurationItem.Text = "00:00";
+
+            
             slider1.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             slider1.ChannelHeight = 6;
             slider1.ForeBackColor = System.Drawing.Color.Transparent;
@@ -380,16 +420,6 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayQueue.UseVisualStyleBackColor = false;
             this.btnPlayQueue.Click += new System.EventHandler(this.btnPlayQueue_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnPlayListChild2);
-            this.panel1.Controls.Add(this.btnPlayListChild1);
-            this.panel1.Controls.Add(this.btnPlayListsMain);
-            this.panel1.Location = new System.Drawing.Point(0, 256);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 148);
-            this.panel1.TabIndex = 4;
-            // 
             // btnPlayListChild2
             // 
             this.btnPlayListChild2.BackColor = System.Drawing.Color.Transparent;
@@ -403,7 +433,7 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayListChild2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayListChild2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListChild2.ForeColor = System.Drawing.Color.White;
-            this.btnPlayListChild2.Location = new System.Drawing.Point(4, 76);
+            this.btnPlayListChild2.Location = new System.Drawing.Point(3, 87);
             this.btnPlayListChild2.Name = "btnPlayListChild2";
             this.btnPlayListChild2.Size = new System.Drawing.Size(304, 36);
             this.btnPlayListChild2.TabIndex = 7;
@@ -425,7 +455,7 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayListChild1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayListChild1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListChild1.ForeColor = System.Drawing.Color.White;
-            this.btnPlayListChild1.Location = new System.Drawing.Point(4, 38);
+            this.btnPlayListChild1.Location = new System.Drawing.Point(3, 45);
             this.btnPlayListChild1.Name = "btnPlayListChild1";
             this.btnPlayListChild1.Size = new System.Drawing.Size(304, 36);
             this.btnPlayListChild1.TabIndex = 6;
@@ -447,7 +477,7 @@ namespace Music_Player_Project_IT008N13
             this.btnPlayListsMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayListsMain.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlayListsMain.ForeColor = System.Drawing.Color.White;
-            this.btnPlayListsMain.Location = new System.Drawing.Point(4, 0);
+            this.btnPlayListsMain.Location = new System.Drawing.Point(3, 3);
             this.btnPlayListsMain.Name = "btnPlayListsMain";
             this.btnPlayListsMain.Size = new System.Drawing.Size(304, 36);
             this.btnPlayListsMain.TabIndex = 5;
@@ -494,9 +524,9 @@ namespace Music_Player_Project_IT008N13
             // 
             // labelNameApp
             // 
-            this.labelNameApp.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameApp.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameApp.ForeColor = System.Drawing.Color.White;
-            this.labelNameApp.Location = new System.Drawing.Point(104, 14);
+            this.labelNameApp.Location = new System.Drawing.Point(104, 17);
             this.labelNameApp.Name = "labelNameApp";
             this.labelNameApp.Size = new System.Drawing.Size(100, 23);
             this.labelNameApp.TabIndex = 2;
@@ -507,9 +537,9 @@ namespace Music_Player_Project_IT008N13
             this.ptBImageApp.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.imageApp;
             this.ptBImageApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ptBImageApp.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptBImageApp.InitialImage")));
-            this.ptBImageApp.Location = new System.Drawing.Point(63, 7);
+            this.ptBImageApp.Location = new System.Drawing.Point(78, 14);
             this.ptBImageApp.Name = "ptBImageApp";
-            this.ptBImageApp.Size = new System.Drawing.Size(35, 35);
+            this.ptBImageApp.Size = new System.Drawing.Size(20, 20);
             this.ptBImageApp.TabIndex = 1;
             this.ptBImageApp.TabStop = false;
             // 
@@ -523,6 +553,8 @@ namespace Music_Player_Project_IT008N13
             this.backBtn.BorderRadius = 7;
             this.backBtn.BorderSize = 0;
             this.backBtn.FlatAppearance.BorderSize = 0;
+            this.backBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.backBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.ForeColor = System.Drawing.Color.White;
             this.backBtn.Location = new System.Drawing.Point(12, 14);
@@ -542,13 +574,14 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelMenuBar
             // 
+            this.panelMenuBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelMenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panelMenuBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMenuBar.Controls.Add(this.panel2);
             this.panelMenuBar.Controls.Add(this.btnSetting);
-            this.panelMenuBar.Controls.Add(this.panel1);
+            this.panelMenuBar.Controls.Add(this.panelDropDownPlayLists);
             this.panelMenuBar.Controls.Add(this.btnPlayQueue);
-            this.panelMenuBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuBar.Location = new System.Drawing.Point(0, 0);
             this.panelMenuBar.Name = "panelMenuBar";
             this.panelMenuBar.Size = new System.Drawing.Size(316, 790);
@@ -568,10 +601,36 @@ namespace Music_Player_Project_IT008N13
             this.panel2.Size = new System.Drawing.Size(316, 209);
             this.panel2.TabIndex = 10;
             // 
+            // panelDropDownPlayLists
+            // 
+            this.panelDropDownPlayLists.Controls.Add(this.pictureBox1);
+            this.panelDropDownPlayLists.Controls.Add(this.btnPlayListChild2);
+            this.panelDropDownPlayLists.Controls.Add(this.btnPlayListChild1);
+            this.panelDropDownPlayLists.Controls.Add(this.btnPlayListsMain);
+            this.panelDropDownPlayLists.Location = new System.Drawing.Point(0, 256);
+            this.panelDropDownPlayLists.MaximumSize = new System.Drawing.Size(316, 156);
+            this.panelDropDownPlayLists.MinimumSize = new System.Drawing.Size(316, 36);
+            this.panelDropDownPlayLists.Name = "panelDropDownPlayLists";
+            this.panelDropDownPlayLists.Size = new System.Drawing.Size(316, 146);
+            this.panelDropDownPlayLists.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.dropimage;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(286, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // panelUserControl
             // 
+            this.panelUserControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelUserControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelUserControl.Controls.Add(this.panelDragForm);
             this.panelUserControl.Controls.Add(this.panelControlSizeExitApp);
             this.panelUserControl.Controls.Add(this.addHomeForm1);
             this.panelUserControl.Controls.Add(this.addMusicForm1);
@@ -579,7 +638,6 @@ namespace Music_Player_Project_IT008N13
             this.panelUserControl.Controls.Add(this.addMediaQueueForm1);
             this.panelUserControl.Controls.Add(this.addPlaylistForm1);
             this.panelUserControl.Controls.Add(this.addSettingForm1);
-            this.panelUserControl.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelUserControl.Location = new System.Drawing.Point(316, 0);
             this.panelUserControl.Name = "panelUserControl";
             this.panelUserControl.Size = new System.Drawing.Size(1084, 790);
@@ -587,11 +645,12 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelControlSizeExitApp
             // 
+            this.panelControlSizeExitApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelControlSizeExitApp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelControlSizeExitApp.Controls.Add(this.btnMinimize);
             this.panelControlSizeExitApp.Controls.Add(this.btnExit);
             this.panelControlSizeExitApp.Controls.Add(this.btnMaximize);
-            this.panelControlSizeExitApp.Location = new System.Drawing.Point(967, 0);
+            this.panelControlSizeExitApp.Location = new System.Drawing.Point(966, 0);
             this.panelControlSizeExitApp.Name = "panelControlSizeExitApp";
             this.panelControlSizeExitApp.Size = new System.Drawing.Size(117, 34);
             this.panelControlSizeExitApp.TabIndex = 9;
@@ -659,8 +718,6 @@ namespace Music_Player_Project_IT008N13
             // addHomeForm1
             // 
             this.addHomeForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.addHomeForm1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addHomeForm1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addHomeForm1.FileContainMedia = "";
             this.addHomeForm1.FolderContainMedia = "";
             this.addHomeForm1.Location = new System.Drawing.Point(0, 0);
@@ -729,15 +786,9 @@ namespace Music_Player_Project_IT008N13
             player.TabIndex = 11;
             player.Visible = false;
             // 
-            // panelDragForm
+            // timer1
             // 
-            this.panelDragForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.panelDragForm.Location = new System.Drawing.Point(0, 1);
-            this.panelDragForm.Name = "panelDragForm";
-            this.panelDragForm.Size = new System.Drawing.Size(962, 33);
-            this.panelDragForm.TabIndex = 10;
-            this.panelDragForm.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelDragForm_MouseDown);
-            this.panelDragForm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelDragForm_MouseMove);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // mainForm
             // 
@@ -752,21 +803,22 @@ namespace Music_Player_Project_IT008N13
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Media Player Project";
             this.Load += new System.EventHandler(this.mainForm_Load);
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
             this.panelControl.ResumeLayout(false);
             this.panelControl.PerformLayout();
+            this.panelVolume.ResumeLayout(false);
+            this.panelVolume.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.panelControlPlayer.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptBImageApp)).EndInit();
             this.panelMenuBar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelDropDownPlayLists.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelUserControl.ResumeLayout(false);
             this.panelControlSizeExitApp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
@@ -775,15 +827,7 @@ namespace Music_Player_Project_IT008N13
         }
 
         #endregion
-        private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripButton btnShuffle;
-        private System.Windows.Forms.ToolStripButton btnPrevious;
-        private System.Windows.Forms.ToolStripButton btnPlayPause;
-        private System.Windows.Forms.ToolStripButton btnNext;
-        private System.Windows.Forms.ToolStripButton btnLoop;
         private System.Windows.Forms.Panel panelControl;
-        private System.Windows.Forms.ToolStrip toolStrip3;
-        private System.Windows.Forms.ToolStripButton btnVolume;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbVolumn;
@@ -791,7 +835,6 @@ namespace Music_Player_Project_IT008N13
         private CustomButton btnMusicLibrary;
         private CustomButton btnVideoLibrary;
         private CustomButton btnPlayQueue;
-        private Panel panel1;
         private CustomButton btnPlayListChild2;
         private CustomButton btnPlayListChild1;
         private CustomButton btnPlayListsMain;
@@ -803,21 +846,31 @@ namespace Music_Player_Project_IT008N13
         private TextBox txtBSearch;
         private Panel panelMenuBar;
         private Panel panelUserControl;
+        private Panel panelControlSizeExitApp;
+        private CustomButton btnMinimize;
+        private CustomButton btnExit;
+        private CustomButton btnMaximize;
+        private Panel panel2;
         private addHomeForm addHomeForm1;
         private addMusicForm addMusicForm1;
         private addVideoForm addVideoForm1;
         private addMediaQueueForm addMediaQueueForm1;
         private addPlaylistForm addPlaylistForm1;
         private addSettingForm addSettingForm1;
-        private Panel panelControlSizeExitApp;
-        private CustomButton btnMinimize;
-        private CustomButton btnExit;
-        private CustomButton btnMaximize;
-        private Panel panel2;
+        private Panel panelControlPlayer;
+        private CustomButton btnShuffle;
+        private CustomButton btnLoop;
+        private CustomButton btnPrevious;
+        private CustomButton btnNext;
+        private CustomButton btnPlayPause;
+        private Panel panelVolume;
+        private CustomButton btnVolume;
+        private Panel panelDropDownPlayLists;
+        private Timer timer1;
+        private PictureBox pictureBox1;
         static public Label lbDurationItem;
         static public Label lbCurrentDuration;
         static public Slider slider1;
         static public AxWMPLib.AxWindowsMediaPlayer player;
-        private Panel panelDragForm;
     }
 }
