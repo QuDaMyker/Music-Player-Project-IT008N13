@@ -683,16 +683,6 @@ namespace Music_Player_Project_IT008N13.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        /*internal static System.Drawing.Bitmap stop_button {
-            get {
-                object obj = ResourceManager.GetObject("stop-button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }*/
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tape {
             get {
                 object obj = ResourceManager.GetObject("tape", resourceCulture);
