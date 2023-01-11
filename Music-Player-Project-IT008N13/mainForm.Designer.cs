@@ -162,13 +162,13 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelControlPlayer
             // 
+            this.panelControlPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelControlPlayer.Controls.Add(this.btnShuffle);
             this.panelControlPlayer.Controls.Add(this.panelVolume);
             this.panelControlPlayer.Controls.Add(this.btnLoop);
             this.panelControlPlayer.Controls.Add(this.btnPrevious);
             this.panelControlPlayer.Controls.Add(this.btnNext);
             this.panelControlPlayer.Controls.Add(this.btnPlayPause);
-            this.panelControlPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControlPlayer.Location = new System.Drawing.Point(0, 38);
             this.panelControlPlayer.Name = "panelControlPlayer";
             this.panelControlPlayer.Size = new System.Drawing.Size(1398, 70);
@@ -634,11 +634,12 @@ namespace Music_Player_Project_IT008N13
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.dropimage;
+            this.pictureBox1.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.imagearrow_down;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(286, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox1.Size = new System.Drawing.Size(12, 6);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 

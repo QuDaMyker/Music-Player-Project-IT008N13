@@ -313,6 +313,16 @@ namespace Music_Player_Project_IT008N13.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_up {
+            get {
+                object obj = ResourceManager.GetObject("image_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imageApp {
             get {
                 object obj = ResourceManager.GetObject("imageApp", resourceCulture);
@@ -326,6 +336,16 @@ namespace Music_Player_Project_IT008N13.Properties {
         internal static System.Drawing.Bitmap imageApp1 {
             get {
                 object obj = ResourceManager.GetObject("imageApp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagearrow_down {
+            get {
+                object obj = ResourceManager.GetObject("imagearrow_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +426,26 @@ namespace Music_Player_Project_IT008N13.Properties {
         internal static System.Drawing.Bitmap imagebtnVideoLibrary {
             get {
                 object obj = ResourceManager.GetObject("imagebtnVideoLibrary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageFolder {
+            get {
+                object obj = ResourceManager.GetObject("imageFolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagenewFolder {
+            get {
+                object obj = ResourceManager.GetObject("imagenewFolder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
