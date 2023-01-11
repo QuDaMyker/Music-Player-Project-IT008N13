@@ -35,9 +35,9 @@ namespace Music_Player_Project_IT008N13
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.panelControl = new System.Windows.Forms.Panel();
             this.panelSlider = new System.Windows.Forms.Panel();
-            this.slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
-            this.lbDurationItem = new System.Windows.Forms.Label();
-            this.lbCurrentDuration = new System.Windows.Forms.Label();
+            slider1 = new Music_Player_Project_IT008N13.Controls.Slider();
+            lbDurationItem = new System.Windows.Forms.Label();
+            lbCurrentDuration = new System.Windows.Forms.Label();
             this.panelControlPlayer = new System.Windows.Forms.Panel();
             this.btnShuffle = new Music_Player_Project_IT008N13.Controls.CustomButton();
             this.panelVolume = new System.Windows.Forms.Panel();
@@ -77,7 +77,7 @@ namespace Music_Player_Project_IT008N13
             this.addMediaQueueForm1 = new Music_Player_Project_IT008N13.addMediaQueueForm();
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
-            this.player = new AxWMPLib.AxWindowsMediaPlayer();
+            player = new AxWMPLib.AxWindowsMediaPlayer();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panelControl.SuspendLayout();
             this.panelSlider.SuspendLayout();
@@ -92,7 +92,7 @@ namespace Music_Player_Project_IT008N13
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelUserControl.SuspendLayout();
             this.panelControlSizeExitApp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(player)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl
@@ -109,9 +109,9 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelSlider
             // 
-            this.panelSlider.Controls.Add(this.slider1);
-            this.panelSlider.Controls.Add(this.lbDurationItem);
-            this.panelSlider.Controls.Add(this.lbCurrentDuration);
+            this.panelSlider.Controls.Add(slider1);
+            this.panelSlider.Controls.Add(lbDurationItem);
+            this.panelSlider.Controls.Add(lbCurrentDuration);
             this.panelSlider.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSlider.Location = new System.Drawing.Point(0, 0);
             this.panelSlider.Name = "panelSlider";
@@ -120,45 +120,45 @@ namespace Music_Player_Project_IT008N13
             // 
             // slider1
             // 
-            this.slider1.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            this.slider1.ChannelHeight = 6;
-            this.slider1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.slider1.ForeBackColor = System.Drawing.Color.Transparent;
-            this.slider1.ForeColor = System.Drawing.Color.Transparent;
-            this.slider1.Location = new System.Drawing.Point(34, 0);
-            this.slider1.Name = "slider1";
-            this.slider1.ShowMaximum = false;
-            this.slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
-            this.slider1.Size = new System.Drawing.Size(1330, 10);
-            this.slider1.SliderColor = System.Drawing.Color.RoyalBlue;
-            this.slider1.SliderHeight = 6;
-            this.slider1.SymbolAfter = "";
-            this.slider1.SymbolBefore = "";
-            this.slider1.TabIndex = 2;
+            slider1.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            slider1.ChannelHeight = 6;
+            slider1.Dock = System.Windows.Forms.DockStyle.Top;
+            slider1.ForeBackColor = System.Drawing.Color.Transparent;
+            slider1.ForeColor = System.Drawing.Color.Transparent;
+            slider1.Location = new System.Drawing.Point(34, 0);
+            slider1.Name = "slider1";
+            slider1.ShowMaximum = false;
+            slider1.ShowValue = Music_Player_Project_IT008N13.Controls.TextPosition.Right;
+            slider1.Size = new System.Drawing.Size(1330, 10);
+            slider1.SliderColor = System.Drawing.Color.RoyalBlue;
+            slider1.SliderHeight = 6;
+            slider1.SymbolAfter = "";
+            slider1.SymbolBefore = "";
+            slider1.TabIndex = 2;
             // 
             // lbDurationItem
             // 
-            this.lbDurationItem.AutoSize = true;
-            this.lbDurationItem.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDurationItem.ForeColor = System.Drawing.Color.White;
-            this.lbDurationItem.Location = new System.Drawing.Point(1364, 0);
-            this.lbDurationItem.Name = "lbDurationItem";
-            this.lbDurationItem.Size = new System.Drawing.Size(34, 13);
-            this.lbDurationItem.TabIndex = 14;
-            this.lbDurationItem.Text = "00:00";
+            lbDurationItem.AutoSize = true;
+            lbDurationItem.Dock = System.Windows.Forms.DockStyle.Right;
+            lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbDurationItem.ForeColor = System.Drawing.Color.White;
+            lbDurationItem.Location = new System.Drawing.Point(1364, 0);
+            lbDurationItem.Name = "lbDurationItem";
+            lbDurationItem.Size = new System.Drawing.Size(34, 13);
+            lbDurationItem.TabIndex = 14;
+            lbDurationItem.Text = "00:00";
             // 
             // lbCurrentDuration
             // 
-            this.lbCurrentDuration.AutoSize = true;
-            this.lbCurrentDuration.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCurrentDuration.ForeColor = System.Drawing.Color.White;
-            this.lbCurrentDuration.Location = new System.Drawing.Point(0, 0);
-            this.lbCurrentDuration.Name = "lbCurrentDuration";
-            this.lbCurrentDuration.Size = new System.Drawing.Size(34, 13);
-            this.lbCurrentDuration.TabIndex = 13;
-            this.lbCurrentDuration.Text = "00:00";
+            lbCurrentDuration.AutoSize = true;
+            lbCurrentDuration.Dock = System.Windows.Forms.DockStyle.Left;
+            lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbCurrentDuration.ForeColor = System.Drawing.Color.White;
+            lbCurrentDuration.Location = new System.Drawing.Point(0, 0);
+            lbCurrentDuration.Name = "lbCurrentDuration";
+            lbCurrentDuration.Size = new System.Drawing.Size(34, 13);
+            lbCurrentDuration.TabIndex = 13;
+            lbCurrentDuration.Text = "00:00";
             // 
             // panelControlPlayer
             // 
@@ -591,7 +591,7 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelMenuBar
             // 
-            this.panelMenuBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelMenuBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelMenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panelMenuBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -644,8 +644,8 @@ namespace Music_Player_Project_IT008N13
             // 
             // panelUserControl
             // 
-            this.panelUserControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelUserControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelUserControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelUserControl.Controls.Add(this.panelControlSizeExitApp);
@@ -796,13 +796,13 @@ namespace Music_Player_Project_IT008N13
             // 
             // player
             // 
-            this.player.Enabled = true;
-            this.player.Location = new System.Drawing.Point(374, 362);
-            this.player.Name = "player";
-            this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            this.player.Size = new System.Drawing.Size(135, 117);
-            this.player.TabIndex = 11;
-            this.player.Visible = false;
+            player.Enabled = true;
+            player.Location = new System.Drawing.Point(374, 362);
+            player.Name = "player";
+            player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            player.Size = new System.Drawing.Size(135, 117);
+            player.TabIndex = 11;
+            player.Visible = false;
             // 
             // timer2
             // 
@@ -816,7 +816,7 @@ namespace Music_Player_Project_IT008N13
             this.ClientSize = new System.Drawing.Size(1400, 900);
             this.Controls.Add(this.panelUserControl);
             this.Controls.Add(this.panelMenuBar);
-            this.Controls.Add(this.player);
+            this.Controls.Add(player);
             this.Controls.Add(this.panelControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -841,7 +841,7 @@ namespace Music_Player_Project_IT008N13
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelUserControl.ResumeLayout(false);
             this.panelControlSizeExitApp.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(player)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -889,9 +889,9 @@ namespace Music_Player_Project_IT008N13
         private Timer timer2;
         private PictureBox pictureBox1;
         private Panel panelSlider;
-        public Label lbCurrentDuration;
-        public Label lbDurationItem;
-        public Slider slider1;
-        public AxWMPLib.AxWindowsMediaPlayer player;
+        public static Label lbCurrentDuration;
+        public static Label lbDurationItem;
+        public static Slider slider1;
+        public static AxWMPLib.AxWindowsMediaPlayer player;
     }
 }
