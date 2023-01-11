@@ -79,6 +79,7 @@ namespace Music_Player_Project_IT008N13
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             player = new AxWMPLib.AxWindowsMediaPlayer();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelControl.SuspendLayout();
             this.panelSlider.SuspendLayout();
             this.panelControlPlayer.SuspendLayout();
@@ -192,7 +193,6 @@ namespace Music_Player_Project_IT008N13
             this.btnShuffle.TabIndex = 10;
             this.btnShuffle.TextColor = System.Drawing.Color.White;
             this.btnShuffle.UseVisualStyleBackColor = false;
-            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
             // 
             // panelVolume
             // 
@@ -803,7 +803,7 @@ namespace Music_Player_Project_IT008N13
             player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
             player.Size = new System.Drawing.Size(135, 117);
             player.TabIndex = 11;
-            player.Visible = false;
+            player.Visible = true;
             // 
             // timer2
             // 
@@ -890,6 +890,7 @@ namespace Music_Player_Project_IT008N13
         private Timer timer2;
         private PictureBox pictureBox1;
         private Panel panelSlider;
+        private Timer timer1;
         public static Label lbCurrentDuration;
         public static Label lbDurationItem;
         public static Slider slider1;

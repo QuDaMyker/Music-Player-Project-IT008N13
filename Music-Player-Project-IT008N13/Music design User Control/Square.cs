@@ -14,114 +14,71 @@ namespace Music_Player_Project_IT008N13
 {
     public partial class Square : UserControl
     {
-        private bool is_Play = false;
-        private string nameSong = String.Empty;
-        public string _nameSong
-        {
-            get
-            {
-                return nameSong;
-            }
-            set
-            {
-                nameSong = value;
-            }
-        }
-        private string urlSong = String.Empty;
-        public string _urlSong
-        {
-            get
-            {
-                return urlSong;
-            }
-            set
-            {
-                urlSong = value;
-            }
-        }
-        private string urlPictureBox = String.Empty;
-        public string _urlPictureBox
-        {
-            get
-            {
-                return urlPictureBox;
-            }
-            set
-            {
-                urlPictureBox = value;
-            }
-        }
-        public Square() { }
-        public Square(string tenSong, string UrlSong)
+        public Square()
         {
             InitializeComponent();
-            _nameSong = tenSong;
-            _urlSong = UrlSong;
-            
-            //MessageBox.Show(tfile.Tag.Title);
-            _init();
         }
-        public Square(string tenSong, string UrlSong, Bitmap bm)
+        public Image _Thumbnail
         {
-            InitializeComponent();
-            _nameSong = tenSong;
-            _urlSong = UrlSong;
-            pictureBox1.Image = bm;
-            //MessageBox.Show(tfile.Tag.Title);
-            _init();
+            get { return thumbnail.Image; }
+            set { thumbnail.Image = value; }
         }
-        private void _init()
+        private bool havingSong = false;
+        public bool _havingSong
         {
-            if (nameSong != String.Empty)
-            {
-                labelNameSong.Text = nameSong;
-            }
+            get { return havingSong; }
+            set { havingSong = value; }
         }
-        private Bitmap btnPlayPause = null;
-        public Bitmap _btnPlayPause
+        private bool isPlaying = false;
+        public bool _isPlaying
         {
-            get
-            {
-                return btnPlayPause;
-            }
+            get { return isPlaying; }
             set
             {
-                btnPlayPause = value;
+                isPlaying = value;
+                if (isPlaying == true)
+                {
+                    btn_play_pause.BackgroundImage = Music_Player_Project_IT008N13.Properties.Resources.pausedisplay;
+                }
+                else
+                {
+                    btn_play_pause.BackgroundImage = Music_Player_Project_IT008N13.Properties.Resources.playdisplay;
+                }
             }
         }
-        private void loadSlider()
+        
+        public string _Title
         {
-            
+            get { return Title.Text; }
+            set { Title.Text = value; }
         }
-        private void btn_play_pause_Click_1(object sender, EventArgs e)
+        private string Artist;
+        public string _Artist
         {
-            if (is_Play == true)
+            get { return Artist; }
+            set { Artist = value; }
+        }
+        private string URL;
+        public string _URL
+        {
+            get { return URL; }
+            set { URL = value; }
+        }
+        private string Duration;
+        public string _Duration
+        {
+            get { return Duration; }
+            set { Duration = value; }
+        }
+        public event EventHandler onAction = null;
+        private void btn_play_pause_Click(object sender, EventArgs e)
+        {
+            Music_Player_Project_IT008N13.mainForm.player.settings.rate = 20f;
+            isPlaying = !isPlaying;
+            if (onAction != null)
             {
-                btn_play_pause.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.playdisplay;
-                is_Play = false;
-                global::Music_Player_Project_IT008N13.mainForm.player.URL = String.Empty;
-                global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.pause();
+                onAction.Invoke(this, e);
             }
-            else
-            {
-                btn_play_pause.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.pausedisplay;
-                is_Play = true;
-                global::Music_Player_Project_IT008N13.mainForm.player.URL= _urlSong;
-                global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.play();
-                
-            }
-            timer1.Start();
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            global::Music_Player_Project_IT008N13.mainForm.slider1.Maximum = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.duration;
-            global::Music_Player_Project_IT008N13.mainForm.slider1.Value = (int)global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition;
-            //MessageBox.Show(global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPosition.ToString());
-            global::Music_Player_Project_IT008N13.mainForm.lbCurrentDuration.Text = global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentPositionString;
-            global::Music_Player_Project_IT008N13.mainForm.lbDurationItem.Text = global::Music_Player_Project_IT008N13.mainForm.player.Ctlcontrols.currentItem.durationString;
-
-        }
-
     }
 }
