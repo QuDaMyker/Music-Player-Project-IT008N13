@@ -69,7 +69,7 @@
             this.btn_play_pause.UseVisualStyleBackColor = false;
             this.btn_play_pause.Click += new System.EventHandler(this.btn_play_pause_Click_1);
             // 
-            // timer2
+            // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 

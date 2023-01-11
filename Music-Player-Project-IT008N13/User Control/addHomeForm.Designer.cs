@@ -148,7 +148,7 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(956, 323);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
-            // timer2
+            // timer1
             // 
             this.timer1.Interval = 5000;
             // 
