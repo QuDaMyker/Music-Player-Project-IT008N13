@@ -45,8 +45,7 @@
             // labelPlayQueue
             // 
             this.labelPlayQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlayQueue.ForeColor = System.Drawing.Color.White;
-            this.labelPlayQueue.Location = new System.Drawing.Point(50, 50);
+            this.labelPlayQueue.Location = new System.Drawing.Point(51, 21);
             this.labelPlayQueue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPlayQueue.Name = "labelPlayQueue";
             this.labelPlayQueue.Size = new System.Drawing.Size(203, 46);
@@ -55,18 +54,18 @@
             // 
             // customButton1
             // 
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(128)))), ((int)(((byte)(66)))));
+            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(128)))), ((int)(((byte)(66)))));
             this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.customButton1.BorderRadius = 10;
             this.customButton1.BorderSize = 0;
             this.customButton1.FlatAppearance.BorderSize = 0;
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(57, 116);
+            this.customButton1.Location = new System.Drawing.Point(58, 70);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(76, 36);
+            this.customButton1.Size = new System.Drawing.Size(117, 52);
             this.customButton1.TabIndex = 10;
             this.customButton1.Text = "Clear";
             this.customButton1.TextColor = System.Drawing.Color.White;
@@ -74,18 +73,18 @@
             // 
             // customButton2
             // 
-            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(128)))), ((int)(((byte)(66)))));
+            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(128)))), ((int)(((byte)(66)))));
             this.customButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.customButton2.BorderRadius = 10;
             this.customButton2.BorderSize = 0;
             this.customButton2.FlatAppearance.BorderSize = 0;
             this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(139, 116);
+            this.customButton2.Location = new System.Drawing.Point(181, 70);
             this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(86, 36);
+            this.customButton2.Size = new System.Drawing.Size(117, 52);
             this.customButton2.TabIndex = 11;
             this.customButton2.Text = "Add to";
             this.customButton2.TextColor = System.Drawing.Color.White;
@@ -123,21 +122,21 @@
             // 
             this.addFileToPlayQueueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addFileToPlayQueueToolStripMenuItem.Image")));
             this.addFileToPlayQueueToolStripMenuItem.Name = "addFileToPlayQueueToolStripMenuItem";
-            this.addFileToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.addFileToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.addFileToPlayQueueToolStripMenuItem.Text = "Add File to play queue";
             // 
             // addFolderToPlayQueueToolStripMenuItem
             // 
             this.addFolderToPlayQueueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addFolderToPlayQueueToolStripMenuItem.Image")));
             this.addFolderToPlayQueueToolStripMenuItem.Name = "addFolderToPlayQueueToolStripMenuItem";
-            this.addFolderToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.addFolderToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.addFolderToPlayQueueToolStripMenuItem.Text = "Add Folder to Play queue";
             // 
             // addMediaFromURLToPlayQueueToolStripMenuItem
             // 
             this.addMediaFromURLToPlayQueueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addMediaFromURLToPlayQueueToolStripMenuItem.Image")));
             this.addMediaFromURLToPlayQueueToolStripMenuItem.Name = "addMediaFromURLToPlayQueueToolStripMenuItem";
-            this.addMediaFromURLToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.addMediaFromURLToPlayQueueToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.addMediaFromURLToPlayQueueToolStripMenuItem.Text = "Add Media From URL to Play queue";
             // 
             // toolStrip3
@@ -151,7 +150,7 @@
             this.toolStripButton1,
             this.toolStripSeparator1,
             this.toolStripDropDownButton1});
-            this.toolStrip3.Location = new System.Drawing.Point(815, 58);
+            this.toolStrip3.Location = new System.Drawing.Point(755, 21);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Size = new System.Drawing.Size(147, 38);
             this.toolStrip3.TabIndex = 9;
@@ -161,14 +160,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.BackColor = System.Drawing.Color.MintCream;
             this.Controls.Add(this.customButton2);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.toolStrip3);
             this.Controls.Add(this.labelPlayQueue);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "addMediaQueueForm";
-            this.Size = new System.Drawing.Size(1084, 790);
+            this.Size = new System.Drawing.Size(1047, 647);
             this.Load += new System.EventHandler(this.addMediaQueueForm_Load);
             this.toolStrip3.ResumeLayout(false);
             this.toolStrip3.PerformLayout();

@@ -35,8 +35,7 @@
             // labelSetting
             // 
             this.labelSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSetting.ForeColor = System.Drawing.Color.White;
-            this.labelSetting.Location = new System.Drawing.Point(50, 50);
+            this.labelSetting.Location = new System.Drawing.Point(51, 21);
             this.labelSetting.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSetting.Name = "labelSetting";
             this.labelSetting.Size = new System.Drawing.Size(146, 46);
@@ -46,21 +45,21 @@
             // weCantFindAnyMusic1
             // 
             this.weCantFindAnyMusic1.BackColor = System.Drawing.Color.Transparent;
-            this.weCantFindAnyMusic1.Location = new System.Drawing.Point(200, 180);
+            this.weCantFindAnyMusic1.Location = new System.Drawing.Point(150, 183);
             this.weCantFindAnyMusic1.Name = "weCantFindAnyMusic1";
-            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(652, 365);
+            this.weCantFindAnyMusic1.Size = new System.Drawing.Size(669, 251);
             this.weCantFindAnyMusic1.TabIndex = 6;
             // 
             // addMusicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.BackColor = System.Drawing.Color.MintCream;
             this.Controls.Add(this.weCantFindAnyMusic1);
             this.Controls.Add(this.labelSetting);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addMusicForm";
-            this.Size = new System.Drawing.Size(1084, 790);
+            this.Size = new System.Drawing.Size(1047, 647);
             this.ResumeLayout(false);
 
         }

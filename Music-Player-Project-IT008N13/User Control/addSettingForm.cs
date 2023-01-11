@@ -19,7 +19,14 @@ namespace Music_Player_Project_IT008N13
 
         private void toggleButton1_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (toggleButton1.Checked == true)
+            {
+                toolStripLabel6.Text = "On";
+            }
+            else
+            {
+                toolStripLabel6.Text = "Off";
+            }
         }
 
         private void btnExpand1_Click(object sender, EventArgs e)
