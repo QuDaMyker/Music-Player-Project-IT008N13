@@ -33,7 +33,9 @@ namespace Music_Player_Project_IT008N13
             InitializeComponent();
             Active_Button(btnHome);
             currentButton = btnHome;
+            
         }
+        
         private void Active_Button(object sender)
         {
             CustomButton button = (CustomButton)sender;
@@ -337,5 +339,7 @@ namespace Music_Player_Project_IT008N13
                 }
             }
         }
+
+
     }
 }

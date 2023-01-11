@@ -27,8 +27,8 @@ namespace Music_Player_Project_IT008N13
             imagebtnShuffle_Disable = new Bitmap(Properties.Resources.shuffle_disable, new Size(16, 16));
             imagebtnPrevious = new Bitmap(Properties.Resources.previous_image, new Size(16, 16));
             imagebtnNext = new Bitmap(Properties.Resources.next_image, new Size(16, 16));
-            imagebtnPlay = new Bitmap(Properties.Resources.imageApp, new Size(68, 68));
-            imagebtnPause = new Bitmap(Properties.Resources.imagebtnPause, new Size(68, 68));
+            imagebtnPlay = new Bitmap(Properties.Resources.imageApp, new Size(65, 65));
+            imagebtnPause = new Bitmap(Properties.Resources.imagebtnPause, new Size(65, 65));
             imagebtnLoop_Enable = new Bitmap(Properties.Resources.loop_able, new Size(16, 16)); 
             imagebtnLoop_One = new Bitmap(Properties.Resources.loop_one, new Size(16, 16));
             imagebtnLoop_Disable = new Bitmap(Properties.Resources.loop_disable, new Size(16, 16));
