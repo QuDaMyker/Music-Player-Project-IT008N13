@@ -1,23 +1,11 @@
 ﻿using Music_Player_Project_IT008N13.Controls;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 using TagLib;
 using System.IO;
 using AxWMPLib;
-using HXV;
-using WMPLib;
-using System.Runtime.InteropServices.ComTypes;
-using System.Security.Principal;
-using System.Reflection;
-using System.Threading;
+
 
 namespace Music_Player_Project_IT008N13
 {
@@ -32,8 +20,8 @@ namespace Music_Player_Project_IT008N13
         private ImageButtonMenuBar imageMenuBar = new ImageButtonMenuBar();
         private imagebuttonExit_Max_Min imageButtonControlApp = new imagebuttonExit_Max_Min();
         private ImageSoureControlPlayer imageSoureControlPlayer = new ImageSoureControlPlayer();
-        private CustomButton previousButton;
-        private CustomButton currentButton;
+        //private CustomButton previousButton;
+        //private CustomButton currentButton;
         private bool is_shuffle = false;
         private bool is_Collapsed;
         private int is_loop = 0; // 0_enable_loop; 1_loop_one; 2_disable_loop
@@ -45,8 +33,8 @@ namespace Music_Player_Project_IT008N13
 
             InitializeComponent();
             _initdataMainForm();
-            Active_Button(btnHome);
-            currentButton = btnHome;
+            //Active_Button(btnHome);
+            //currentButton = btnHome;
             //<name of your media player control here>.Ctlcontrols.currentPositionString;
             player.Ctlcontrols.pause();
             player.IsAccessible = true;
@@ -98,7 +86,7 @@ namespace Music_Player_Project_IT008N13
         {
             try
             {
-                string[] lines = File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurrentSong.txt");
+                string[] lines = System.IO.File.ReadAllLines($@"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\Music-Player-Project-IT008N13\Database\historyCurrentSong.txt");
                 string[] values;
                 for (int i = 0; i < lines.Length; i++)
                 {
@@ -126,12 +114,12 @@ namespace Music_Player_Project_IT008N13
         private void ActiveButton(object btnSender)
         {
             ToolStripButton btn = (ToolStripButton)btnSender;
-            DisableButton(btn, btn.Tag);
+            //DisableButton(btn, btn.Tag);
             btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular);
             btn.BackColor = Color.Coral;
             btn.ForeColor = Color.White;
         }
-        private void DisableButton(object btnSender, object tagButton)
+        /*private void DisableButton(object btnSender, object tagButton)
         {
             foreach (Object previousButton in toolStripControl.Items)
             {
@@ -143,7 +131,7 @@ namespace Music_Player_Project_IT008N13
                     btn.BackColor = System.Drawing.Color.LightSalmon;
                 }
             }
-        }
+        }*/
         
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -493,11 +481,11 @@ namespace Music_Player_Project_IT008N13
                 }
             }
         }
-        private void btnShuffle_Click(object sender, EventArgs e)
+        /*private void btnShuffle_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             player.URL = dataMainForm.Rows[rnd.Next(dataMainForm.RowCount - 1)].Cells[2].Value.ToString();
-        }
+        }*/
         
 
         private void nextSongWhenFullValueSlider(object sender, EventArgs e)
