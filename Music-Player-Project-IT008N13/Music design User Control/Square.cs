@@ -73,6 +73,7 @@ namespace Music_Player_Project_IT008N13
         public event EventHandler onAction = null;
         private void btn_play_pause_Click(object sender, EventArgs e)
         {
+            Music_Player_Project_IT008N13.mainForm.player.settings.rate = 20f;
             isPlaying = !isPlaying;
             if (onAction != null)
             {

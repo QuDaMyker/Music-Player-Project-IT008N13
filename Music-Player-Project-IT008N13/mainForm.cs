@@ -49,11 +49,13 @@ namespace Music_Player_Project_IT008N13
             player.Ctlcontrols.stop();
             timer1.Start();
 
-            
+
             /*var collection = player.mediaCollection;
             var list = collection.getAll();
             int total = list.count;
             MessageBox.Show(total.ToString());*/
+
+            
         }
         private void _initdataMainForm()
         {
@@ -423,6 +425,7 @@ namespace Music_Player_Project_IT008N13
             if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
             {
                 slider1.Maximum = (int)player.Ctlcontrols.currentItem.duration;
+                MessageBox.Show("play");
                 timer1.Start();
             }
             else if (player.playState == WMPLib.WMPPlayState.wmppsPaused)
@@ -430,7 +433,7 @@ namespace Music_Player_Project_IT008N13
                 MessageBox.Show("Pause");
                 timer1.Stop();
             }
-            else if (player.playState == WMPLib.WMPPlayState.wmppsStopped || player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            else if (player.playState == WMPLib.WMPPlayState.wmppsStopped)
             {
                 //MessageBox.Show("Stop");
 
@@ -444,17 +447,19 @@ namespace Music_Player_Project_IT008N13
                     //player.Ctlcontrols.next();
                     for (int i = 0; i < dataMainForm.RowCount - 1; i++)
                     {
-                        if (i == dataMainForm.RowCount - 2)
+                        MessageBox.Show(i.ToString());
+                        if (i == dataMainForm.RowCount - 1)
                         {
                             player.URL = dataMainForm.Rows[0].Cells[2].Value.ToString();
-                            MessageBox.Show(player.URL.ToString());
+                            MessageBox.Show("Chay tu 0");
+                            Console.WriteLine("pLAYER");
                             break;
                         }
                         else
                         {
                             player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
                             MessageBox.Show("Next");
-                            //Task.Delay(1000);
+                            Console.WriteLine("pLAYER");
                             //player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
 
                             break;
@@ -466,8 +471,9 @@ namespace Music_Player_Project_IT008N13
                 {
 
                 }
-                // player.Ctlcontrols.next();
+               // player.Ctlcontrols.play();
             }
+            //player.Ctlcontrols.play();
             /*else if(player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
             {
                 //MessageBox.Show("End Song");
