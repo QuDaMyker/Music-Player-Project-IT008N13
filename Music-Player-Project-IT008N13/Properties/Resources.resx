@@ -325,4 +325,16 @@
   <data name="volume" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon\volume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imageFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\imageFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagenewFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\imagenewFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagearrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\imagearrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon\image_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
