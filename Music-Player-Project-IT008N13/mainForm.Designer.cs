@@ -78,7 +78,7 @@ namespace Music_Player_Project_IT008N13
             this.addPlaylistForm1 = new Music_Player_Project_IT008N13.addPlaylistForm();
             this.addSettingForm1 = new Music_Player_Project_IT008N13.addSettingForm();
             player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panelControl.SuspendLayout();
             this.panelSlider.SuspendLayout();
             this.panelControlPlayer.SuspendLayout();
@@ -135,9 +135,9 @@ namespace Music_Player_Project_IT008N13
             slider1.SymbolAfter = "";
             slider1.SymbolBefore = "";
             slider1.TabIndex = 2;
-            
-            
-            
+            // 
+            // lbDurationItem
+            // 
             lbDurationItem.AutoSize = true;
             lbDurationItem.Dock = System.Windows.Forms.DockStyle.Right;
             lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -147,9 +147,9 @@ namespace Music_Player_Project_IT008N13
             lbDurationItem.Size = new System.Drawing.Size(34, 13);
             lbDurationItem.TabIndex = 14;
             lbDurationItem.Text = "00:00";
-            
-            
-            
+            // 
+            // lbCurrentDuration
+            // 
             lbCurrentDuration.AutoSize = true;
             lbCurrentDuration.Dock = System.Windows.Forms.DockStyle.Left;
             lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -804,9 +804,9 @@ namespace Music_Player_Project_IT008N13
             player.TabIndex = 11;
             player.Visible = false;
             // 
-            // timer1
+            // timer2
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // mainForm
             // 
@@ -886,12 +886,12 @@ namespace Music_Player_Project_IT008N13
         private Panel panelVolume;
         private CustomButton btnVolume;
         private Panel panelDropDownPlayLists;
-        private Timer timer1;
+        private Timer timer2;
         private PictureBox pictureBox1;
         private Panel panelSlider;
-        static public Label lbCurrentDuration;
-        static public Label lbDurationItem;
-        static public Slider slider1;
-        static public AxWMPLib.AxWindowsMediaPlayer player;
+        public static Label lbCurrentDuration;
+        public static Label lbDurationItem;
+        public static Slider slider1;
+        public static AxWMPLib.AxWindowsMediaPlayer player;
     }
 }

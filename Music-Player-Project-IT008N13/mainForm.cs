@@ -71,7 +71,7 @@ namespace Music_Player_Project_IT008N13
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
             Handle_Click(sender, addPlaylistForm1);
-            timer1.Start();
+            timer2.Start();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
@@ -318,14 +318,14 @@ namespace Music_Player_Project_IT008N13
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e)
         {
-            if(is_Collapsed)
+            if (is_Collapsed)
             {
                 panelDropDownPlayLists.Height += 120;
                 if (panelDropDownPlayLists.Size == panelDropDownPlayLists.MaximumSize)
                 {
-                    timer1.Stop();
+                    timer2.Stop();
                     is_Collapsed = false;
                 }
             }
@@ -334,12 +334,10 @@ namespace Music_Player_Project_IT008N13
                 panelDropDownPlayLists.Height -= 120;
                 if (panelDropDownPlayLists.Size == panelDropDownPlayLists.MinimumSize)
                 {
-                    timer1.Stop();
+                    timer2.Stop();
                     is_Collapsed = true;
                 }
             }
         }
-
-
     }
 }
