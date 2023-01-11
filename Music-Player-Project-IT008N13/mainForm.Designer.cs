@@ -798,12 +798,11 @@ namespace Music_Player_Project_IT008N13
             // player
             // 
             player.Enabled = true;
-            player.Location = new System.Drawing.Point(374, 362);
+            player.Location = new System.Drawing.Point(80, 512);
             player.Name = "player";
             player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            player.Size = new System.Drawing.Size(135, 117);
+            player.Size = new System.Drawing.Size(175, 110);
             player.TabIndex = 11;
-            player.Visible = true;
             // 
             // timer2
             // 
@@ -815,9 +814,9 @@ namespace Music_Player_Project_IT008N13
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1400, 900);
+            this.Controls.Add(player);
             this.Controls.Add(this.panelUserControl);
             this.Controls.Add(this.panelMenuBar);
-            this.Controls.Add(player);
             this.Controls.Add(this.panelControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
