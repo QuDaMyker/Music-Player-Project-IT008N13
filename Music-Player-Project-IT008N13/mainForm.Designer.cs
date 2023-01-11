@@ -806,7 +806,7 @@ namespace Music_Player_Project_IT008N13
             // 
             // timer2
             // 
-            this.timer2.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // mainForm
             // 

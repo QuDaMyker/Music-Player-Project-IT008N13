@@ -318,7 +318,7 @@ namespace Music_Player_Project_IT008N13
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e)
         {
             if(is_Collapsed)
             {
