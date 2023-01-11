@@ -33,22 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Accessibility" />
-    <Reference Include="CustomMarshalers" />
-    <Reference Include="ISymWrapper" />
-    <Reference Include="Microsoft.Activities.Build" />
-    <Reference Include="Microsoft.Build" />
-    <Reference Include="Microsoft.Build.Conversion.v4.0" />
-    <Reference Include="Microsoft.Build.Engine" />
-    <Reference Include="Microsoft.Build.Framework" />
-    <Reference Include="Microsoft.Build.Tasks.v4.0" />
-    <Reference Include="Microsoft.Build.Utilities.v4.0" />
-    <Reference Include="Microsoft.JScript" />
-    <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
-    <Reference Include="Microsoft.VisualC" />
-    <Reference Include="Microsoft.VisualC.STLCLR" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -74,6 +58,10 @@
     </Compile>
     <Compile Include="Controls\MenuColorTable.cs" />
     <Compile Include="Controls\MenuRenderer.cs" />
+    <Compile Include="ImageButtonMenuBar.cs" />
+    <Compile Include="ImageControlUser.cs" />
+    <Compile Include="imagebuttonExit_Max_Min.cs" />
+    <Compile Include="ImageSoureControlPlayer.cs" />
     <Compile Include="InitialUI\MeetTheNewMediaPlayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -368,7 +356,13 @@
     <None Include="Resources\icon\pausedisplay.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WindowsBase.dll" />
+    <None Include="Resources\icon\volume.png" />
+    <None Include="Resources\icon\shuffle_disable.png" />
+    <None Include="Resources\icon\previous_image.png" />
+    <None Include="Resources\icon\next_image.png" />
+    <None Include="Resources\icon\mute_volume.png" />
+    <None Include="Resources\icon\shuffle_able.png" />
+    <None Include="Resources\icon\video_tape.png" />
     <None Include="Resources\icon\stop-button.png" />
     <None Include="Resources\icon\tape.png" />
     <None Include="Resources\icon\more.png" />
@@ -376,11 +370,25 @@
     <None Include="Resources\icon\add-folder %282%29.png" />
     <None Include="Resources\icon\add-folder-_2_.ico" />
     <None Include="Resources\icon\listen.png" />
-    <Content Include="PresentationCore.dll" />
+    <None Include="Resources\icon\imagebtnHome.png" />
+    <None Include="Resources\icon\imagebtnMusicLibrary.png" />
+    <None Include="Resources\icon\imagebtnPlayListChild.png" />
+    <None Include="Resources\icon\imagebtnPlayListMain.png" />
+    <None Include="Resources\icon\imagebtnPlayQueue.png" />
+    <None Include="Resources\icon\imagebtnSetting.png" />
+    <None Include="Resources\icon\imagebtnVideoLibrary.png" />
+    <None Include="Resources\icon\dropimage.png" />
+    <None Include="Resources\icon\exit.png" />
+    <None Include="Resources\icon\maximize.png" />
+    <None Include="Resources\icon\minimize.png" />
+    <None Include="Resources\icon\full_screen.png" />
+    <None Include="Resources\icon\minus.png" />
+    <None Include="Resources\icon\imageApp.png" />
+    <None Include="Resources\icon\loop_able.png" />
+    <None Include="Resources\icon\loop_one.png" />
+    <None Include="Resources\icon\imagebtnPause.png" />
+    <None Include="Resources\icon\loop_disable.png" />
     <Content Include="Resources\icon\mute.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

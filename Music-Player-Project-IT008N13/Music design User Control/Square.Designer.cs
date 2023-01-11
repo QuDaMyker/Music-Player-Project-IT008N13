@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Title = new System.Windows.Forms.Label();
-            this.thumbnail = new System.Windows.Forms.PictureBox();
+            this.labelNameSong = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_play_pause = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.thumbnail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Title
+            // labelNameSong
             // 
-            this.Title.BackColor = System.Drawing.Color.MintCream;
-            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.Location = new System.Drawing.Point(0, 150);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(160, 20);
-            this.Title.TabIndex = 2;
-            this.Title.Text = "Song 1";
-            this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNameSong.BackColor = System.Drawing.Color.MintCream;
+            this.labelNameSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameSong.Location = new System.Drawing.Point(0, 150);
+            this.labelNameSong.Name = "labelNameSong";
+            this.labelNameSong.Size = new System.Drawing.Size(160, 20);
+            this.labelNameSong.TabIndex = 2;
+            this.labelNameSong.Text = "Song 1";
+            this.labelNameSong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // thumbnail
+            // pictureBox1
             // 
-            this.thumbnail.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.spotify;
-            this.thumbnail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.thumbnail.Location = new System.Drawing.Point(0, 0);
-            this.thumbnail.Name = "thumbnail";
-            this.thumbnail.Size = new System.Drawing.Size(160, 150);
-            this.thumbnail.TabIndex = 3;
-            this.thumbnail.TabStop = false;
+            this.pictureBox1.BackgroundImage = global::Music_Player_Project_IT008N13.Properties.Resources.spotify;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 150);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_play_pause
             // 
@@ -67,7 +67,11 @@
             this.btn_play_pause.Size = new System.Drawing.Size(40, 40);
             this.btn_play_pause.TabIndex = 4;
             this.btn_play_pause.UseVisualStyleBackColor = false;
-            this.btn_play_pause.Click += new System.EventHandler(this.btn_play_pause_Click);
+            this.btn_play_pause.Click += new System.EventHandler(this.btn_play_pause_Click_1);
+            // 
+            // timer2
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Square
             // 
@@ -75,20 +79,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btn_play_pause);
-            this.Controls.Add(this.thumbnail);
-            this.Controls.Add(this.Title);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelNameSong);
             this.DoubleBuffered = true;
             this.Name = "Square";
             this.Size = new System.Drawing.Size(160, 170);
-            ((System.ComponentModel.ISupportInitialize)(this.thumbnail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.PictureBox thumbnail;
+        private System.Windows.Forms.Label labelNameSong;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_play_pause;
         private System.Windows.Forms.Timer timer1;
     }
