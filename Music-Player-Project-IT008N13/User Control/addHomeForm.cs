@@ -185,7 +185,7 @@ namespace Music_Player_Project_IT008N13
                         squares[i] = new Square(nameSong, Files[i]);
                     }
                     squares[i].Click += new EventHandler(squares_Click);
-                    //timer1.Start();
+                    //timer2.Start();
                     string[] dataAddToDataRecentHomePage = { $"{i}", $"{nameSong}", $"{Files[i]}" };
                     dataRecentHomePage.Rows.Add(dataAddToDataRecentHomePage);
                     flowLayoutPanel1.Controls.Add(squares[i]);
