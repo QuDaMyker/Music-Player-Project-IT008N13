@@ -33,7 +33,29 @@ namespace Music_Player_Project_IT008N13
             InitializeComponent();
             Active_Button(btnHome);
             currentButton = btnHome;
+            //<name of your media player control here>.Ctlcontrols.currentPositionString;
+            player.Ctlcontrols.pause();
+            player.IsAccessible = true;
+            var myPlayList = player.playlistCollection.newPlaylist("MyPlayList");
+            if(dataMainForm.RowCount != 0)
+            {
+                for (int i = 0; i < dataMainForm.RowCount - 1; i++)
+                {
+                    var mediaItem = player.newMedia(dataMainForm.Rows[i].Cells[2].Value.ToString());
+                    myPlayList.appendItem(mediaItem);
+                }
+            }
             
+            player.currentPlaylist = myPlayList;
+
+            player.Ctlcontrols.stop();
+            timer1.Start();
+
+            
+            /*var collection = player.mediaCollection;
+            var list = collection.getAll();
+            int total = list.count;
+            MessageBox.Show(total.ToString());*/
         }
         
         private void Active_Button(object sender)
@@ -252,6 +274,42 @@ namespace Music_Player_Project_IT008N13
             // btn Play 
             btnPlayPause.BackgroundImage = imageSoureControlPlayer.ImagebtnPlay;
             btnPlayPause.BackgroundImageLayout = ImageLayout.Center;
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                slider1.Maximum = (int)player.Ctlcontrols.currentItem.duration;
+                timer1.Start();
+            }
+            else if (player.playState == WMPLib.WMPPlayState.wmppsPaused)
+            {
+                MessageBox.Show("Pause");
+                timer1.Stop();
+            }
+            else if (player.playState == WMPLib.WMPPlayState.wmppsStopped || player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+                //MessageBox.Show("Stop");
+
+                //timer1.Stop();
+                //slider1.Value = 0;
+                //MessageBox.Show("End Song");
+                //timer1.Stop();
+                //slider1.Value = 0;
+                try
+                {
+                    //player.Ctlcontrols.next();
+                    for (int i = 0; i < dataMainForm.RowCount - 1; i++)
+                    {
+                        if (i == dataMainForm.RowCount - 2)
+                        {
+                            player.URL = dataMainForm.Rows[0].Cells[2].Value.ToString();
+                            MessageBox.Show(player.URL.ToString());
+                            break;
+                        }
+                        else
+                        {
+                            player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
+                            MessageBox.Show("Next");
+                            //Task.Delay(1000);
+                            //player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
 
             // btn Next 
             btnNext.BackgroundImage = imageSoureControlPlayer.ImagebtnNext;
@@ -264,6 +322,51 @@ namespace Music_Player_Project_IT008N13
             btnVolume.BackgroundImage = imageSoureControlPlayer.ImagebtnVolume;
             btnVolume.BackgroundImageLayout = ImageLayout.Center;
 
+                }
+                // player.Ctlcontrols.next();
+            }
+            /*else if(player.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+                //MessageBox.Show("End Song");
+                //timer1.Stop();
+                slider1.Value = 0;
+                try
+                {
+                    //player.Ctlcontrols.next();
+                    for (int i = 0; i < dataMainForm.RowCount - 1; i++)
+                    {
+                        if (i == dataMainForm.RowCount - 2)
+                        {
+                            player.URL = dataMainForm.Rows[0].Cells[2].Value.ToString();
+                            MessageBox.Show(player.URL.ToString());
+                            //player.Ctlcontrols.play();
+                            break;
+                        }
+                        else
+                        {
+                            *//*if (player.URL == dataMainForm.Rows[i].Cells[2].Value.ToString())
+                            {
+                                player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
+                                MessageBox.Show(player.URL.ToString());
+
+                                //player.Ctlcontrols.play();
+                                break;
+                            }*//*
+                            player.URL = dataMainForm.Rows[i + 1].Cells[2].Value.ToString();
+                            //MessageBox.Show(player.URL.ToString());
+
+                            //player.Ctlcontrols.play();
+                            break;
+                        }
+
+                    }
+                }
+                catch
+                {
+                    
+                }
+               // player.Ctlcontrols.next();
+            }*/
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)

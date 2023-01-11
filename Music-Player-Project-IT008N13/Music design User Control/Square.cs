@@ -30,7 +30,32 @@ namespace Music_Player_Project_IT008N13
         private string urlSong = String.Empty;
         public string _urlSong
         {
-            get
+            get { return Title.Text; }
+            set { Title.Text = value; }
+        }
+        private string Artist;
+        public string _Artist
+        {
+            get { return Artist; }
+            set { Artist = value; }
+        }
+        private string URL;
+        public string _URL
+        {
+            get { return URL; }
+            set { URL = value; }
+        }
+        private string Duration;
+        public string _Duration
+        {
+            get { return Duration; }
+            set { Duration = value; }
+        }
+        public event EventHandler onAction = null;
+        private void btn_play_pause_Click(object sender, EventArgs e)
+        {
+            isPlaying = !isPlaying;
+            if (onAction != null)
             {
                 return urlSong;
             }
