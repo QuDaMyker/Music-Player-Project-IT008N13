@@ -141,7 +141,7 @@ namespace Music_Player_Project_IT008N13
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
             Handle_Click(sender, addPlaylistForm1);
-            timer1.Start();
+            timer2.Start();
         }
         private void btnSetting_Click(object sender, EventArgs e)
         {
