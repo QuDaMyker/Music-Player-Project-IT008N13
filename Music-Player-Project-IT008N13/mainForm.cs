@@ -13,15 +13,15 @@ namespace Music_Player_Project_IT008N13
     {
         private bool is_Play = false;
         private bool is_Muted = true;
-        private Button currentButton;
+        
 
         private Point mouseLocation;
         private Pen pen = new Pen(Color.FromArgb(50, 50, 50), 2);
         private ImageButtonMenuBar imageMenuBar = new ImageButtonMenuBar();
         private imagebuttonExit_Max_Min imageButtonControlApp = new imagebuttonExit_Max_Min();
         private ImageSoureControlPlayer imageSoureControlPlayer = new ImageSoureControlPlayer();
-        //private CustomButton previousButton;
-        //private CustomButton currentButton;
+        private CustomButton previousButton;
+        private CustomButton currentButton;
         private bool is_shuffle = false;
         private bool is_Collapsed;
         private int is_loop = 0; // 0_enable_loop; 1_loop_one; 2_disable_loop
@@ -33,8 +33,8 @@ namespace Music_Player_Project_IT008N13
 
             InitializeComponent();
             _initdataMainForm();
-            //Active_Button(btnHome);
-            //currentButton = btnHome;
+            Active_Button(btnHome);
+            currentButton = btnHome;
             //<name of your media player control here>.Ctlcontrols.currentPositionString;
             player.Ctlcontrols.pause();
             player.IsAccessible = true;
@@ -111,93 +111,50 @@ namespace Music_Player_Project_IT008N13
             childForm.Size = new Size(1047, 647);
             childForm.ShowDialog();
         }
-        private void ActiveButton(object btnSender)
+        private void Active_Button(object sender)
         {
-            ToolStripButton btn = (ToolStripButton)btnSender;
-            //DisableButton(btn, btn.Tag);
-            btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular);
-            btn.BackColor = Color.Coral;
-            btn.ForeColor = Color.White;
+            CustomButton button = (CustomButton)sender;
+            button.BackColor = Color.FromArgb(45, 45, 45);
         }
-        /*private void DisableButton(object btnSender, object tagButton)
+        private void Disable_Button(object sender)
         {
-            foreach (Object previousButton in toolStripControl.Items)
-            {
-                if (previousButton.GetType() == typeof(ToolStripButton))
-                {
-                    ToolStripButton btn = previousButton as ToolStripButton;
-                    btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular);
-                    btn.ForeColor = Color.Black;
-                    btn.BackColor = System.Drawing.Color.LightSalmon;
-                }
-            }
-        }*/
-        
+            CustomButton button = (CustomButton)sender;
+            button.BackColor = Color.FromArgb(32, 32, 32);
+        }
+
         private void btnHome_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-            /*addHomeForm1.Show();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();*/
-            addHomeForm1.BringToFront();
+            Handle_Click(sender, addHomeForm1);
         }
         private void bbtnMusicLibrary_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-            /*addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Show();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();*/
-            addMusicForm1.BringToFront();
+            Handle_Click(sender, addMusicForm1);
         }
         private void btnVideoLibrary_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-            /*addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Show();
-            addSettingForm1.Hide();*/
-            addVideoForm1.BringToFront();
+            Handle_Click(sender, addVideoForm1);
         }
         private void btnPlayQueue_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-            /*addHomeForm1.Hide();
-            addMediaQueueForm1.Show();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();*/
-            addMediaQueueForm1.BringToFront();
+            Handle_Click(sender, addMediaQueueForm1);
         }
         private void btnPlaylists_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-            /*addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Show();
-            addVideoForm1.Hide();
-            addSettingForm1.Hide();*/
-            addPlaylistForm1.BringToFront();
+            Handle_Click(sender, addPlaylistForm1);
+            timer1.Start();
         }
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender);
-            /*addHomeForm1.Hide();
-            addMediaQueueForm1.Hide();
-            addMusicForm1.Hide();
-            addPlaylistForm1.Hide();
-            addVideoForm1.Hide();
-            addSettingForm1.Show();*/
-            addSettingForm1.BringToFront();
+            Handle_Click(sender, addSettingForm1);
+        }
+        private void Handle_Click(object sender, UserControl userControl)
+        {
+            previousButton = currentButton;
+            currentButton = (CustomButton)sender;
+            Disable_Button(previousButton);
+            Active_Button(sender);
+            userControl.BringToFront();
+            panelControlSizeExitApp.BringToFront();
         }
         private void btnPlayPause_Click(object sender, EventArgs e)
         {          

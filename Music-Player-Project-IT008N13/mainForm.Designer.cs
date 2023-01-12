@@ -136,9 +136,9 @@ namespace Music_Player_Project_IT008N13
             slider1.SymbolAfter = "";
             slider1.SymbolBefore = "";
             slider1.TabIndex = 2;
-            // 
-            // lbDurationItem
-            // 
+            
+            
+            
             lbDurationItem.AutoSize = true;
             lbDurationItem.Dock = System.Windows.Forms.DockStyle.Right;
             lbDurationItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,9 +148,9 @@ namespace Music_Player_Project_IT008N13
             lbDurationItem.Size = new System.Drawing.Size(34, 13);
             lbDurationItem.TabIndex = 14;
             lbDurationItem.Text = "00:00";
-            // 
-            // lbCurrentDuration
-            // 
+            
+            
+            
             lbCurrentDuration.AutoSize = true;
             lbCurrentDuration.Dock = System.Windows.Forms.DockStyle.Left;
             lbCurrentDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -890,9 +890,9 @@ namespace Music_Player_Project_IT008N13
         private PictureBox pictureBox1;
         private Panel panelSlider;
         private Timer timer1;
-        public static Label lbCurrentDuration;
-        public static Label lbDurationItem;
-        public static Slider slider1;
-        public static AxWMPLib.AxWindowsMediaPlayer player;
+        static public Label lbCurrentDuration;
+        static public Label lbDurationItem;
+        static public Slider slider1;
+        static public AxWMPLib.AxWindowsMediaPlayer player;
     }
 }
