@@ -12,44 +12,57 @@ namespace Music_Player_Project_IT008N13
 {
     public partial class addSettingForm : UserControl
     {
+        private ImageSourceSettingUserControl imageSource = new ImageSourceSettingUserControl();
+        private bool isCollapsed;
         public addSettingForm()
         {
             InitializeComponent();
         }
-
-        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        private void addSettingForm_Load(object sender, EventArgs e)
         {
-            if (toggleButton1.Checked == true)
+            Load_Image();
+        }
+
+        private void Load_Image()
+        {
+            // btn add Folder
+            btnAddFolder.Image = imageSource.ImageAddFolder;
+            btnAddFolder.ImageAlign = ContentAlignment.MiddleCenter;
+            btnAddFolder.TextImageRelation = TextImageRelation.ImageBeforeText;
+
+            // label folder
+            pictureBox1.Image = imageSource.ImageFolder;
+
+            //button drop 
+            btnDropMusicLibrary.Image = imageSource.ImageDrop;
+            btnDropMusicLibrary.ImageAlign = ContentAlignment.MiddleCenter;
+            // button delete
+            btnDelete.Image = imageSource.ImageDelete;
+            btnDelete.ImageAlign = ContentAlignment.MiddleCenter;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            panelDropDownMusicLibraryLocation.Controls.Remove(panelMusicLibraryLocationChild);
+            panelDropDownMusicLibraryLocation.Size = MinimumSize;
+        }
+
+        private void panelMusicLibraryLocation_Click(object sender, EventArgs e)
+        {
+            if(isCollapsed == false)
             {
-                toolStripLabel6.Text = "On";
+                panelDropDownMusicLibraryLocation.Size = panelDropDownMusicLibraryLocation.MaximumSize;
+                btnDropMusicLibrary.Image = imageSource.ImageUp;
+                btnDropMusicLibrary.ImageAlign = ContentAlignment.MiddleCenter;
+                isCollapsed = true;
             }
             else
             {
-                toolStripLabel6.Text = "Off";
+                panelDropDownMusicLibraryLocation.Size = panelDropDownMusicLibraryLocation.MinimumSize;
+                btnDropMusicLibrary.Image = imageSource.ImageDrop;
+                btnDropMusicLibrary.ImageAlign = ContentAlignment.MiddleCenter;
+                isCollapsed = false;
             }
-        }
-
-        private void btnExpand1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExpand2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAddfolder1_Click(object sender, EventArgs e)
-        {
-            FolderBrowserDialog folder = new FolderBrowserDialog();
-            folder.ShowDialog();
-
-        }
-
-        private void btnAddfolder2_Click(object sender, EventArgs e)
-        {
-            FolderBrowserDialog folder = new FolderBrowserDialog();
-            folder.ShowDialog();
         }
     }
 }
